@@ -1,0 +1,136 @@
+---
+title: 'Week 3 (LAB 1): Data Wrangling with dplyr'
+subtitle: "PSTAT100: Data Science Concepts and Analysis" 
+
+author:
+  - name: "Ali Abuzaid"
+    affiliations:
+      - name: "Spring 2025"
+affiliation-title: "Quarter"
+format: 
+ pdf:
+
+    code-fold: true
+    code-line-numbers: true
+    code-copy: true
+    code-tools: true
+    self-contained: true
+    toc: false
+    toc-location: left
+    number-sections: true
+---
+
+```{r setup-general, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, error = FALSE)
+
+bfcolor <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{\\textbf{%s}}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'><b>%s</b></span>", color, x)
+  } else x
+}
+```
+
+
+```{r, include=FALSE}
+library(tidyverse)
+library(readr)
+```
+
+
+:::{.callout-tip}
+# Submission Instructions
+
+
+* This LAB must be completed and submitted **individually**. Collaboration is allowed for discussion, but each student must submit their own work.
+
+* Ensure that all `R` code are presented clearly and appropriately.
+
+* All figures should be numbered, and axes must be labeled. 
+
+* Please use the provided `LAB 1.qmd` file to type your solutions and submit the completed LAB as a PDF file. You can utilize `RStudio` for this purpose. For guidance, refer to the [Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)).
+
+* Submit your solution via **Gradescope**.
+
+:::
+:::{.callout-caution}
+# Due Date
+**Due Date:** Thursday, April 17, 2025, 11:59 PM
+:::
+ 
+ \newpage
+:::{.callout-important}
+# **Exercises**
+
+**Question 1**: 
+
+Add a new column called `rank1` containing integers 1-4 expressing your personal taste preference (1 = tastiest). Make sure numbers are unique.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+
+**Question 2**: 
+
+Create a new dataframe `fruit_info_mod1` with an additional column `rank2` containing the same values as `rank1`.
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 3**: 
+
+Remove all rank columns from `fruit_info_mod1` and store as `fruit_info_original`.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 4**:
+
+Rename columns to capitalize them using `rename()`.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 5**: 
+
+Check the dimensions of `baby_names` and store as `dimensions_baby_names`.
+
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 6**: 
+
+Count how many names appear in each year and store as `occur_per_year`. Also store the number of distinct years as `num_years`.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 7**: 
+
+Find all entries for a friend's name and select just the Count, Sex, and Year columns.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+**Question 8**: 
+
+Find all girl names in 2010 that were given more than 3000 times.
+
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+**Question 9**: 
+
+Find which name was most common in 1995 and how many babies had that name.
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+**Question 10**: 
+
+Count how many distinct names there were for each sex in 1995.
+
+`r bfcolor("Replace this line with your answers", "red")` \
+
+
+
+::::

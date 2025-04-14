@@ -1,0 +1,179 @@
+---
+title: "Lab1_week 3"
+format: html
+editor: visual
+---
+
+---
+title: "Lab 1_Inclass"
+author: "Netasha"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+
+# Agenda
+  - How to: 
+    - create a dataframe?
+    - evaluate dataframes
+    - add columns
+    - remove columns
+    - change names
+    - real world
+    - filtering
+    - filtering by multiple conditions
+    - grouping and aggregation
+    - slice
+    - pivot
+    
+## Install packages
+
+```{r}
+#please install the dplyr package! 
+
+```
+
+
+## This is how to create a data frame 
+- We can use the tibble funtion 
+```{r}
+# Define a dataframe using tibble()
+fruit_info <- tibble(
+  fruit = c('apple', 'orange', 'banana', 'raspberry'),
+  color = c('red', 'orange', 'yellow', 'pink')
+)
+
+# Print the dataframe
+fruit_info
+```
+
+- Notice how the output shows the data type under each column name (chr = character). This is one advantage of tibbles over traditional R data frames.
+
+## This is how to evaluate dataframes 
+DataFrames have several basic attributes that help you understand their structure:
+
+dim() shows the dimensions (rows x columns)
+str() displays the structure including column types
+names() gives the column names
+glimpse() provides a concise overview
+
+```{r}
+# Get dimensions (rows, columns)
+dim( PUTNAMEOFDATASET)
+
+# See structure including column types
+str(PUTNAMEOFDATASET)
+
+# Get column names
+names(PUTNAMEOFDATASET)
+
+# Concise overview (similar to str() but more readable)
+glimpse(PUTNAMEOFDATASET)
+```
+
+
+## How to add columns
+
+Columns can be added using mutate(). This is one of the most common dplyr operations. Let’s add a column showing personal taste preferences:
+
+```{r}
+# Add a rank column with mutate()
+fruit_info <- fruit_info %>% 
+  mutate(rank1 = c( PUTVALUES HERE)) # 1 = tastiest, 4 = least tasty
+
+# Print the modified dataframe
+ 
+```
+
+
+## How to remove columns 
+
+Columns can be removed using select() with a minus sign before the column name:
+
+```{r}
+# Remove the color column
+fruit_info %>% select(-PUTVARIABLEHERE)
+```
+
+## How to change names 
+
+Use the rename function to change names
+What do you notice?
+
+```{r}
+ # Rename columns to capitalize them
+fruit_info %>% 
+  rename(Fruit = PUTVARIABLEHERE , Color = PUTVARIABLEHERE)
+```
+
+## Real world 
+Now let’s work with a more substantial dataset to learn about data operations. We’ll use baby name data from California (1990-2018):
+
+This dataset contains: - Year: The year of birth - Sex: Gender (M/F) - Name: The baby’s first name
+- Count: How many babies had that name - State: Always CA in this dataset
+
+```{r}
+# Read the CSV file into a dataframe
+baby_names <- read_csv("baby_names.csv")
+
+# Preview first few rows
+head(baby_names)
+```
+
+## Filtering 
+
+Filtering selects rows that meet certain conditions using filter(). For example, let’s find names given more than 1000 times:
+
+```{r}
+# Names with counts > 1000
+PUTVARIABLEHERE %>% filter(Count > 1000)
+```
+
+## Filter by multiple condtions
+
+We can combine multiple conditions. Let’s find girl names in 2010 that were given more than 3000 times:
+
+```{r}
+# Girl names in 2010 with count > 3000
+baby_names %>% 
+  filter(Sex == "PUTLEVELHERE", Year == PUTYEARHERE, Count > PUTCOUNTHERE)
+```
+
+## Grouping and aggregation
+
+Grouping with group_by() lets us compute statistics by group. 
+
+For example, let’s find total births by sex in 1995:
+
+```{r}
+# Total counts by sex in 1995
+baby_names %>% 
+  filter(Year == 1995) %>% 
+  group_by(Sex) %>% 
+  summarize(total = sum(Count))
+```
+
+
+## Let's slice 
+We can also find the most common names by group using slice_max():
+Lets find the most common names by sex 
+
+```{r}
+VARIABLENAMEHERE %>% 
+  filter(Year == 1995) %>% 
+  group_by(Sex) %>% 
+  slice_max(Count, n = 1)
+```
+
+## Pivot 
+
+pivot_wider() reshapes data from long to wide format. Let’s see average name counts by sex and year (1990-1995) in a wide format:
+
+```{r}
+baby_names %>% 
+  filter(Year <= 1995) %>% 
+  group_by(Year, Sex) %>% 
+  summarize(mean_count = mean(Count), .groups = "drop") %>% 
+  pivot_wider(names_from = Year, values_from = mean_coun)
+```
+
