@@ -1,0 +1,425 @@
+---
+title: 'Week 4 (LAB2): Sampling designs and statistical bias'
+subtitle: "PSTAT100: Data Science Concepts and Analysis" 
+
+author:
+  - name: "Ali Abuzaid"
+    affiliations:
+      - name: "Spring 2025"
+affiliation-title: "Quarter"
+format: 
+ pdf:
+
+    code-fold: true
+    code-line-numbers: true
+    code-copy: true
+    code-tools: true
+    self-contained: true
+    toc: false
+    toc-location: left
+    number-sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message =  FALSE)
+knitr::opts_chunk$set(warning =  FALSE)
+knitr::opts_chunk$set(error =  FALSE)
+bfcolor <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{\\textbf{%s}}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'><b>%s</b></span>", color, x)
+  } else x
+}
+```
+
+
+:::{.callout-tip}
+# Submission Instructions
+
+
+* This LAB must be completed and submitted **individually**. Collaboration is allowed for discussion, but each student must submit their own work.
+
+* Ensure that all `R` code are presented clearly and appropriately.
+
+* All figures should be numbered, and axes must be labeled. 
+
+* Please use the provided `LAB 2.qmd` file to type your solutions and submit the completed LAB as a PDF file. You can utilize `RStudio` for this purpose. For guidance, refer to the [Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)).
+
+* Submit your solution via **Gradescope**.
+
+:::
+:::{.callout-caution}
+# Due Date
+**Due Date:** Thursday, April 24, 2025, 11:59 PM
+:::
+
+
+# Overview
+In this lab you'll explore through simulation how nonrandom sampling can produce datasets with statistical properties that are distorted relative to the population that the sample was drawn from. This kind of distortion is known as **bias**. 
+
+## Objectives:
+
+* Simulate biased and unbiased sampling designs
+* Examine the impact of sampling bias on the sample mean
+* Apply a simple bias correction by inverse probability weighting
+
+## Background
+
+### Sampling designs
+
+The **sampling design** of a study refers to _**the way observational units are selected**_ from the collection of all observational units. Any design can be expressed by the probability that each unit is included in the sample. In a random sample, all units are equally likely to be included.
+
+### Bias
+
+Formally, **bias** describes _**the 'typical' deviation of a sample statistic from the corresponding population value**_. 
+
+## Simulated data
+
+You will be simulating data in this lab. **Simulation** is a great means of exploration _**because you can control the population properties**_, which are generally unknown in practice. 
+
+# Scenario 1: eucalyptus seed diameters
+
+## Hypothetical population
+
+To provide a little context to this scenario, imagine that you're measuring eucalyptus seeds to determine their typical diameter. The cell below simulates diameter measurements for a hypothetical population of 5000 seeds; imagine that this is the total number of seeds in a small grove at some point in time.
+
+```{r}
+# simulate seed diameters
+set.seed(40221) # for reproducibility
+population <- data.frame(
+  diameter = rgamma(5000, shape = 2, scale = 1/2),
+  seed = 1:5000
+)
+
+# check first few rows
+head(population, 3)
+```
+
+:::{.callout-important}
+# **Question 1**    (2 Point)
+
+Calculate the mean diameter for the hypothetical population.
+:::
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+:::{.callout-important}
+# **Question 2**    (2 Point)
+
+Calculate the standard deviation of diameters for the hypothetical population.
+
+:::
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+
+
+The cell below produces a histogram of the population values -- the distribution of diameter measurements among the hypothetical population -- with a vertical line indicating the population mean.
+
+```{r, message=FALSE, warning=FALSE}
+# Plot population distribution
+library(ggplot2)
+mean_pop_diameter <- mean(population$diameter)
+ggplot(population, aes(x = diameter)) +
+  geom_histogram(bins = 20, alpha = 0.8) +
+  geom_vline(xintercept = mean_pop_diameter, color = "blue") +
+  labs(x = "Diameter (mm)", y = "Number of seeds in population") +
+  xlim(0, 6)
+```
+
+## Random sampling
+
+Imagine that your sampling design involves collecting bunches of plant material from several locations in the grove and sifting out the seeds with a fine sieve until you obtaining 250 seeds. We'll suppose that using your collection method, any of the 5000 seeds is equally likely to be obtained, so that your 250 seeds comprise a random sample of the population.
+
+We can simulate samples obtained using your hypothetical design by drawing values without replacement from the population.
+
+```{r}
+# draw a random sample of seeds
+set.seed(40221)
+sample <- population[sample(nrow(population), 250), ]
+```
+
+:::{.callout-important}
+# **Question 3**  (2 Point)
+
+Calculate the mean diameter of seeds in the simulated sample.
+:::
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+You should see above that the sample mean is close to the population mean. In fact, all sample statistics are close to the population; this can be seen by comparing the distribution of sample values with the distribution of population values.
+
+```{r, message=FALSE, warning=FALSE}
+# Plot sample vs population
+library(patchwork)
+
+p1 <- ggplot(sample, aes(x = diameter)) +
+  geom_histogram(bins = 20, alpha = 0.8) +
+  geom_vline(xintercept = mean(sample$diameter), color = "blue") +
+  labs(x = "Diameter (mm)", y = "Number of seeds in sample") +
+  xlim(0, 6)
+
+p2 <- ggplot(population, aes(x = diameter)) +
+  geom_histogram(bins = 20, alpha = 0.8) +
+  geom_vline(xintercept = mean_pop_diameter, color = "blue") +
+  labs(x = "Diameter (mm)", y = "Number of seeds in population") +
+  xlim(0, 6)
+
+p1 | p2
+```
+While there are some small differences, the overall shape is similar and the sample mean is almost exactly the same as the population mean. So with this sampling design, you obtained a dataset with few distortions of the population properties, and the sample mean is a good estimate of the population mean.
+
+### Assessing bias through simulation
+
+You may wonder: does that happen all the time, or was this just a lucky draw? This question can be answered by simulating a large number of samples and checking the average behavior to see whether the undistorted representation of the population is typical for this sampling design.
+
+The cell below estimates the bias, Standard Error, and root mean squared error (RMSE) of the sample mean by:
+
+drawing 1000 samples of size 300;
+storing the sample mean from each sample;
+
+
+* The **bias** of the sample mean is its average distance from the population mean.
+* **Standard Error**: standard deviation of the sample means across all 1000 samples.
+* **RMSE**  measures how much the sample mean deviates from the population mean on average, combining both variance and bias.
+
+We can estimate these using our simulation results as follows:
+
+```{r}
+set.seed(40221)
+nsim <- 1000
+samp_means <- numeric(nsim)
+
+for(i in 1:nsim) {
+  samp <- population[sample(nrow(population), 250), ]
+  samp_means[i] <- mean(samp$diameter)
+}
+
+# Estimate bias
+bias<-mean(samp_means) - mean_pop_diameter
+
+# Standard deviation of sample means (Standard Error)
+se<-sd(samp_means)
+
+# RMSE
+rmse<-sqrt(mean((samp_means - mean_pop_diameter)^2))
+list("Bias"=bias, "Standard Error"=se ,"RMSE"=rmse)
+```
+* So the average error observed in 1000 simulations was about 0.001 mm! This suggests that the sample mean is unbiased: on average, there is no error. Therefore, at least with respect to estimating the population mean, random samples appear to be unbiased samples.
+
+* So on average, the sample mean varies by about 0.04 mm from sample to sample.
+
+* Note that the root mean squared error (RMSE) is very close to the variance of the sample mean across simulations, but not exactly the same; this latter calculation measures the spread around the population mean, and is a conventional measure of estimation accuracy.
+
+```{r}
+# Plot sampling distribution
+ggplot(data.frame(sample_mean = samp_means), aes(x = sample_mean)) +
+  geom_histogram(bins = 30) +
+  geom_vline(xintercept = mean_pop_diameter, color = "blue") +
+  labs(x = "Value of sample mean", y = "Number of simulations")
+```
+
+## Biased sampling
+
+In this scenario, you'll use the same hypothetical population of eucalyptus seed diameter measurements and explore the impact of a biased sampling design.
+
+In the first design, you were asked to imagine that you collected and sifted plant material to obtain seeds. Suppose you didn't know that the typical seed is about 1 mm in diameter and decided to use a sieve that is a little too coarse, tending only to sift out larger seeds and letting smaller seeds pass through. As a result, small seeds have a lower probability of being included in the sample and large seeds have a higher probability of being included in the sample.
+
+This kind of sampling design can be described by assigning differential *sampling weights* $w_1,...,w_N$ to each observation. The cell below defines some hypothetical weights such that larger diameters are more likely to be sampled.
+
+```{r}
+# inclusion weight function
+weight_fn <- function(x, r = 10, c = 1.5) {
+  1 / (1 + exp(-r * (x - c)))
+}
+
+# Plot weight function
+grid <- seq(0, 6, length.out = 100)
+weight_df <- data.frame(
+  seed_diameter = grid,
+  weight = weight_fn(grid)
+)
+
+ggplot(weight_df, aes(x = seed_diameter, y = weight)) +
+  geom_area(alpha = 0.3, linetype = "solid") +
+  labs(x = "Seed diameter", y = "Weight") +
+  theme(plot.margin = margin(t = 5, r = 5, b = 5, l = 5, unit = "pt"))
+```
+
+The actual probability that a seed is included in the sample -- its **inclusion probability** -- is proportional to the sampling weight. These inclusion probabilities $\pi_i$ can be calculated by normalizing the weights $w_i$ over all seeds in the population $\pi_i=\frac{w_i}{\sum_i w_i}$:
+
+It may help you to picture how the weights will be used in sampling to line up this plot with the population distribution. In effect, we will sample more from the right tail of the population distribution, where the weight is nearest to 1.
+
+* The following cell draws a sample with replacement from the hypothetical seed population with seeds weighted according to the inclusion probability given by the function above.
+
+```{r}
+# Assign weights and sample
+population_mod1 <- population
+population_mod1$weight <- weight_fn(population_mod1$diameter)
+
+set.seed(40721)
+sample2 <- population_mod1[sample(nrow(population_mod1), 250, prob = population_mod1$weight), ]
+```
+
+:::{.callout-important}
+# **Question 4**   (2 Point)
+
+Calculate the mean diameter of seeds in the simulated sample and store the value as `mean_sample2_diameter`.
+:::
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+:::{.callout-important}
+# **Question 5**    (4 Point)
+
+Show side-by-side plots of the distribution of sample values and the distribution of population values, with vertical lines indicating the corresponding mean on each plot.
+:::
+*Hint*: copy the cell that produced this plot in scenario 1 and replace sample with sample2. Utilizing different methods is also welcome.
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+### Assessing bias through simulation
+
+:::{.callout-important}
+# **Question 6** (5 Points)
+
+- Investigate the bias, standard error and RMSE of the sample mean by:
+
+- drawing 1000 samples with observations weighted by inclusion probability;
+
+- storing the collection of sample means from each sample as samp_means;
+compute  `bias1`, `se1` and `rmse1`.
+:::
+
+(**Hint**: copy the cell that performs this simulation in scenario 1, and be sure to replace population with population_mod1 and adjust the sampling step to include weights = ... with the appropriate argument.)
+
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+:::{.callout-important}
+# **Question 7** (3 Points)
+
+Does this sampling design seem to introduce bias? If so, does the sample mean tend to over-estimate or under-estimate the population mean? and interpret and compare the Standard Error and RMSE.
+
+:::
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+# Scenario 2: hawks
+
+In this scenario, you'll explore sampling from a population with group structure -- frequently bias can arise from inadvertent uneven sampling of groups within a population.
+
+## Hypothetical population
+
+Suppose you're interested in determining the average beak-to-tail length of red-tailed hawks to help differentiate them from other hawks by sight at a distance. Females and males differ slightly in length -- females are generally larger than males. The cell below generates length measurements for a hypothetical population of 3000 females and 2000 males.
+
+```{r, message=FALSE, warning=FALSE}
+set.seed(40721)
+
+female_hawks <- data.frame(
+  length = rnorm(3000, mean = 57.5, sd = 3),
+  sex = "female"
+)
+
+male_hawks <- data.frame(
+  length = rnorm(2000, mean = 50.5, sd = 3),
+  sex = "male"
+)
+
+population_hawks <- rbind(female_hawks, male_hawks)
+
+head(population_hawks[order(population_hawks$sex), ], 4)
+```
+
+The cell below produces a histogram of the lengths in the population overall (bottom panel) and when distinguished by sex (top panel).
+
+```{r, message=FALSE, warning=FALSE}
+# Plot distributions
+p1 <- ggplot(population_hawks, aes(x = length, fill = sex)) +
+  geom_histogram(alpha = 0.5, position = "identity", bins = 40) +
+  xlim(40, 70) +
+  labs(x = "length (cm)", y = "number of birds")
+
+p2 <- ggplot(population_hawks, aes(x = length)) +
+  geom_histogram(bins = 40, fill = "red", alpha = 0.5) +
+  xlim(40, 70) +
+  labs(x = "length (cm)", y = "number of birds")
+
+p1 / p2
+```
+
+The population mean -- average length of both female and male red-tailed hawks -- is shown below.
+
+```{r}
+# Population mean
+mean(population_hawks$length)
+```
+First try drawing a random sample from the population:
+```{r}
+# Random sample
+set.seed(40821)
+sample_hawks <- population_hawks[sample(nrow(population_hawks), 300), ]
+```
+
+:::{.callout-important}
+# **Question 8** (4 Points) 
+
+- Do you expect that the sample will contain equal numbers of male and female hawks?
+
+- compute the proportions of individuals in the sample of each sex and store the result as a dataframe named `proportion_hawks_sample`
+
+:::
+
+
+**Hint**: group by sex, use .count(), and divide by the sample size. Be sure to rename the output column appropriately, as the default behavior produces a column called length.
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+
+## Biased sampling
+
+```{r, message=FALSE, warning=FALSE}
+weight_fn <- function(sex, p = 5/6) {
+  ifelse(sex == "male", p, 1 - p)
+}
+
+weight_df <- data.frame(
+  length = c(50.5, 57.5),
+  weight = c(5/6, 1/6),
+  sex = c("male", "female")
+)
+
+p1 <- ggplot(population_hawks, aes(x = length, fill = sex)) +
+  geom_histogram(alpha = 0.5, position = "identity", bins = 40) +
+  xlim(40, 70) +
+  labs(x = "length (cm)", y = "number of birds")
+
+p2 <- ggplot(weight_df, aes(x = length, y = weight, fill = sex)) +
+  geom_col(alpha = 0.5) +
+  xlim(40, 70) +
+  ylim(0, 1) +
+  labs(x = "length (cm)", y = "weight")
+
+p1 / p2
+```
+
+:::{.callout-important}
+# **Question 9** (2 Points)
+
+Draw a weighted sample `sample_hawks_biased` from the population `population_hawks` using the weights defined by `weight_fn`, and compute and store the value of the sample mean as `sample_hawks_biased_mean`.
+:::
+
+`r bfcolor("Replace this line with your answers:", "red")` \
+
+:::{.callout-important}
+# **Question 10** (4 Points)
+
+Investigate the bias of the sample mean by:
+
+- drawing 1000 samples with observations weighted by `weight_fn`;
+
+- storing the sample mean from each sample as `samp_means_hawks`;
+
+- compute the  `bias1`, `se1` and `rmse1`, and comment.
+:::
+
+
+`r bfcolor("Replace this line with your answers:", "red")` \
