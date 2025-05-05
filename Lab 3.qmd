@@ -1,0 +1,529 @@
+---
+title: 'Week 6 (LAB3): Visulization'
+subtitle: "PSTAT100: Data Science Concepts and Analysis" 
+
+author:
+  - name: "Ali Abuzaid"
+    affiliations:
+      - name: "Spring 2025"
+affiliation-title: "Quarter"
+format: 
+ pdf:
+
+    code-fold: true
+    code-line-numbers: true
+    code-copy: true
+    code-tools: true
+    self-contained: true
+    toc: false
+    toc-location: left
+    number-sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message =  FALSE)
+knitr::opts_chunk$set(warning =  FALSE)
+knitr::opts_chunk$set(error =  FALSE)
+bfcolor <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{\\textbf{%s}}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'><b>%s</b></span>", color, x)
+  } else x
+}
+```
+
+
+:::{.callout-tip}
+# Submission Instructions
+
+
+* This LAB must be completed and submitted **individually**. Collaboration is allowed for discussion, but each student must submit their own work.
+
+* Ensure that all `R` code are presented clearly and appropriately.
+
+* All figures should be numbered, and axes must be labeled. 
+
+* Please use the provided `LAB 3.qmd` file to type your solutions and submit the completed LAB as a PDF file. You can utilize `RStudio` for this purpose. For guidance, refer to the [Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)).
+
+* Submit your solution via **Gradescope**.
+
+:::
+:::{.callout-caution}
+# Due Date
+**Due Date:** Thursday, May 8, 2025, 11:59 PM
+:::
+
+
+# Overview  
+Data visualizations are graphics that represent quantitative or qualitative data. In this lab, you’ll use **ggplot2**, an `R` visualization library built around dataframes.
+
+* `ggplot2` creates visualizations by mapping columns of a dataframe to graphical elements: **aesthetics** (e.g., axes, color, size) and **geometric objects** (e.g., points, bars).
+
+Visualizations are essential for exploratory analysis and communication. They help identify patterns, check assumptions, and convey results effectively.
+
+## Objectives* 
+1. Learn **ggplot2** basics: geoms, aesthetics, scales, and faceting.  
+
+2. Iteratively refine plots for clarity and impact. 
+
+
+## Workflow  
+In `ggplot2`, plots are constructed by:  
+1. Initializing a plot with `ggplot()`.  
+2. Adding **geoms** (e.g., `geom_point()`).  
+3. Mapping variables to **aesthetics** (e.g., `aes(x, y, color)`).  
+4. Customizing scales, labels, and themes.  
+
+
+
+
+# Background: Elements of Graphics  
+Graphics in `ggplot2` consist of: 
+
+- **Aesthetics**: Mappings between data and visual properties (e.g., `x`, `y`, `color`).  
+
+- **Geoms**: Geometric objects like points (`geom_point()`), lines (`geom_line()`), or bars (`geom_bar()`).  
+
+- **Scales**: Control how aesthetics are rendered (e.g., `scale_x_log10()`). 
+
+- **Facets**: Split data into subplots (`facet_wrap()` or `facet_grid()`).  
+
+
+# Data Import: GDP and Life Expectancy  
+We’ll use a dataset of life expectancy, GDP per capita, and population for 158 countries (2000–2019). 
+
+
+-   **Observational units**: countries.
+-   **Variables**: country, year, life expectancy at birth (men, women, overall), GDP per capita, total population, region (continent), and subregion.
+
+The data come from merging several smaller datasets, mostly collected from [World Bank Open Data](https://data.worldbank.org/). The result is essentially a convenience sample, but descriptive analyses without inference are nonetheless interesting and suggestive.
+
+Your focus won't be on acquainting yourself with the data carefully or on tidying. The cells below import and merge component datasets.
+
+```{r, echo=TRUE}
+# Load necessary libraries
+library(dplyr)
+library(tidyr)
+library(readr)
+
+#setwd('/Users/irene/Desktop')
+# Import and format country regional information
+countryinfo <- read_csv('data/country-info.csv') %>%
+  select(3, 6, 7) %>%
+  rename('Country Code' = 'alpha-3')
+head(countryinfo)
+
+```
+
+```{r,echo=TRUE}
+# Import and format GDP per capita
+gdp <- read_csv('data/gdp-per-capita.csv', locale = locale(encoding = 'latin1')) %>%
+  select(-'Indicator Name', -'Indicator Code') %>%
+  pivot_longer(cols = -c('Country Name', 'Country Code'), 
+               names_to = 'Year', 
+               values_to = 'GDP_per_capita') %>%
+  mutate(Year = as.integer(Year))
+
+# Import and format life expectancies
+life <- read_csv('data/life-expectancy.csv') %>%
+  rename(Life_Expectancy = All, 
+         Male_Life_Expectancy = Male, 
+         Female_Life_Expectancy = Female)
+head(gdp)
+head(life)
+```
+
+```{r, echo=TRUE}
+# Import population data
+pop <- read_csv('data/population.csv', locale = locale(encoding = 'latin1')) %>%
+  pivot_longer(cols = -c('Country Name', 'Country Code'), 
+               names_to = 'Year', 
+               values_to = 'Population') %>%
+  mutate(Year = as.integer(Year)) %>%
+  select(-c('Country Name'))
+head(pop)
+```
+
+
+```{r, echo=TRUE}
+# Merge data
+merge1 <- left_join(life, gdp, by = c('Country Name', 'Year'))
+head(merge1)
+```
+
+```{r,echo=TRUE}
+
+merge2 <- left_join(merge1, countryinfo, by = 'Country Code')
+head(merge2)
+merge3 <- left_join(merge2, pop, by = c('Country Code', 'Year'))
+
+# Final data
+data <- merge3 %>%
+  drop_na() %>%
+  select(-'Country Code')
+
+# View the first few rows of the final dataset
+head(data)
+
+```
+
+# Life expectancy and GDP per capita
+
+Here you'll see how marks and encodings work in a basic sense, along with some examples of how to adjust encodings.
+
+## Basic scatterplots
+
+The following code constructs a scatterplot of life expectancy at birth against GDP per capita; each point corresponds to one country in one year. The syntax works as follows:
+
+`ggplot(data, aes(...))` begins by constructing a ggplot object from the dataframe and specifies the aesthetic mappings (e.g., x-axis, y-axis, color, size). 
+
+The result is passed to `geom_point()`, which adds points (circles) to the plot. Additional layers, such as scales (`scale_x_log10()` for log scaling), themes (`theme_minimal()` for a clean appearance), and guides, are added to refine the visualization.
+
+```{r,echo=TRUE}
+# Load necessary library
+library(ggplot2)
+
+# Basic scatterplot in R using ggplot2
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "GDP per capita", y = "Life Expectancy")
+
+```
+
+:::{.callout-important}
+# **Question 1: Different marks**    (2 Points)
+
+
+The code block below is a copy of the previous scatterplot. Have a look at the documentation on geom functions in `ggplot2` for a list of possible geometries (marks) you can use, such as `geom_point()`, `geom_line()`, or `geom_jitter()`. Try out a few alternatives to see what they look like. Once you're satisfied, set the geometry back to geom_point() to use points.
+:::
+
+
+
+:::{.callout-important}
+# **Question 2: Mark properties**    (2 Points)
+
+What is the difference between points and circles, according to the documentation?
+:::
+
+*Type your answer here, replacing this text.*
+
+
+## Adjusting Axis Scales, Labels, and Limits in R with ggplot2
+
+In ggplot2, axis adjustments are made using functions like `scale_x_*()` and `scale_y_*()`. These functions allow you to modify:
+
+- Scale types (e.g., logarithmic, continuous, categorical).
+
+- Labels (e.g., axis titles).
+
+- Limits (e.g., ranges for the axis).
+
+- Ticks (e.g., number or formatting of tick marks).
+
+
+```{r,echo=TRUE}
+# change axis label
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "GDP per capita", y = "Life Expectancy at Birth")  # Custom y-axis title
+```
+You can adjust the y-axis to start at a more appropriate value (e.g., 30 instead of 0) by setting the limits argument within the scale_y_continuous() function. This helps remove unnecessary whitespace and improves visualization.
+
+```{r,echo=TRUE}
+# don't start y axis at zero
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "GDP per capita", y = "Life Expectancy at Birth") +
+  scale_y_continuous(expand = c(0, 0), limits = c(min(data$Life_Expectancy), NA))  # Remove zero from y-axis
+```
+* You can achieve this by applying a logarithmic transformation to the x-axis using `scale_x_log10()`. This transformation helps spread out data points clustered near 0 on the x-axis, improving the visibility of patterns.
+
+```{r,echo=TRUE}
+# log scale for x axis
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy)) +
+  geom_point() +
+  theme_minimal() +
+  labs(x = "Log(GDP per capita)",  # Clarify log scale in axis label
+       , y = "Life Expectancy at Birth") +
+  scale_x_log10() +  # Apply log scale to x-axis
+  scale_y_continuous(expand = c(0, 0), limits = c(min(data$Life_Expectancy), NA))  # Prevent y-axis from starting at zero
+
+```
+
+
+:::{.callout-important}
+# **Question 3: Changing axis scale**    (3 Points)
+
+
+Try using a different scale for the x-axis instead of `scale_x_log10()`. Modify the scale type by using another appropriate scale_x_*() function in the previous code.
+
+- Pay attention to how the axis labels change to reflect the new scale.
+:::
+Look at the `ggplot2` documentation for a list of possible scale options and their parameters.
+
+
+
+
+# Using aesthetic attributes to display other variables
+
+You can adjust the transparency of points globally by setting the alpha argument inside the `geom_point()` function. 
+
+This is especially useful for scatterplots with tightly clustered points, as it reduces overplotting and reveals underlying patterns.
+
+
+```{r,echo=TRUE}
+# change opacity globally to fixed value
+library(scales)
+
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy))+
+   geom_point(alpha = 0.5) +
+   scale_x_log10() +
+   scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.05)))
+ 
+```
+
+You can display variable information through an aesthetic mapping using the aes() function in ggplot2. 
+
+Instead of setting a global value (e.g., alpha = 0.5), you map the aesthetic to a column in the dataset. This enables the visualization to represent data dynamically.
+
+```{r,echo=TRUE}
+# use opacity as an encoding channel
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, alpha = Year)) +
+  geom_point() +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.05))) +
+  theme_minimal()
+```
+
+Notice that there's not actually any data for 2005. Isn't it odd, then, that the legend includes an opacity value for that year? This is because the Year variable is automatically treated as continuous due to its data type (integer). If we want to instead have a unique opacity value for each year (i.e., use a discrete scale), we can coerce the Year variable to a nominal type in R by converting it to a factor using as.factor().
+
+
+
+:::{.callout-important}
+# **Question 4: Correction data types**    (3 Points)
+
+Convert `Year` column to a nominal data and plot the `Life Expectancy at Birth` verses `Log(GDP per capita)`.
+:::
+
+
+
+
+
+This displays more recent data in darker shades. Nice, but not especially informative. Let's try encoding year with color instead.
+
+:::{.callout-important}
+# **Question 5: Color encoding**    (3 Points)
+
+Map `Year` to color and treat it as a nominal variable.
+:::
+
+
+
+
+Pretty, but there's not a clear pattern, so the color aesthetic for year doesn't make the plot any more informative than it was without color. This **doesn't** mean that year is unimportant; just that color probably isn't the best choice to show year.
+
+
+* Let's try to find a color variable that does add information to the plot. When region is mapped to color, there is still substantial mixing but some apparent clustering. This communicates visually that there's some similarity in the relationship between GDP and life-expectancy among countries in the same region.
+
+```{r,echo=TRUE}
+
+# map region to color
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, color = region)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.05))) +
+  theme_minimal() +
+  guides(color = guide_legend(title = "Region"))
+```
+
+That's a little more interesting. Let's add another variable: map population to size, so that points are displayed in proportion to the country's total population.
+
+```{r,echo=TRUE}
+
+# map population to size
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, color = region, size = Population)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.07))) +
+  theme_minimal() +
+  guides(
+    color = guide_legend(title = "Region"),
+    size = guide_legend(title = "Population")
+  )
+```
+
+Great, but highly populated countries in Asia are so much larger than countries in other regions that, when size is displayed on a linear scale, too many data points are hardly visible. Just like the axes were rescaled using `alt.X()` and `alt.Scale()`, other encoding channels can be rescaled, too. Below, size is put on a square root scale.
+
+```{r,echo=TRUE}
+
+# rescale size
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, color = region, size = Population)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.07))) +
+  scale_size_continuous(trans = "sqrt", guide = guide_legend(title = "Population")) +
+  theme_minimal() +
+  guides(color = guide_legend(title = "Region"))
+```
+
+Not only does this add information, but it makes the regional clusters a little more visible!
+
+# Faceting
+
+Your previous graphic looks pretty good, and is nearly presentation-quality. However, it still doesn't display year information. As a result, each country appears multiple times in the same plot, which is potentially misleading. Here we'll address that using faceting.
+
+Faceting is a technique in `ggplot2` that creates multiple subplots (or panels) within a single visualization. Each panel represents a subset of the data, based on one or more categorical or temporal variables. This approach is especially useful for observing trends or patterns within specific groups or time periods.
+
+```{r,echo=TRUE}
+
+# facet by year
+ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, color = region, size = Population)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.07))) +
+  scale_size_continuous(trans = "sqrt", guide = guide_legend(title = "Population")) +
+  theme_minimal() +
+  guides(color = guide_legend(title = "Region")) +
+  facet_wrap(~ Year, ncol = 1)  # Adjust the number of columns if needed
+```
+* In `R` with `ggplot2`, resizing the individual facets is done using `theme()` to control the size of the plot area and its panels.
+
+:::{.callout-important}
+# **Question 6: Panel resizing**    (3 Points)
+Adjust the size of individual facets using theme(panel.spacing) and controlling the overall plot dimensions with `ggsave()` or layout management.
+
+:::
+
+
+
+
+Looks like life expectancy is increasing over time for lower-GDP nations, especially in Africa and Asia.
+
+Can we also display the life expectancy for each sex separately? To do this, we'll need to rearrange the dataframe a little -- untidy it so that we have one variable that indicates sex, and another that indicates life expectancy.
+
+
+:::{.callout-important}
+# **Question 7: Melt for plotting purposes**    (3 Points)
+
+Drop the Life Expectancy column and reshape the Male Life Expectancy and Female Life Expectancy columns in data into a long format so that:
+
+The values appear in a column called `Life Expectancy at Birth`. The variable names appear in a column called `Group`. Store the result as `plot_df` and print the first few rows. It may be helpful to refer to the `pivot_longer` documentation in `tidyr` for guidance. This is a pretty common operation for plotting purposes.
+:::
+
+
+
+
+:::{.callout-tip}
+**You will need to complete the part above correctly before moving on**. Consult your TA.
+
+Check the result of the following cell (first few rows for each group) against the reference dataframe below -- they should match exactly.
+:::
+
+
+
+```{r,echo=TRUE, message=FALSE,warning=FALSE}
+# Import plot_df to make sure the code rendering
+plot_df<- read_csv('data/plot_df.csv') 
+```
+
+```{r,echo=TRUE}
+# Group by 'Group' and take the first 4 rows from each group
+plot_df %>%
+  group_by(Group) %>%
+  slice_head(n = 4) %>%
+  ungroup()
+```
+
+```{r,echo=TRUE}
+# check result
+# Read the CSV file into a data frame
+plotdf_check <- read.csv('data/plotdf-check.csv')
+
+# View the first few rows
+head(plotdf_check)
+```
+
+To facet by both Year and Group (representing sex), you can use `facet_grid()` in `ggplot2`.
+
+```{r,echo=TRUE}
+
+# Filter out rows where Group is 'Life Expectancy'
+filtered_plot_df <- plot_df %>% 
+  filter(Group != "Life Expectancy")
+
+head(filtered_plot_df)
+```
+
+```{r,echo=TRUE}
+# Create the faceted plot
+p1<- ggplot(filtered_plot_df, aes(x = GDP_per_capita, y = Life_Expectancy_at_Birth, color = region, size = Population)) +
+  geom_point(alpha = 0.5) +
+  scale_x_log10() +
+  scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.07))) +
+  scale_size_continuous(trans = "sqrt", guide = guide_legend(title = "Population")) +
+  theme_minimal() +
+  guides(color = guide_legend(title = "Region")) +
+  facet_grid(Group ~ Year) +  # Facet by Group (rows) and Year (columns)
+  theme(
+    panel.spacing = unit(1, "lines"),  # Adjust spacing between facets
+    strip.text = element_text(size = 10),  # Adjust facet label text size
+    axis.text = element_text(size = 8),   # Adjust axis text size
+    axis.title = element_text(size = 10)  # Adjust axis title size
+  ) 
+p1
+
+```
+
+
+It's a little hard to line up the patterns visually between sexes because they are aligned on GDP per capita, not life expectancy -- so we can't really tell without moving our eyes back and forth and checking the axis ticks whether there's much difference in life expectancy rates by sex. Switching the row/column layout gives a better result. Modify the cell below so that facet columns correspond to sex and facet rows correspond to years.
+
+:::{.callout-important}
+# **Question 8: Adjusting facet layout**    (3 Points)
+
+Modify the layout so that facet columns correspond to `Group` (sex) and facet rows correspond to `Year`, we simply switch the order in the `facet_grid()` function in R`. 
+:::
+
+
+
+
+So life expectancy is a bit lower for men on average. But from the plot it's hard to tell if some countries reverse this pattern, since you can't really tell which country is which. Also, the panel is a bit cumbersome. Take a moment to consider how you might improve these issues, and then move on to our suggestion below.
+
+The next parts will modify the dataframe `data` by adding a column. We'll create a copy `data_mod1` of the original dataframe `data` to modify as to not lose track of our previous work:
+
+```{r,echo=TRUE}
+data_mod1 = data
+```
+
+
+:::{.callout-important}
+# **Question 9: Data transformation and re-plotting**    (5 Point)
+
+
+A simple data transformation can help give a clearer and more concise picture of how life expectancy differs by sex. 
+
+Perform the following steps: 
+
+\* append a new variable `Difference` to `data_mod1` that gives the difference between female and male (F - M) life expectancy in each country and year; 
+\* modify your plot of general life expectancy against `GDP per capita` by `Year` to instead plot the difference in `life expectancy at birth` against `GDP per capita` by `Year`.
+
+When modifying the example, be sure to change the axis label appropriately.
+:::
+
+
+:::{.callout-important}
+# **Question 10: Interpretation**    (3 Points)
+
+
+Note in the last graphic that 
+
+(1) each panel shows an increasing trend and 
+(2) one region shows the opposite trend. 
+Interpret these observations in context.
+:::
+
+*Type your answer here, replacing this text.*
+
