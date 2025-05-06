@@ -381,7 +381,7 @@ ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy)) +
   theme_minimal() +
   labs(x = "SQRT(GDP per capita)",
        , y = "Life Expectancy at Birth") +
-  scale_x_log10() + 
+  scale_x_sqrt() + 
   scale_y_continuous(expand = c(0, 0), limits = c(min(data$Life_Expectancy), NA))  
 ```
 
@@ -432,12 +432,14 @@ Convert `Year` column to a nominal data and plot the `Life Expectancy at Birth` 
 
 ```{r}
 #Set year as a factor using the as.factor and name it the same variable to change it in the dataset 
-
+data$Year<- as.factor(data$Year)
 
 #plot 
 ggplot(data, aes(x = GDP_per_capita, y = Life_Expectancy, alpha = Year)) +
   geom_point() +
   scale_x_log10() +
+  labs(x = "Log(GDP per capita)",
+       , y = "Life Expectancy at Birth")+
   scale_y_continuous(name = "Life Expectancy at Birth", expand = expansion(mult = c(0, 0.05))) +
   theme_minimal() +
   guides(alpha = guide_legend(title = "Year"))
@@ -652,8 +654,6 @@ p1
 
 It's a little hard to line up the patterns visually between sexes because they are aligned on GDP per capita, not life expectancy -- so we can't really tell without moving our eyes back and forth and checking the axis ticks whether there's much difference in life expectancy rates by sex. Switching the row/column layout gives a better result. Modify the cell below so that facet columns correspond to sex and facet rows correspond to years.
 
-
-
 ::: callout-important
 # **Question 8: Adjusting facet layout** (3 Points)
 
@@ -685,7 +685,6 @@ ggplot(filtered_plot_df, aes(x = GDP_per_capita, y = Life_Expectancy_at_Birth, c
     axis.title = element_text(size = 10)  
   )
 ```
-
 :::
 
 So life expectancy is a bit lower for men on average. But from the plot it's hard to tell if some countries reverse this pattern, since you can't really tell which country is which. Also, the panel is a bit cumbersome. Take a moment to consider how you might improve these issues, and then move on to our suggestion below.
@@ -733,7 +732,6 @@ ggplot(data_mod1, aes(x = GDP_per_capita, y = Difference, color = region, size =
     axis.title = element_text(size = 10)  # Adjust axis title size
   )
 ```
-
 :::
 
 ::: callout-important
