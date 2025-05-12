@@ -1,0 +1,727 @@
+---
+title: 'Week 7 (LAB4): Smoothing'
+subtitle: "PSTAT100: Data Science Concepts and Analysis" 
+
+author:
+  - name: "Ali Abuzaid"
+    affiliations:
+      - name: "Spring 2025"
+affiliation-title: "Quarter"
+format: 
+ pdf:
+
+    code-fold: true
+    code-line-numbers: true
+    code-copy: true
+    code-tools: true
+    self-contained: true
+    toc: false
+    toc-location: left
+    number-sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message =  FALSE)
+knitr::opts_chunk$set(warning =  FALSE)
+knitr::opts_chunk$set(error =  FALSE)
+bfcolor <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{\\textbf{%s}}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'><b>%s</b></span>", color, x)
+  } else x
+}
+```
+
+
+:::{.callout-tip}
+# Submission Instructions
+
+
+* This LAB must be completed and submitted **individually**. Collaboration is allowed for discussion, but each student must submit their own work.
+
+* Ensure that all `R` code are presented clearly and appropriately.
+
+* All figures should be numbered, and axes must be labeled. 
+
+* Please use the provided `LAB 4.qmd` file to type your solutions and submit the completed LAB as a PDF file. You can utilize `RStudio` for this purpose. For guidance, refer to the [Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)).
+
+* Submit your solution via **Gradescope**.
+
+:::
+:::{.callout-caution}
+# Due Date
+**Due Date:** Thursday, May 15, 2025, 11:59 PM
+:::
+
+
+# Overview  
+
+So far, you've encountered a number of visualization techniques for displaying tidy data. In those visualizations, all graphic elements represent the values of a dataset—they are visual displays of actual data.
+
+In general, **smoothing means evening out**. Visualizations of actual data are often irregular—points are distributed widely in scatterplots, line plots are jagged, and bars can be discontinuous. When we look at such visuals, we tend to attempt to look past these irregularities in order to discern patterns. For example, we may want to identify the **overall shape** of a histogram or the general trend in a scatterplot. Smoothing techniques allow us to **even out irregularities in graphical displays of actual data**, helping the eye detect underlying patterns.
+
+For our purposes, smoothing consists of drawing a **line or curve** on top of an existing statistical graphic. From a technical point of view, this amounts to **adding derived geometric objects** to a graphic that have fewer irregularities than the displays of actual data.
+
+In this lab, you'll learn some basic **smoothing techniques**:
+
+-   **Kernel density estimation** for histogram smoothing
+
+-   **LOESS smoothing** for scatterplots
+
+-   **Linear smoothing via regression**
+
+We will implement these techniques using the **ggplot2** package in R.
+
+## Sections of the lab:
+
+0.  **Introduction to ggplot2 smoothing functions**
+
+1.  **Histogram smoothing: Kernel density estimation**
+
+2.  **Scatterplot smoothing: LOESS and linear regression smoothing**
+
+3.  **Creating polished visualizations**
+
+## Goals:
+
+-   Get familiar with **ggplot2** for creating smooth visualizations.
+
+-   Construct **handmade** histograms using density estimation.
+
+-   Implement **kernel density estimation** using `geom_density()`.
+
+-   Implement **LOESS smoothing** using `geom_smooth(method = "loess")`.
+
+-   Implement **linear regression smoothing** using `geom_smooth(method = "lm")`.
+
+# Dataset:
+
+We'll use the same data as last week to stick to a familiar example:
+
+```{r}
+## ensure that the .csv file is saved in the same folder as this .qmd file
+data <- read.csv("data/lab4-data.csv")
+head(data)
+str(data)
+```
+
+------------------------------------------------------------------------
+
+## Data Transformations in ggplot2
+
+In `ggplot2`, data transformations such as **filtering**, **binning**, and **smoothing** can be performed before or within the plotting commands. These transformations help in pre-processing the dataset and making visualizations clearer.
+
+In this section, we will focus on:
+
+-   Filtering data for visualization.
+
+-   Creating histograms with **binned data**.
+
+-   Using functions in `ggplot2` library to streamline transformations.
+
+### Filtering Data
+
+Last week, you saw how to create histograms. As a refresher, to make a histogram of life expectancies across the globe in **2010**, we can **filter** the dataset and then plot it using the following commands:
+
+```{r}
+# Load necessary library
+library(ggplot2)
+library(dplyr)  # For data manipulation
+
+# Filter data for the year 2010
+data2010 <- data %>% filter(Year == 2010)
+
+# Plot histogram of Life Expectancy in 2010
+ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 2, fill = "skyblue", color = "black") +
+  labs(title = "Life Expectancy Distribution (2010)",
+       x = "Life Expectancy",
+       y = "Count")
+```
+
+Alternatively, we can **filter within the ggplot command** to avoid creating an intermediate dataset:
+
+```{r}
+# Filtering within the plotting command
+ggplot(data %>% filter(Year == 2010), aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 2, fill = "lightgreen", color = "black") +
+  labs(title = "Life Expectancy Distribution (2010)",
+       x = "Life Expectancy",
+       y = "Count")
+```
+
+:::{.callout-important}
+# Question 1:    (3 Points)
+
+Construct a histogram of life expectancies across the globe **in 2019** by filtering the dataset **within** the ggplot() function. Use a **bin size of 3** years instead of 2.
+
+:::
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+
+```{r}
+ggplot(data %>% filter(Year == 2019), aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = , fill = "orange", color = "black") +
+  labs(title = "Life Expectancy Distribution (2019)",
+       x = "Life Expectancy",
+       y = "Count")
+```
+
+:::
+
+------------------------------------------------------------------------
+
+### Counting of Observations in Each Bin
+
+In `ggplot2`, the process of counting how many observations fall into each bin is handled **automatically** when creating histograms. This aggregation step **reduces the number of values** by summarizing raw data into bins.
+
+Instead of manually computing bin counts, we can **extract the aggregated bin data** directly from `ggplot2` using `ggplot_build()`.
+
+#### Extracting Binned Data with `ggplot_build()`
+
+The codes below give us a dataframe containing the **bin midpoints** (`x`) and **counts** (`count`), which we can use for further analysis.
+
+```{r}
+# Filter data for the year 2010
+data2010 <- data %>% filter(Year == 2010)
+
+# Create histogram using stat_bin()
+p <- ggplot(data2010, aes(x = Life.Expectancy)) +
+  stat_bin(binwidth = 2, aes(y = ..count..))
+
+# Extract binned data
+binned_data <- ggplot_build(p)$data[[1]]
+
+# Display extracted bin counts
+head(binned_data[,c("x","count")])
+#tail(binned_data[,c("x","count")])
+```
+
+#### Plot the Extracted Aggregated Data
+
+Now that we have extracted the bin counts from `ggplot_build()`, we can plot the **manually** aggregated data using `geom_bar()`.
+
+```{r}
+# Plot aggregated data manually
+ggplot(binned_data, aes(x = x, y = count)) +
+  geom_bar(stat = "identity", fill = "blue", color = "black") +
+  labs(title = "Counting of Observations in Each Bin (2010)",
+       x = "Life Expectancy (Binned)",
+       y = "Count")
+```
+
+:::{.callout-important}
+# Question 2:    (3 Points)
+
+Modify the code above to **extract** the binned data (counts of observations and midpoints for each bin) and **plot** the aggregated data (using `geom_bar()`) for **2015**, using a **bin size of 3 years**.
+:::
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+Add your code here
+```{r}
+data2015 <- data %>% filter(Year ==  )
+
+p_2015 <- ggplot(data2015, aes(x = Life.Expectancy)) +
+  stat_bin(binwidth = 3, aes(y = ..count..))
+
+binned_data_2015 <- ggplot_build(p_2015)$data[[1]]
+
+# Display extracted bin counts
+head(binned_data_2015[,c("x","count")])
+```
+
+```{r}
+ggplot(binned_data_2015, aes(x = x, y = count)) +
+  geom_bar(stat = "identity", fill = "orange", color = "black") +
+  labs(title = "Counting of Observations in Each Bin (2019)",
+       x = "Life Expectancy (Binned)",
+       y = "Count")
+```
+
+:::
+
+------------------------------------------------------------------------
+
+### Converting Count Scale to Density Scale in ggplot2
+
+By default, histograms in `ggplot2` are displayed using the **count scale**, where the y-axis represents **the number of observations in each bin**.
+
+However, we can also display histograms using the **density scale**, where the y-axis represents **proportions of the total bar area**. This ensures that the total area under the histogram **sums to 1**, making it easier to compare distributions across different datasets or sample sizes.
+
+#### Histogram on Count Scale
+
+First, let's plot a **regular** histogram where the y-axis represents the **count** of observations per bin.
+
+```{r}
+# Filter data for the year 2010
+data2010 <- data %>% filter(Year == 2010)
+
+# Histogram using count scale
+ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 2, aes(y = ..count..), 
+                 fill = "blue", color = "black") +
+  labs(title = "Life Expectancy Histogram (Count Scale, 2010)",
+       x = "Life Expectancy",
+       y = "Count")
+```
+
+#### Histogram on Density Scale
+
+To switch to the density scale, we simply replace `aes(y = ..count..)` with `aes(y = ..density..)` in `geom_histogram()`. This automatically normalizes the histogram, ensuring that the total area sums to 1.
+
+```{r}
+# Histogram using density scale (simpler approach)
+ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 2, aes(y = ..density..), 
+                 fill = "orange", color = "black") +
+  labs(title = "Life Expectancy Histogram (Density Scale, 2010)",
+       x = "Life Expectancy",
+       y = "Density")
+```
+
+:::{.callout-important}
+# Question 3: Convert to Density Scale for 2015        (3 Points) 
+
+Modify the code above to convert the histogram for the year **2015** to the **density scale**, using a **bin size of 3 years**.
+
+:::
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+```{r}
+
+# Filter data for the year 2015
+data2015 <- data %>% filter(Year == )
+
+# Histogram using density scale (simpler approach)
+ggplot( , aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 2, aes(y = ..density..), 
+                 fill = "orange", color = "black") +
+  labs(title = "Life Expectancy Histogram (Density Scale, 2010)",
+       x = "Life Expectancy",
+       y = "Density")
+```
+
+:::
+
+------------------------------------------------------------------------
+
+## Density Estimation in ggplot2
+
+Now that we have explored different transformations, we can apply a **smoothing technique** known as **kernel density estimation**.
+
+Histograms show the **empirical density** by displaying the distribution of values in the sample. A **kernel density estimate** is simply a **smoothed version of the empirical density**. It approximates the **distribution of population values** that the sample comes from.
+
+### Why Use Kernel Density Estimation?
+
+-   ✅ Helps **visualize** the distribution shape more clearly.
+
+-   ✅ Allows identification of **multiple peaks** (multi-modality).
+
+-   ✅ **Smooths out irregularities** in histograms
+
+Instead of manually computing kernel density estimates, we can use the **built-in `geom_density()` function** in `ggplot2`.
+
+### Plot Kernel Density Estimate
+
+To generate a density estimate for life expectancies in 2010, we use `geom_density()`.
+
+```{r}
+# Filter data for the year 2010
+data2010 <- data %>% filter(Year == 2010)
+
+# Kernel density plot
+ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_density(fill = "blue", alpha = 0.4) +
+  labs(title = "Kernel Density Estimate of Life Expectancy (2010)",
+       x = "Life Expectancy",
+       y = "Density")
+```
+
+This produces a **smooth curve** representing the estimated probability density of life expectancy values.
+
+### Overlay Density Curve on Histogram
+
+We can **overlay** the density estimate on top of the histogram to compare the **empirical distribution (histogram)** and the **smoothed estimate**.
+
+```{r}
+ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_histogram(aes(y = ..density..), binwidth = 2, 
+                 fill = "gray", color = "black", alpha = 0.5) +
+  geom_density(color = "blue", size = 1) +
+  labs(title = "Histogram with Kernel Density Estimate (2010)",
+       x = "Life Expectancy",
+       y = "Density")
+```
+
+### Bandwidth Adjustment
+
+The **bandwidth parameter** controls the amount of **smoothing**.
+
+-   **Larger** bandwidth = **Smoother** curve (less detail)\
+-   **Smaller** bandwidth = **Wigglier** curve (More local detail)
+
+We can adjust the bandwidth in `geom_density()` using the `bw` argument
+
+```{r}
+library(patchwork)
+p1<- ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_density(fill = "blue", alpha = 0.4, bw = 2) +
+  labs(title = "Kernel Density Estimate with Bw = 2",
+       x = "Life Expectancy",
+       y = "Density")
+
+p2<- ggplot(data2010, aes(x = Life.Expectancy)) +
+  geom_density(fill = "blue", alpha = 0.4, bw = 6) +
+  labs(title = "Kernel Density Estimate with Bw = 6",
+       x = "Life Expectancy",
+       y = "Density")
+
+(p1+p2)
+```
+
+:::{.callout-important}
+# Question 4: Kernel Density Estimation for 2015  (4 Points)
+
+Modify the plotting code by **decreasing the bandwidth parameter**.\
+Try several values, and then choose one that you feel **captures the shape of the distribution well without getting too wiggly**.
+:::
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+```{r}
+
+data2015 <- data %>% filter(Year ==  )
+
+ggplot(data2015, aes(x = Life.Expectancy)) +
+  geom_density(fill = "purple", alpha = 0.4, bw = ) +
+  labs(title = "Kernel Density Estimate of Life Expectancy (2015)",
+       x = "Life Expectancy",
+       y = "Density")
+```
+ 
+:::
+
+------------------------------------------------------------------------
+
+### Comparing Distributions
+
+The visual advantage of a **kernel density estimate** is even more apparent when comparing distributions.
+
+A major task in **exploratory data analysis** is understanding how the distribution of a variable changes over time or across groups. For example, we have already seen that **life expectancy seems to change over time**. We can explore this further by **comparing distributions for different years**.
+
+We can plot **multiple density estimates** on the **same plot** by grouping the data by year.
+
+#### Compare Kernel Density Estimates for Different Years
+
+We compare the life expectancy distributions for 2010 and 2019 by grouping by Year in `geom_density()`.
+
+```{r}
+# Filter data for 2010 and 2019
+data_filtered <- data %>% filter(Year %in% c(2010, 2019))
+
+# Plot density estimates for both years
+ggplot(data_filtered, aes(x = Life.Expectancy, color = as.factor(Year))) +
+  geom_density() +
+  labs(title = "Kernel Density Estimate of Life Expectancy (2010 vs. 2019)",
+       x = "Life Expectancy",
+       y = "Density",
+       color = "Year")
+
+```
+
+#### Fill the Area Under the Density Curve
+
+To enhance visibility, we fill the density curves with transparency using `fill = Year` and `alpha` for transparency.
+
+```{r}
+# Density plot with filled areas
+ggplot(data_filtered, aes(x = Life.Expectancy, fill = as.factor(Year))) +
+  geom_density(alpha = 0.4) +
+  labs(title = "Filled Kernel Density Estimate (2010 vs. 2019)",
+       x = "Life Expectancy",
+       y = "Density",
+       fill = "Year")
+```
+
+#### Comparing with Histograms (Less Effective)
+
+Overlaying **histograms** can sometimes be useful, but they can also be harder to interpret compared to density plots.
+
+```{r}
+# Overlaid histograms (not recommended due to clutter)
+ggplot(data_filtered, aes(x = Life.Expectancy, fill = as.factor(Year))) +
+  geom_histogram(aes(y = ..density..), binwidth = 2, 
+                 alpha = 0.5, position = "identity", color = "black") +
+  labs(title = "Overlaid Histograms (2010 vs. 2019)",
+       x = "Life Expectancy",
+       y = "Density",
+       fill = "Year")
+```
+
+:::{.callout-important}
+# Question 5: Multiple Density Estimates    (4 Points)
+
+Follow the example above to construct a plot showing **separate density estimates of life expectancy** for each **region** in 2010.
+
+You can choose whether to **fill the area beneath the smooth curves** or not.\
+Be sure to **adjust the bandwidth** parameter and select a value that makes sense.
+:::
+
+##### Step 1: Compute Density Estimates for Each Region
+
+We filter the dataset for 2010 and plot separate density curves for each region.
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+
+```{r}
+# Filter data for 2010 
+data_filtered <- data %>% filter(Year ==  )
+
+# Plot density estimates for different regions color should equal Region
+ggplot(data2010, aes(x = Life.Expectancy, color =  )) +
+  geom_density(bw = ) +
+  labs(title = "Kernel Density Estimates ",
+       x = "Life Expectancy",
+       y = "Density",
+       color = " ")
+```
+
+:::
+
+##### Step 2: Fill the Area Under the Density Curves
+
+To enhance visibility, we can fill the area under the density curves with transparency using `fill = region` and `alpha`.
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+ 
+```{r}
+# Density plot with filled areas
+ggplot(data2010, aes(x = Life.Expectancy, fill =  )) +
+  geom_density(alpha = 0.4, bw = ) +
+  labs(title = "Filled Kernel Density Estimates  ",
+       x = "Life Expectancy",
+       y = "Density",
+       fill = " ")
+```
+ 
+ 
+:::
+
+**Note**:\
+Remember to modify the `bw` parameter in above codes to adjust the smoothness of the density curves.
+
+:::{.callout-important}
+# Question 6: Interpretation  (3 Points)
+
+Do the distributions of life expectancies seem to differ by region? If so, what is one difference that you notice? Answer in 1-2 sentences.
+
+:::
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+
+
+:::{.callout-important}
+# **Question 7: Outlier   (6 Points)
+
+Notice that **small peak far to the left** in the **Americas** region. That is an **outlier** in life expectancy.
+
+**Tasks:**
+
+1.  **Identify the country** with the **lowest life expectancy** in the Americas in 2010.\
+
+
+
+2.  **Check life expectancies** for that country across different years.
+
+
+3.  **Investigate why life expectancy was so low** in that country for 2010.
+:::
+**Task 1**: Find the Country with the Lowest Life Expectancy
+
+Filter for 2010 and Americas, then find the **country** with the **lowest** life expectancy.
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+ 
+```{r}
+lowest_Americas <- data %>%
+  filter(Year ==   , region == " ") %>%
+  arrange( ) %>%
+  head(6)  # Select the lowest value
+
+# Print the outlier row
+lowest_Americas
+```
+ 
+
+:::
+
+**Task 2: Examine Life Expectancies for This Country**
+
+Now, check life expectancy **across all years** for the **identified outlier country**.
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+
+```{r}
+#gathering the names of countries and assigning to outlier country (Country.Name)
+outlier_country_name <- lowest_Americas$ 
+
+# Filter data for this country across all years
+outlier_country <- data %>%
+  filter(  == outlier_country_name)
+
+# Print the life expectancy trend
+outlier_country
+```
+
+
+
+:::
+
+**Task 3: Interpretation**
+
+What happened in 2010?
+
+Can you explain why life expectancy was so low for this country in 2010? Hint: If you're unsure, search for major events in this country in 2010 (e.g., conflicts, disasters, epidemics).
+
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+
+
+------------------------------------------------------------------------
+
+## Scatterplot Smoothing
+
+In this section, you'll explore two techniques for **smoothing scatterplots**:
+
+1.  **LOESS (Locally Weighted Scatterplot Smoothing)** – Produces a **curved** trend line.\
+2.  **Linear Regression Smoothing** – Produces a **straight-line** trend.
+
+
+```{r}
+data_mod1 <- data %>%
+  mutate(log_GDP_per_capita = log(GDP.per.capita))
+```
+
+### LOESS or Local Polynomial Regression Fitting
+
+**Locally weighted scatterplot smoothing (LOESS)** is a flexible technique for visualizing trends in scatterplots. It is conceptually **similar to kernel density estimation**, but applied to **scatterplots** instead of distributions.
+
+To illustrate, let's examine the relationship between **GDP per capita** and **life expectancy** for the year 2010.
+
+#### Step 1: Scatterplot of GDP per Capita vs. Life Expectancy
+
+First, we create a basic **scatterplot**.
+
+```{r}
+# Filter data for 2010
+data_2010 <- data_mod1 %>% filter(Year == 2010)
+
+# Scatterplot
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy)) +
+  geom_point(alpha = 0.5) +
+  labs(title = "Scatterplot of Life Expectancy vs. GDP per Capita (2010)",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy")
+```
+
+#### Step 2: Add LOESS
+
+To add a **LOESS curve**, we use `geom_smooth(method = "loess")`.
+
+```{r}
+# Scatterplot with LOESS smoothing
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", color = "blue", se = FALSE) +
+  labs(title = "LOESS of Life Expectancy vs. GDP per Capita (2010)",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy")
+```
+
+#### Step 3: Adjusting LOESS Span
+
+The **span parameter** controls the degree of smoothing:
+
+-   **Larger** span → **Smoother** curve (more general trend)\
+-   **Smaller** span → **Wigglier** curve (more localized trends)
+
+```{r}
+# Adjusting LOESS span
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", color = "red", se = FALSE,
+              span = 0.3) + # More detailed fit
+  labs(title = "LOESS with Smaller Span (More Detail)",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy")
+```
+
+:::{.callout-important}
+# Question 8: LOESS Bandwidth Selection   (4 Points)
+
+Tinker with the **bandwidth parameter** (`span` in ggplot2) to see its effect on the **smoothness of the LOESS curve**.\
+Choose a value that produces a trend line that **best represents the data**
+
+Modify the `span` parameter in `geom_smooth()` to change the smoothness of the LOESS curve.
+:::
+`r bfcolor("YOUR ANSWER:", "red")`\
+
+::: callout
+ 
+```{r}
+# Filter data for 2010
+data_2010 <- data_mod1 %>% filter(Year == 2010)
+
+# Scatterplot with LOESS (adjust span)
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", span =  , color = "blue", se = FALSE) +
+  labs(title = "LOESS with Bandwidth =  ",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy
+```
+ 
+:::
+
+Try different `span` values to see how the LOESS curve changes. Draw LOESS curves with different `span` values in the same scatterplot.
+
+```{r}
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", span = 0.2, color = "red", se = FALSE) +  # More localized fit
+  geom_smooth(method = "loess", span = 0.4, color = "blue", se = FALSE) +  # Medium localized fit
+  geom_smooth(method = "loess", span = 0.8, color = "green", se = FALSE) + # Smoother fit
+  labs(title = "Comparing Different LOESS Bandwidths",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy")
+```
+
+#### Groupwise LOESS (Separate Curves by Region)
+
+To compute LOESS trends for each region separately, set `group = region`.
+
+```{r}
+ggplot(data_2010, aes(x = log_GDP_per_capita, y = Life.Expectancy, 
+                      color = region)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", span = 0.7, se = FALSE) +
+  labs(title = "LOESS by Region (2010)",
+       x = "Log(GDP per Capita)",
+       y = "Life Expectancy",
+       color = "Region")
+```
+
