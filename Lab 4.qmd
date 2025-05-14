@@ -224,7 +224,7 @@ Modify the code above to **extract** the binned data (counts of observations and
 ::: callout
 Add your code here
 ```{r}
-data2015 <- data %>% filter(Year ==  )
+data2015 <- data %>% filter(Year == 2015 )
 
 p_2015 <- ggplot(data2015, aes(x = Life.Expectancy)) +
   stat_bin(binwidth = 3, aes(y = ..count..))
@@ -296,11 +296,11 @@ Modify the code above to convert the histogram for the year **2015** to the **de
 ```{r}
 
 # Filter data for the year 2015
-data2015 <- data %>% filter(Year == )
+data2015 <- data %>% filter(Year == 2015)
 
 # Histogram using density scale (simpler approach)
-ggplot( , aes(x = Life.Expectancy)) +
-  geom_histogram(binwidth = 2, aes(y = ..density..), 
+ggplot(data2015, aes(x = Life.Expectancy)) +
+  geom_histogram(binwidth = 3, aes(y = ..density..), 
                  fill = "orange", color = "black") +
   labs(title = "Life Expectancy Histogram (Density Scale, 2010)",
        x = "Life Expectancy",
@@ -396,10 +396,10 @@ Try several values, and then choose one that you feel **captures the shape of th
 ::: callout
 ```{r}
 
-data2015 <- data %>% filter(Year ==  )
+data2015 <- data %>% filter(Year == 2015)
 
 ggplot(data2015, aes(x = Life.Expectancy)) +
-  geom_density(fill = "purple", alpha = 0.4, bw = ) +
+  geom_density(fill = "purple", alpha = 0.4, bw = 3) +
   labs(title = "Kernel Density Estimate of Life Expectancy (2015)",
        x = "Life Expectancy",
        y = "Density")
@@ -483,15 +483,15 @@ We filter the dataset for 2010 and plot separate density curves for each region.
 
 ```{r}
 # Filter data for 2010 
-data_filtered <- data %>% filter(Year ==  )
+data2010 <- data %>% filter(Year == 2010 )
 
 # Plot density estimates for different regions color should equal Region
-ggplot(data2010, aes(x = Life.Expectancy, color =  )) +
-  geom_density(bw = ) +
+ggplot(data2010, aes(x = Life.Expectancy, color = region )) +
+  geom_density(bw = 3) +
   labs(title = "Kernel Density Estimates ",
        x = "Life Expectancy",
        y = "Density",
-       color = " ")
+       color = "region")
 ```
 
 :::
@@ -506,12 +506,12 @@ To enhance visibility, we can fill the area under the density curves with transp
  
 ```{r}
 # Density plot with filled areas
-ggplot(data2010, aes(x = Life.Expectancy, fill =  )) +
-  geom_density(alpha = 0.4, bw = ) +
+ggplot(data2010, aes(x = Life.Expectancy, fill = region )) +
+  geom_density(alpha = 0.4, bw = 3 ) +
   labs(title = "Filled Kernel Density Estimates  ",
        x = "Life Expectancy",
        y = "Density",
-       fill = " ")
+       fill = "region")
 ```
  
  
@@ -556,8 +556,8 @@ Filter for 2010 and Americas, then find the **country** with the **lowest** life
  
 ```{r}
 lowest_Americas <- data %>%
-  filter(Year ==   , region == " ") %>%
-  arrange( ) %>%
+  filter(Year == 2010  , region == "americas") %>%
+  arrange(Life.Expectancy) %>%
   head(6)  # Select the lowest value
 
 # Print the outlier row
