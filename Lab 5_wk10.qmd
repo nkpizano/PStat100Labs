@@ -1,0 +1,550 @@
+---
+title: "Lab 5_Wk 10"
+format: pdf
+editor: visual
+---
+## 2 Data: Fertility Rates
+```{r}
+# Load necessary library
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# Read the data
+fertility <- read.csv("data/fertility.csv")
+country <- read.csv("data/country-indicators.csv")
+gender <- read.csv("data/gender-data.csv")
+```
+
+```{r}
+# Select variables of interest
+fertility_sub <- fertility %>% select(Country, fertility_total)
+gender_sub <- gender %>% select(Country, educ_expected_yrs_f)
+country_sub <- country %>% select(Country, hdi)
+
+# Merge datasets
+reg_data <- fertility_sub %>%
+  inner_join(gender_sub, by = "Country") %>%
+  left_join(country_sub, by = "Country") %>%
+  drop_na()
+
+# Preview data
+head(reg_data, 4)
+```
+
+
+## 3 Exploratory analysis
+
+```{r}
+library(ggplot2)
+# Scatterplot of fertility rate vs. expected years of education for women
+scatter_educ <- ggplot(reg_data, aes(x = educ_expected_yrs_f, 
+                                    y = fertility_total)) +
+  geom_point() +
+  labs(x = "Expected years of education for women", y = "Fertility rate", 
+       title = "Education and Fertility Rate")
+scatter_educ
+```
+
+
+```{r}
+# Scatterplot of fertility rate vs. HDI
+scatter_hdi <- ggplot(reg_data, aes(x = hdi, y = fertility_total)) +
+  geom_point() +
+  labs(x = "Human Development Index (HDI)", y = "Fertility rate", 
+       title = "HDI and Fertility Rate")
+scatter_hdi
+```
+
+## 4 Simple linear regression
+
+```{r}
+# Retrieve response variable
+y <- reg_data$fertility_total
+
+# Construct explanatory variable (matrix)
+x <- reg_data$educ_expected_yrs_f
+x_with_leading1 <- model.matrix(~ x)
+
+# Print first few rows of X
+head(x_with_leading1)
+```
+## 4.1 Estimation
+```{r}
+# Fit simple linear model
+lm_fit <- lm(y ~ x, data = reg_data)
+
+# Display summary of results
+summary(lm_fit)
+```
+
+## 4.2 Extracting Estimates
+
+```{r}
+# Coefficients
+coef(lm_fit)
+```
+
+Interpretation: 
+Intercept: For a country in which women are entirely uneducated, the estimated mean fertility rate is  7.5 children on average by the end of a woman’s reproductive period.
+
+
+Beta/slope: Each additional year of education for women is associated with a decrease in a country’s fertility rate by an estimated 0.43.
+
+```{r}
+# Variance estimate
+sigma_hat2 <- summary(lm_fit)$sigma^2
+sigma_hat2
+```
+
+Interpretation: 
+
+After accounting for women’s education levels, fertility rates vary by a standard deviation of .66 = sqrt(.438) across countries.
+```{r}
+# Variance-covariance matrix of coefficients
+vcov(lm_fit)
+```
+
+## 4.3 Model Interpretation
+
+```{r}
+# Compute R-squared
+s<-summary(lm_fit)
+s$r.squared
+```
+
+Interpretation: So, the expected years of education for women in a country explains 72.38% of variability in fertility rates, and furthermore, according to the fitted model:
+
+Note that no countries report an expected zero years of education for women, so the meaning of the intercept is artificial. As we saw in lecture, centering the explanatory variable can improve interpretability of the intercept. Center the expected years of education for women and refit the model by following the steps outlined below. Display the coefficient estimates and standard errors.
+```{r}
+# Center the education column by subtracting its mean from each value
+educ_ctr <- x - mean(x)
+
+# Fit new model
+lm_ctr <- lm(y ~ educ_ctr)
+
+# Extract results
+summary(lm_ctr)
+```
+
+```{r}
+# Arrange estimates and standard errors in a dataframe and display
+coef_tbl <- data.frame(
+  Estimate = coef(lm_ctr),
+  `Standard Error` = sqrt(diag(vcov(lm_ctr)))
+)
+
+print(coef_tbl)
+```
+
+
+## Fitted values and residual 
+
+```{r}
+# Fitted values
+fitted_values <- fitted(lm_fit)
+
+# Display first few fitted values
+head(fitted_values)
+```
+
+## Residuals 
+
+Recall that model residuals are the difference between observed and fitted values:
+
+```{r}
+# Obtain residuals
+residuals <- residuals(lm_fit)
+
+# Display first few residuals
+head(residuals)
+```
+
+```{r}
+plot(residuals)
+```
+Pattern in our residuals:
+A random scatter of points around 0 on the y-axis.
+	•	No clear patterns, curves, or trends.
+	•	Residuals are evenly spread across all levels of the predictor (x-axis).
+
+This suggests:
+	•	Linearity is satisfied (the relationship between x and y is linear).
+	•	Homoscedasticity (constant variance of residuals).
+	•	No major outliers or model misspecification.
+	
+	
+```{r}
+#Hand Calculations of the fitted and residual values store in fitted and resid manual respectively 
+X <- x_with_leading1
+
+# Compute fitted values manually
+fitted_manual <- X %*% coef(lm_fit)
+
+# Compute residuals manually
+resid_manual <- y - fitted_manual
+
+# Display first few values
+head(fitted_manual)
+
+# Display the first few values of residulas 
+head(resid_manual)
+```
+
+It is often convenient to add the fitted values and residuals as new columns in reg_data.
+
+```{r}
+# Append fitted values and residuals
+reg_data$fitted_slr <- fitted(lm_fit)
+reg_data$resid_slr <- residuals(lm_fit)
+
+# Display first few rows
+head(reg_data, 3)
+```
+
+## Visualize the Models
+
+```{r}
+# Construct scatterplot with fitted line
+ggplot(reg_data, aes(x = educ_expected_yrs_f, y = fertility_total)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  labs(title = "Fertility Rate vs. Education",
+       x = "Expected Years of Education for Women",
+       y = "Fertility Rate")
+```
+
+
+## Uncertainty Bands
+
+To obtain uncertainty bands about the estimated mean, we’ll compute predictions at each observed value using confidence intervals.
+
+```{r}
+# Compute confidence intervals for estimated mean
+conf_int <- predict(lm_fit, interval = "confidence")
+
+# Append lower and upper bounds to the data
+reg_data$lwr_mean <- conf_int[, "lwr"]
+reg_data$upr_mean <- conf_int[, "upr"]
+
+# Display first few rows
+head(reg_data)
+```
+
+Now, we can visualize the uncertainty bands:
+
+```{r}
+# Construct plot with uncertainty bands
+ggplot(reg_data, aes(x = educ_expected_yrs_f, y = fertility_total)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "blue") +
+  geom_ribbon(aes(ymin = lwr_mean, ymax = upr_mean), alpha = 0.2) +
+  labs(title = "Fertility Rate vs. Education with Confidence Bands",
+       x = "Expected Years of Education for Women",
+       y = "Fertility Rate")
+```
+
+As discussed in lecture, we can also compute and display uncertainty bounds for predicted observations (rather than the mean).
+
+```{r}
+head(predict(lm_fit, interval = "prediction"))
+```
+The standard error for predictions is stored with the output of predict() as part of the confidence interval calculation. The prediction standard error captures variability when predicting new observations rather than estimating the mean.
+
+Use this method to compute 95% uncertainty bounds for the predicted observations. Add the lower and upper bounds as new columns in reg_data, named lwr_obs and upr_obs, respectively. Construct a plot showing data scatter, the model predictions, and prediction uncertainty bands.
+
+```{r}
+# Compute prediction intervals
+pred_int <- predict(lm_fit, interval = "prediction")
+
+# Store lower and upper bounds in the dataset
+reg_data$lwr_obs <- pred_int[, "lwr"]
+reg_data$upr_obs <- pred_int[, "upr"]
+
+# Display first few rows
+head(reg_data)
+```
+
+
+Visualization of Prediction Intervals:
+
+Now, we can create a plot displaying both confidence intervals (for the mean) and prediction intervals (for new observations):
+
+```{r}
+# Construct plot showing prediction uncertainty
+ggplot(reg_data, aes(x = educ_expected_yrs_f, y = fertility_total)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "blue") +
+  geom_ribbon(aes(ymin = lwr_mean, ymax = upr_mean), 
+              fill = "blue", alpha = 0.2) +  # Confidence interval
+  geom_ribbon(aes(ymin = lwr_obs, ymax = upr_obs), 
+              fill = "red", alpha = 0.2) +    # Prediction interval
+  labs(title = "Fertility Rate vs. Education with Confidence and Prediction Intervals",
+       x = "Expected Years of Education for Women",
+       y = "Fertility Rate")
+```
+
+Interpretation: 
+
+The confidence interval (shaded in blue) represents uncertainty in estimating the mean response.
+
+The prediction interval (shaded in red) is wider because it accounts for additional variability when predicting new observations.
+
+The prediction interval (shaded in red) is wider because it accounts for additional variability when predicting new observations.
+
+## Coverage
+
+What proportion of observed values are within the prediction bands? Compute and store the covereage value
+
+```{r}
+# Compute the proportion of observed values within prediction bands
+coverage_prop <- mean(reg_data$fertility_total >= reg_data$lwr_obs &
+                        reg_data$fertility_total <= reg_data$upr_obs)
+
+# Display the computed proportion
+coverage_prop
+```
+
+
+## Multiple Linear regression 
+
+Now let’s consider adding the human development factor to the model. First, let’s investigate the univariate relationship between HDI (Human Development Index) and fertility rate.
+
+A scatterplot is shown below with a regression line overlaid. The relationship may not be perfectly linear, but a line should provide a decent approximation.
+
+```{r}
+# Scatterplot of HDI vs Fertility Rate with Regression Line
+ggplot(reg_data, aes(x = hdi, y = fertility_total)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Fertility Rate vs. Human Development Index",
+       x = "Human Development Index (HDI)",
+       y = "Fertility Rate")
+```
+
+Fit the model plotted above. Display the coefficient estimates, standard errors, and  R2 statistic.
+
+```{r}
+# Fit simple linear regression with HDI only
+lm_hdi <- lm(fertility_total ~ hdi, data = reg_data)
+
+# Display summary of results
+summary(lm_hdi)
+```
+
+```{r}
+# Coefficients
+paste("Coefficient estimates (beta0): ", coef(lm_hdi)[1])
+```
+
+```{r}
+paste("Coefficient estimates (beta1): ", coef(lm_hdi)[2])
+```
+
+
+```{r}
+# Variance estimate
+paste("Error variance estimate is: ", summary(lm_hdi)$sigma^2)
+```
+
+
+```{r}
+# Variance-covariance matrix
+vcov <- vcov(lm_hdi)
+paste("Standard errors of estimated beta0 are: ", sqrt(diag(vcov))[1])
+```
+
+```{r}
+paste("Standard errors of estimated beta1 are: ", sqrt(diag(vcov))[2])
+```
+
+
+```{r}
+# Compute R-squared
+paste("R^2 statistic is: ", summary(lm_hdi)$r.squared)
+```
+
+You should have observed that this model also explains about 70% of variance in fertility rates. This suggests that HDI is an equally good predictor of fertility rates.
+
+However, HDI is highly correlated with women’s education. Let’s compute their correlation:
+
+```{r}
+# Compute correlation between HDI and education
+cor(reg_data$hdi, reg_data$educ_expected_yrs_f)
+```
+
+
+So what do you think will happen if we fit a model with both explanatory variables?
+
+Will fertility rate have a stronger association with one or the other?
+
+Will the coefficient estimates also be highly correlated?
+
+Take a moment to consider this and come up with a hypothesis.
+
+## 6.1 Multiple Linear Regression: HDI and Education
+
+The model is fit exactly the same way as the SLR models—the only difference is that instead of using a single predictor, we now use two predictors (HDI and Education).
+
+```{r}
+# Construct explanatory variable matrix with both predictors
+mlr_fit <- lm(fertility_total ~ hdi + educ_expected_yrs_f, data = reg_data)
+
+# Store results
+summary(mlr_fit)
+```
+## Extracting Estimates 
+```{r}
+# Coefficients
+coef(mlr_fit)
+```
+
+interpretation: 
+The association with HDI is weaker in the multiple linear model (around -4.13) compared to the simple linear model (-7.00 when education is not included).
+
+Similarly, the association with education is also weaker (around -0.20) compared to the simple model (-0.43 when HDI is not included).
+
+This is due to multicollinearity, where HDI and education are highly correlated. Let’s recall the correlation between them:
+
+```{r}
+# Standard errors
+sqrt(diag(vcov(mlr_fit)))
+```
+
+```{r}
+# Variance estimate
+sigma_hat2_mlr <- summary(mlr_fit)$sigma^2
+sigma_hat2_mlr
+```
+
+## Assessing multicollinearity
+
+```{r}
+# Compute variance-covariance matrix
+vcov_mlr <- vcov(mlr_fit)
+
+# Compute correlation between coefficient estimates
+stderr_mlr <- sqrt(diag(vcov_mlr))
+corr_mx <- diag(1/stderr_mlr) %*% vcov_mlr %*% diag(1/stderr_mlr)
+
+# Display correlation between coefficient estimates
+corr_mx[1,2]  # Correlation between HDI and Education coefficient estimates
+```
+
+## Model Fit and $R2 Statistic
+
+The multiple linear regression model captures a little bit more variance than either simple linear regression model individually:
+
+```{r}
+# Compute R-squared
+summary(mlr_fit)$r.squared
+```
+
+## Discussion 
+
+The MLR model doesn’t add much value in terms of fit, so if that is our only concern we might prefer one of the SLR models.
+
+However, the presence of additional predictors changes the parameter interpretation – in the MLR model, the coefficients give the estimated changes in mean fertility rate associated with changes in each explanatory variable after accounting for the other explanatory variable. This is one way of understanding why the estimates change so much in the presence of additional explanatory variables – the association between, e.g., HDI and fertility, is different than the association between HDI and fertility after adjusting for women’s expected education.
+
+More broadly, these data are definitely not a representative sample of any particular population of nations – the countries (observational units) are conveniently chosen based on which countries reported data. So there is no scope of inference here, for any of the models we’ve fit.
+
+Although we can’t claim that, for example, ‘the mean fertility rate decreases with education at a rate of 0.2 children per woman per expected year of education after accounting for development status’, we can say ‘among the countries reporting data, the mean fertility rate decreases with education at a rate of 0.2 children per woman per expected year of education after accounting for development status’. This is a nice example of how a model might be used in a descriptive capacity.
+
+## Bootstrap for Estimating Sampling Distributions 
+
+The bootstrap method is a resampling technique that allows us to estimate the sampling distribution of a statistic (such as the mean) without relying on theoretical assumptions. It is especially useful when the underlying distribution of the data is unknown or difficult to model analytically.
+
+### Bootstrap Steps/Procedures
+
+The bootstrap procedure follows these steps:
+
+Resample with replacement from the observed data, creating a new sample of the same size.
+
+Compute the statistic of interest (e.g., sample mean) for each resampled dataset.
+
+Repeat the process many times (e.g., 1000 iterations) to generate an empirical distribution of the statistic.
+
+Analyze the results, including estimating confidence intervals.
+
+
+### Bootstrap Example
+
+We will apply the bootstrap method to estimate the sampling distribution of the mean fertility rate.
+
+#### Step 1: Bootstrap Resampling
+
+We generate 1000 bootstrap samples, each obtained by randomly resampling (with replacement) from the original dataset.
+
+```{r}
+# Load necessary libraries
+library(tibble)
+library(rsample)
+library(ggplot2)
+library(purrr)
+
+# Set seed for reproducibility
+set.seed(123)
+
+# Create a tibble with fertility rate
+#Creates a new tibble (data frame) with one column:
+#bootstraps(times = 1000) This creates 1000 bootstrap samples from the fertility data.Each sample is drawn with replacement and has the same size as the original dataset. The result is a tibble with 1000 rows and a splits column containing resample objects.
+#mutate(bootstrap_mean = map_dbl(...))
+bootstrap_data <- tibble(fertility = reg_data$fertility_total) |> 
+  bootstraps(times = 1000) |> 
+  mutate(bootstrap_mean = map_dbl(splits, ~ mean(as_tibble(.)$fertility)))
+ 
+# Display first few bootstrap sample means You add a new column called bootstrap_mean.For each row (each bootstrap sample) in splits, you:Convert the resample back to a tibble using as_tibble(.). Extract the fertility values.Compute the mean of that sample using mean(...).So now each row of bootstrap_data contains: One bootstrap sample (splits) The mean of fertility for that sample (bootstrap_mean)
+head(bootstrap_data$bootstrap_mean)
+```
+
+#### Visualize the bootstrap 
+
+A histogram of the bootstrap sample means allows us to approximate the sampling distribution.
+
+```{r}
+# Plot the bootstrap distribution of sample means
+bootstrap_data |> 
+  ggplot() + 
+  geom_histogram(aes(x = bootstrap_mean), bins = 30, 
+                 fill = "blue", alpha = 0.6) + 
+  geom_vline(aes(xintercept = mean(reg_data$fertility_total)), 
+             col = "red", linetype = "dashed") +
+  labs(title = "Bootstrap Distribution of Sample Mean",
+       x = "Bootstrap Sample Mean",
+       y = "Frequency") 
+```
+
+interpretation:
+
+The histogram represents the empirical distribution of the sample mean.
+
+The red dashed line represents the original sample mean.
+
+The bootstrap method provides an approximation of the sampling distribution, helping us quantify uncertainty in the sample mean.
+
+### Bootstrap Confidence intervals 
+
+A key application of bootstrap methods is constructing confidence intervals for an estimator. We can estimate a 95% confidence interval for the mean fertility rate using the percentile method.
+
+#### Step 3: Computing the 95% Confidence Interval 
+
+```{r}
+# Compute 95% confidence interval from bootstrap distribution
+ci_boot <- quantile(bootstrap_data$bootstrap_mean, probs = c(0.025, 0.975))
+ci_boot
+```
+
+
+Interpretation
+
+The confidence interval provides a plausible range for the population mean.
+
+Unlike theoretical methods, bootstrap confidence intervals do not require normality assumptions.
+
+### Summary 
+
+Bootstrap resampling allows us to estimate the sampling distribution of a statistic.
+
+The bootstrap confidence interval provides an empirical way to quantify estimation uncertainty.
+
+This method is particularly useful when theoretical assumptions about the data, e.g., properties of the underlying distribution, are uncertain.

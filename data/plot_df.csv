@@ -1,0 +1,1241 @@
+"Country Name","Year","GDP_per_capita","region","sub-region","Population","Group","Life_Expectancy_at_Birth"
+"Afghanistan","2019",507.1034319,"Asia","Southern Asia",38041754,"Male_Life_Expectancy",63.3
+"Afghanistan","2019",507.1034319,"Asia","Southern Asia",38041754,"Female_Life_Expectancy",63.2
+"Afghanistan","2015",578.4663529,"Asia","Southern Asia",34413603,"Male_Life_Expectancy",61
+"Afghanistan","2015",578.4663529,"Asia","Southern Asia",34413603,"Female_Life_Expectancy",62.3
+"Afghanistan","2010",543.3030419,"Asia","Southern Asia",29185507,"Male_Life_Expectancy",59.6
+"Afghanistan","2010",543.3030419,"Asia","Southern Asia",29185507,"Female_Life_Expectancy",60.3
+"Albania","2019",5353.244856,"Europe","Southern Europe",2854191,"Male_Life_Expectancy",76.3
+"Albania","2019",5353.244856,"Europe","Southern Europe",2854191,"Female_Life_Expectancy",79.9
+"Albania","2015",3952.801215,"Europe","Southern Europe",2880703,"Male_Life_Expectancy",76.1
+"Albania","2015",3952.801215,"Europe","Southern Europe",2880703,"Female_Life_Expectancy",79.7
+"Albania","2010",4094.350334,"Europe","Southern Europe",2913021,"Male_Life_Expectancy",74.2
+"Albania","2010",4094.350334,"Europe","Southern Europe",2913021,"Female_Life_Expectancy",78.3
+"Albania","2000",1126.683318,"Europe","Southern Europe",3089027,"Male_Life_Expectancy",70.7
+"Albania","2000",1126.683318,"Europe","Southern Europe",3089027,"Female_Life_Expectancy",76.9
+"Algeria","2019",3973.964072,"Africa","Northern Africa",43053054,"Male_Life_Expectancy",76.2
+"Algeria","2019",3973.964072,"Africa","Northern Africa",43053054,"Female_Life_Expectancy",78.1
+"Algeria","2015",4187.509727,"Africa","Northern Africa",39728025,"Male_Life_Expectancy",75.6
+"Algeria","2015",4187.509727,"Africa","Northern Africa",39728025,"Female_Life_Expectancy",77.5
+"Algeria","2010",4479.34172,"Africa","Northern Africa",35977455,"Male_Life_Expectancy",75
+"Algeria","2010",4479.34172,"Africa","Northern Africa",35977455,"Female_Life_Expectancy",76.8
+"Algeria","2000",1765.022198,"Africa","Northern Africa",31042235,"Male_Life_Expectancy",70.9
+"Algeria","2000",1765.022198,"Africa","Northern Africa",31042235,"Female_Life_Expectancy",73.5
+"Angola","2019",2790.726615,"Africa","Sub-Saharan Africa",31825295,"Male_Life_Expectancy",60.7
+"Angola","2019",2790.726615,"Africa","Sub-Saharan Africa",31825295,"Female_Life_Expectancy",65.5
+"Angola","2015",4166.979684,"Africa","Sub-Saharan Africa",27884381,"Male_Life_Expectancy",59.1
+"Angola","2015",4166.979684,"Africa","Sub-Saharan Africa",27884381,"Female_Life_Expectancy",64.5
+"Angola","2010",3587.883798,"Africa","Sub-Saharan Africa",23356246,"Male_Life_Expectancy",55.8
+"Angola","2010",3587.883798,"Africa","Sub-Saharan Africa",23356246,"Female_Life_Expectancy",60.5
+"Angola","2000",556.8363181,"Africa","Sub-Saharan Africa",16395473,"Male_Life_Expectancy",46.8
+"Angola","2000",556.8363181,"Africa","Sub-Saharan Africa",16395473,"Female_Life_Expectancy",52.1
+"Antigua and Barbuda","2019",17112.82113,"Americas","Latin America and the Caribbean",97118,"Male_Life_Expectancy",74.9
+"Antigua and Barbuda","2019",17112.82113,"Americas","Latin America and the Caribbean",97118,"Female_Life_Expectancy",78
+"Antigua and Barbuda","2015",14286.09316,"Americas","Latin America and the Caribbean",93566,"Male_Life_Expectancy",74.4
+"Antigua and Barbuda","2015",14286.09316,"Americas","Latin America and the Caribbean",93566,"Female_Life_Expectancy",77.8
+"Antigua and Barbuda","2010",13049.25705,"Americas","Latin America and the Caribbean",88028,"Male_Life_Expectancy",73.6
+"Antigua and Barbuda","2010",13049.25705,"Americas","Latin America and the Caribbean",88028,"Female_Life_Expectancy",78.2
+"Antigua and Barbuda","2000",10871.00571,"Americas","Latin America and the Caribbean",76016,"Male_Life_Expectancy",72
+"Antigua and Barbuda","2000",10871.00571,"Americas","Latin America and the Caribbean",76016,"Female_Life_Expectancy",77
+"Argentina","2019",9912.281809,"Americas","Latin America and the Caribbean",44938712,"Male_Life_Expectancy",73.5
+"Argentina","2019",9912.281809,"Americas","Latin America and the Caribbean",44938712,"Female_Life_Expectancy",79.5
+"Argentina","2015",13789.06042,"Americas","Latin America and the Caribbean",43131966,"Male_Life_Expectancy",72.9
+"Argentina","2015",13789.06042,"Americas","Latin America and the Caribbean",43131966,"Female_Life_Expectancy",79.3
+"Argentina","2010",10385.96443,"Americas","Latin America and the Caribbean",40788453,"Male_Life_Expectancy",72.1
+"Argentina","2010",10385.96443,"Americas","Latin America and the Caribbean",40788453,"Female_Life_Expectancy",78.6
+"Argentina","2000",7708.100996,"Americas","Latin America and the Caribbean",36870787,"Male_Life_Expectancy",70.3
+"Argentina","2000",7708.100996,"Americas","Latin America and the Caribbean",36870787,"Female_Life_Expectancy",77.8
+"Armenia","2019",4622.733493,"Asia","Western Asia",2957731,"Male_Life_Expectancy",72.5
+"Armenia","2019",4622.733493,"Asia","Western Asia",2957731,"Female_Life_Expectancy",79.2
+"Armenia","2015",3607.296697,"Asia","Western Asia",2925553,"Male_Life_Expectancy",70.9
+"Armenia","2015",3607.296697,"Asia","Western Asia",2925553,"Female_Life_Expectancy",77.8
+"Armenia","2010",3218.372707,"Asia","Western Asia",2877319,"Male_Life_Expectancy",69.4
+"Armenia","2010",3218.372707,"Asia","Western Asia",2877319,"Female_Life_Expectancy",76.6
+"Armenia","2000",622.7421391,"Asia","Western Asia",3069591,"Male_Life_Expectancy",68.6
+"Armenia","2000",622.7421391,"Asia","Western Asia",3069591,"Female_Life_Expectancy",74.9
+"Australia","2019",55060.3261,"Oceania","Australia and New Zealand",25364307,"Male_Life_Expectancy",81.3
+"Australia","2019",55060.3261,"Oceania","Australia and New Zealand",25364307,"Female_Life_Expectancy",84.8
+"Australia","2015",56755.72171,"Oceania","Australia and New Zealand",23815995,"Male_Life_Expectancy",80.4
+"Australia","2015",56755.72171,"Oceania","Australia and New Zealand",23815995,"Female_Life_Expectancy",84.2
+"Australia","2010",52022.1256,"Oceania","Australia and New Zealand",22031750,"Male_Life_Expectancy",79.8
+"Australia","2010",52022.1256,"Oceania","Australia and New Zealand",22031750,"Female_Life_Expectancy",84
+"Australia","2000",21679.24784,"Oceania","Australia and New Zealand",19153000,"Male_Life_Expectancy",77.1
+"Australia","2000",21679.24784,"Oceania","Australia and New Zealand",19153000,"Female_Life_Expectancy",82.2
+"Austria","2019",50137.66278,"Europe","Western Europe",8877067,"Male_Life_Expectancy",79.4
+"Austria","2019",50137.66278,"Europe","Western Europe",8877067,"Female_Life_Expectancy",83.8
+"Austria","2015",44178.04738,"Europe","Western Europe",8642699,"Male_Life_Expectancy",78.6
+"Austria","2015",44178.04738,"Europe","Western Europe",8642699,"Female_Life_Expectancy",83.3
+"Austria","2010",46858.04327,"Europe","Western Europe",8363404,"Male_Life_Expectancy",77.6
+"Austria","2010",46858.04327,"Europe","Western Europe",8363404,"Female_Life_Expectancy",83
+"Austria","2000",24564.45829,"Europe","Western Europe",8011566,"Male_Life_Expectancy",75.1
+"Austria","2000",24564.45829,"Europe","Western Europe",8011566,"Female_Life_Expectancy",81
+"Azerbaijan","2019",4793.58702,"Asia","Western Asia",10023318,"Male_Life_Expectancy",68.8
+"Azerbaijan","2019",4793.58702,"Asia","Western Asia",10023318,"Female_Life_Expectancy",74.1
+"Azerbaijan","2015",5500.310382,"Asia","Western Asia",9649341,"Male_Life_Expectancy",67.9
+"Azerbaijan","2015",5500.310382,"Asia","Western Asia",9649341,"Female_Life_Expectancy",73.4
+"Azerbaijan","2010",5842.805784,"Asia","Western Asia",9054332,"Male_Life_Expectancy",66.3
+"Azerbaijan","2010",5842.805784,"Asia","Western Asia",9054332,"Female_Life_Expectancy",71.8
+"Azerbaijan","2000",655.0974326,"Asia","Western Asia",8048600,"Male_Life_Expectancy",62.6
+"Azerbaijan","2000",655.0974326,"Asia","Western Asia",8048600,"Female_Life_Expectancy",68.5
+"Bahrain","2019",23503.97713,"Asia","Western Asia",1641172,"Male_Life_Expectancy",75
+"Bahrain","2019",23503.97713,"Asia","Western Asia",1641172,"Female_Life_Expectancy",77
+"Bahrain","2015",22634.11865,"Asia","Western Asia",1371851,"Male_Life_Expectancy",75.9
+"Bahrain","2015",22634.11865,"Asia","Western Asia",1371851,"Female_Life_Expectancy",77.3
+"Bahrain","2010",20722.13729,"Asia","Western Asia",1240860,"Male_Life_Expectancy",73.8
+"Bahrain","2010",20722.13729,"Asia","Western Asia",1240860,"Female_Life_Expectancy",75.3
+"Bahrain","2000",13636.39623,"Asia","Western Asia",664611,"Male_Life_Expectancy",69.5
+"Bahrain","2000",13636.39623,"Asia","Western Asia",664611,"Female_Life_Expectancy",71.8
+"Bangladesh","2019",1855.739824,"Asia","Southern Asia",163046161,"Male_Life_Expectancy",73
+"Bangladesh","2019",1855.739824,"Asia","Southern Asia",163046161,"Female_Life_Expectancy",75.6
+"Bangladesh","2015",1248.453398,"Asia","Southern Asia",156256276,"Male_Life_Expectancy",72.5
+"Bangladesh","2015",1248.453398,"Asia","Southern Asia",156256276,"Female_Life_Expectancy",74.8
+"Bangladesh","2010",781.1535936,"Asia","Southern Asia",147575430,"Male_Life_Expectancy",68.6
+"Bangladesh","2010",781.1535936,"Asia","Southern Asia",147575430,"Female_Life_Expectancy",72.2
+"Bangladesh","2000",418.0689683,"Asia","Southern Asia",127657854,"Male_Life_Expectancy",64.1
+"Bangladesh","2000",418.0689683,"Asia","Southern Asia",127657854,"Female_Life_Expectancy",67.4
+"Barbados","2019",18148.24493,"Americas","Latin America and the Caribbean",287025,"Male_Life_Expectancy",74.3
+"Barbados","2019",18148.24493,"Americas","Latin America and the Caribbean",287025,"Female_Life_Expectancy",77.7
+"Barbados","2015",16525.07325,"Americas","Latin America and the Caribbean",285324,"Male_Life_Expectancy",75
+"Barbados","2015",16525.07325,"Americas","Latin America and the Caribbean",285324,"Female_Life_Expectancy",77.4
+"Barbados","2010",16056.37098,"Americas","Latin America and the Caribbean",282131,"Male_Life_Expectancy",74.5
+"Barbados","2010",16056.37098,"Americas","Latin America and the Caribbean",282131,"Female_Life_Expectancy",77.2
+"Barbados","2000",11268.25406,"Americas","Latin America and the Caribbean",271515,"Male_Life_Expectancy",72.1
+"Barbados","2000",11268.25406,"Americas","Latin America and the Caribbean",271515,"Female_Life_Expectancy",76.7
+"Belarus","2019",6663.295293,"Europe","Eastern Europe",9466856,"Male_Life_Expectancy",69.7
+"Belarus","2019",6663.295293,"Europe","Eastern Europe",9466856,"Female_Life_Expectancy",79.6
+"Belarus","2015",5949.106307,"Europe","Eastern Europe",9489616,"Male_Life_Expectancy",68.6
+"Belarus","2015",5949.106307,"Europe","Eastern Europe",9489616,"Female_Life_Expectancy",78.8
+"Belarus","2010",6029.3968,"Europe","Eastern Europe",9490583,"Male_Life_Expectancy",64.5
+"Belarus","2010",6029.3968,"Europe","Eastern Europe",9490583,"Female_Life_Expectancy",76.4
+"Belarus","2000",1276.288034,"Europe","Eastern Europe",9979610,"Male_Life_Expectancy",63.3
+"Belarus","2000",1276.288034,"Europe","Eastern Europe",9979610,"Female_Life_Expectancy",74.6
+"Belgium","2019",46420.66377,"Europe","Western Europe",11484055,"Male_Life_Expectancy",79.3
+"Belgium","2019",46420.66377,"Europe","Western Europe",11484055,"Female_Life_Expectancy",83.5
+"Belgium","2015",40991.80814,"Europe","Western Europe",11274196,"Male_Life_Expectancy",78.5
+"Belgium","2015",40991.80814,"Europe","Western Europe",11274196,"Female_Life_Expectancy",82.9
+"Belgium","2010",44141.87814,"Europe","Western Europe",10895586,"Male_Life_Expectancy",77.2
+"Belgium","2010",44141.87814,"Europe","Western Europe",10895586,"Female_Life_Expectancy",82.4
+"Belgium","2000",23041.53473,"Europe","Western Europe",10251250,"Male_Life_Expectancy",74.5
+"Belgium","2000",23041.53473,"Europe","Western Europe",10251250,"Female_Life_Expectancy",80.7
+"Belize","2019",4815.163711,"Americas","Latin America and the Caribbean",390353,"Male_Life_Expectancy",71.4
+"Belize","2019",4815.163711,"Americas","Latin America and the Caribbean",390353,"Female_Life_Expectancy",77.8
+"Belize","2015",4775.955648,"Americas","Latin America and the Caribbean",360933,"Male_Life_Expectancy",71.1
+"Belize","2015",4775.955648,"Americas","Latin America and the Caribbean",360933,"Female_Life_Expectancy",77.3
+"Belize","2010",4270.864345,"Americas","Latin America and the Caribbean",322464,"Male_Life_Expectancy",70.9
+"Belize","2010",4270.864345,"Americas","Latin America and the Caribbean",322464,"Female_Life_Expectancy",76.1
+"Belize","2000",3364.332936,"Americas","Latin America and the Caribbean",247315,"Male_Life_Expectancy",67.2
+"Belize","2000",3364.332936,"Americas","Latin America and the Caribbean",247315,"Female_Life_Expectancy",74
+"Benin","2019",1219.432672,"Africa","Sub-Saharan Africa",11801151,"Male_Life_Expectancy",61.2
+"Benin","2019",1219.432672,"Africa","Sub-Saharan Africa",11801151,"Female_Life_Expectancy",65.7
+"Benin","2015",1076.797716,"Africa","Sub-Saharan Africa",10575952,"Male_Life_Expectancy",59.7
+"Benin","2015",1076.797716,"Africa","Sub-Saharan Africa",10575952,"Female_Life_Expectancy",64.2
+"Benin","2010",1036.533952,"Africa","Sub-Saharan Africa",9199259,"Male_Life_Expectancy",58
+"Benin","2010",1036.533952,"Africa","Sub-Saharan Africa",9199259,"Female_Life_Expectancy",62.9
+"Benin","2000",511.400227,"Africa","Sub-Saharan Africa",6865951,"Male_Life_Expectancy",54.3
+"Benin","2000",511.400227,"Africa","Sub-Saharan Africa",6865951,"Female_Life_Expectancy",58.8
+"Bhutan","2019",3316.175714,"Asia","Southern Asia",763092,"Male_Life_Expectancy",72
+"Bhutan","2019",3316.175714,"Asia","Southern Asia",763092,"Female_Life_Expectancy",74.4
+"Bhutan","2015",2752.664208,"Asia","Southern Asia",727876,"Male_Life_Expectancy",71.1
+"Bhutan","2015",2752.664208,"Asia","Southern Asia",727876,"Female_Life_Expectancy",73.5
+"Bhutan","2010",2258.183141,"Asia","Southern Asia",685503,"Male_Life_Expectancy",69.9
+"Bhutan","2010",2258.183141,"Asia","Southern Asia",685503,"Female_Life_Expectancy",72.3
+"Bhutan","2000",718.1878307,"Asia","Southern Asia",591021,"Male_Life_Expectancy",64.9
+"Bhutan","2000",718.1878307,"Asia","Southern Asia",591021,"Female_Life_Expectancy",66.6
+"Bosnia and Herzegovina","2019",6108.510696,"Europe","Southern Europe",3301000,"Male_Life_Expectancy",74.4
+"Bosnia and Herzegovina","2019",6108.510696,"Europe","Southern Europe",3301000,"Female_Life_Expectancy",79.1
+"Bosnia and Herzegovina","2015",4727.277712,"Europe","Southern Europe",3429361,"Male_Life_Expectancy",73.9
+"Bosnia and Herzegovina","2015",4727.277712,"Europe","Southern Europe",3429361,"Female_Life_Expectancy",78.6
+"Bosnia and Herzegovina","2010",4635.517779,"Europe","Southern Europe",3705472,"Male_Life_Expectancy",73.8
+"Bosnia and Herzegovina","2010",4635.517779,"Europe","Southern Europe",3705472,"Female_Life_Expectancy",78.5
+"Bosnia and Herzegovina","2000",1467.776477,"Europe","Southern Europe",3751176,"Male_Life_Expectancy",72.6
+"Bosnia and Herzegovina","2000",1467.776477,"Europe","Southern Europe",3751176,"Female_Life_Expectancy",78
+"Botswana","2019",7961.325181,"Africa","Sub-Saharan Africa",2303697,"Male_Life_Expectancy",58.9
+"Botswana","2019",7961.325181,"Africa","Sub-Saharan Africa",2303697,"Female_Life_Expectancy",65.5
+"Botswana","2015",6799.870178,"Africa","Sub-Saharan Africa",2120716,"Male_Life_Expectancy",57.8
+"Botswana","2015",6799.870178,"Africa","Sub-Saharan Africa",2120716,"Female_Life_Expectancy",63.9
+"Botswana","2010",6434.815724,"Africa","Sub-Saharan Africa",1987105,"Male_Life_Expectancy",55.1
+"Botswana","2010",6434.815724,"Africa","Sub-Saharan Africa",1987105,"Female_Life_Expectancy",61.4
+"Botswana","2000",3522.308678,"Africa","Sub-Saharan Africa",1643334,"Male_Life_Expectancy",43.9
+"Botswana","2000",3522.308678,"Africa","Sub-Saharan Africa",1643334,"Female_Life_Expectancy",47.8
+"Brazil","2019",8717.186278,"Americas","Latin America and the Caribbean",211049527,"Male_Life_Expectancy",72.4
+"Brazil","2019",8717.186278,"Americas","Latin America and the Caribbean",211049527,"Female_Life_Expectancy",79.4
+"Brazil","2015",8814.000987,"Americas","Latin America and the Caribbean",204471769,"Male_Life_Expectancy",71.7
+"Brazil","2015",8814.000987,"Americas","Latin America and the Caribbean",204471769,"Female_Life_Expectancy",78.6
+"Brazil","2010",11286.24302,"Americas","Latin America and the Caribbean",195713635,"Male_Life_Expectancy",70.6
+"Brazil","2010",11286.24302,"Americas","Latin America and the Caribbean",195713635,"Female_Life_Expectancy",77.7
+"Brazil","2000",3749.75325,"Americas","Latin America and the Caribbean",174790340,"Male_Life_Expectancy",67.9
+"Brazil","2000",3749.75325,"Americas","Latin America and the Caribbean",174790340,"Female_Life_Expectancy",75.2
+"Brunei Darussalam","2019",31086.75112,"Asia","South-eastern Asia",433285,"Male_Life_Expectancy",73.4
+"Brunei Darussalam","2019",31086.75112,"Asia","South-eastern Asia",433285,"Female_Life_Expectancy",75.4
+"Brunei Darussalam","2015",31164.56203,"Asia","South-eastern Asia",414907,"Male_Life_Expectancy",73.4
+"Brunei Darussalam","2015",31164.56203,"Asia","South-eastern Asia",414907,"Female_Life_Expectancy",75.5
+"Brunei Darussalam","2010",35269.55311,"Asia","South-eastern Asia",388646,"Male_Life_Expectancy",73.3
+"Brunei Darussalam","2010",35269.55311,"Asia","South-eastern Asia",388646,"Female_Life_Expectancy",75.8
+"Brunei Darussalam","2000",18012.55626,"Asia","South-eastern Asia",333165,"Male_Life_Expectancy",70.9
+"Brunei Darussalam","2000",18012.55626,"Asia","South-eastern Asia",333165,"Female_Life_Expectancy",73.7
+"Bulgaria","2019",9828.148515,"Europe","Eastern Europe",6975761,"Male_Life_Expectancy",71.6
+"Bulgaria","2019",9828.148515,"Europe","Eastern Europe",6975761,"Female_Life_Expectancy",78.6
+"Bulgaria","2015",7055.935673,"Europe","Eastern Europe",7177991,"Male_Life_Expectancy",71.2
+"Bulgaria","2015",7055.935673,"Europe","Eastern Europe",7177991,"Female_Life_Expectancy",78
+"Bulgaria","2010",6812.406338,"Europe","Eastern Europe",7395599,"Male_Life_Expectancy",70.2
+"Bulgaria","2010",6812.406338,"Europe","Eastern Europe",7395599,"Female_Life_Expectancy",77.2
+"Bulgaria","2000",1621.242961,"Europe","Eastern Europe",8170172,"Male_Life_Expectancy",68.4
+"Bulgaria","2000",1621.242961,"Europe","Eastern Europe",8170172,"Female_Life_Expectancy",75
+"Burkina Faso","2019",786.8956313,"Africa","Sub-Saharan Africa",20321378,"Male_Life_Expectancy",60.1
+"Burkina Faso","2019",786.8956313,"Africa","Sub-Saharan Africa",20321378,"Female_Life_Expectancy",65.2
+"Burkina Faso","2015",653.3269795,"Africa","Sub-Saharan Africa",18110624,"Male_Life_Expectancy",58.2
+"Burkina Faso","2015",653.3269795,"Africa","Sub-Saharan Africa",18110624,"Female_Life_Expectancy",63.4
+"Burkina Faso","2010",647.8358465,"Africa","Sub-Saharan Africa",15605217,"Male_Life_Expectancy",56.2
+"Burkina Faso","2010",647.8358465,"Africa","Sub-Saharan Africa",15605217,"Female_Life_Expectancy",60.8
+"Burkina Faso","2000",254.7175291,"Africa","Sub-Saharan Africa",11607942,"Male_Life_Expectancy",49.9
+"Burkina Faso","2000",254.7175291,"Africa","Sub-Saharan Africa",11607942,"Female_Life_Expectancy",53.1
+"Burundi","2019",261.2474725,"Africa","Sub-Saharan Africa",11530580,"Male_Life_Expectancy",61.5
+"Burundi","2019",261.2474725,"Africa","Sub-Saharan Africa",11530580,"Female_Life_Expectancy",66.1
+"Burundi","2015",305.5497728,"Africa","Sub-Saharan Africa",10160030,"Male_Life_Expectancy",59.8
+"Burundi","2015",305.5497728,"Africa","Sub-Saharan Africa",10160030,"Female_Life_Expectancy",64.3
+"Burundi","2010",234.2356469,"Africa","Sub-Saharan Africa",8675602,"Male_Life_Expectancy",56.9
+"Burundi","2010",234.2356469,"Africa","Sub-Saharan Africa",8675602,"Female_Life_Expectancy",60.3
+"Burundi","2000",136.4639708,"Africa","Sub-Saharan Africa",6378871,"Male_Life_Expectancy",41.8
+"Burundi","2000",136.4639708,"Africa","Sub-Saharan Africa",6378871,"Female_Life_Expectancy",45.9
+"Cabo Verde","2019",3603.781793,"Africa","Sub-Saharan Africa",549935,"Male_Life_Expectancy",69.9
+"Cabo Verde","2019",3603.781793,"Africa","Sub-Saharan Africa",549935,"Female_Life_Expectancy",77.9
+"Cabo Verde","2015",3043.013984,"Africa","Sub-Saharan Africa",524743,"Male_Life_Expectancy",72.2
+"Cabo Verde","2015",3043.013984,"Africa","Sub-Saharan Africa",524743,"Female_Life_Expectancy",77.6
+"Cabo Verde","2010",3378.25486,"Africa","Sub-Saharan Africa",492654,"Male_Life_Expectancy",70.8
+"Cabo Verde","2010",3378.25486,"Africa","Sub-Saharan Africa",492654,"Female_Life_Expectancy",77.3
+"Cabo Verde","2000",1259.323656,"Africa","Sub-Saharan Africa",428188,"Male_Life_Expectancy",66.9
+"Cabo Verde","2000",1259.323656,"Africa","Sub-Saharan Africa",428188,"Female_Life_Expectancy",74.6
+"Cambodia","2019",1643.121389,"Asia","South-eastern Asia",16486542,"Male_Life_Expectancy",67.2
+"Cambodia","2019",1643.121389,"Asia","South-eastern Asia",16486542,"Female_Life_Expectancy",72.7
+"Cambodia","2015",1162.90492,"Asia","South-eastern Asia",15521436,"Male_Life_Expectancy",66.2
+"Cambodia","2015",1162.90492,"Asia","South-eastern Asia",15521436,"Female_Life_Expectancy",71.9
+"Cambodia","2010",785.5022829,"Asia","South-eastern Asia",14312212,"Male_Life_Expectancy",64.2
+"Cambodia","2010",785.5022829,"Asia","South-eastern Asia",14312212,"Female_Life_Expectancy",70
+"Cambodia","2000",302.5771636,"Asia","South-eastern Asia",12155239,"Male_Life_Expectancy",56
+"Cambodia","2000",302.5771636,"Asia","South-eastern Asia",12155239,"Female_Life_Expectancy",61.2
+"Cameroon","2019",1507.450206,"Africa","Sub-Saharan Africa",25876380,"Male_Life_Expectancy",60.3
+"Cameroon","2019",1507.450206,"Africa","Sub-Saharan Africa",25876380,"Female_Life_Expectancy",64.5
+"Cameroon","2015",1327.503017,"Africa","Sub-Saharan Africa",23298368,"Male_Life_Expectancy",57.3
+"Cameroon","2015",1327.503017,"Africa","Sub-Saharan Africa",23298368,"Female_Life_Expectancy",61
+"Cameroon","2010",1286.515572,"Africa","Sub-Saharan Africa",20341241,"Male_Life_Expectancy",55.1
+"Cameroon","2010",1286.515572,"Africa","Sub-Saharan Africa",20341241,"Female_Life_Expectancy",58.1
+"Cameroon","2000",649.9918454,"Africa","Sub-Saharan Africa",15513945,"Male_Life_Expectancy",51.3
+"Cameroon","2000",649.9918454,"Africa","Sub-Saharan Africa",15513945,"Female_Life_Expectancy",54.4
+"Canada","2019",46194.72523,"Americas","Northern America",37589262,"Male_Life_Expectancy",80.4
+"Canada","2019",46194.72523,"Americas","Northern America",37589262,"Female_Life_Expectancy",84.1
+"Canada","2015",43585.51198,"Americas","Northern America",35702908,"Male_Life_Expectancy",79.9
+"Canada","2015",43585.51198,"Americas","Northern America",35702908,"Female_Life_Expectancy",83.6
+"Canada","2010",47448.01322,"Americas","Northern America",34004889,"Male_Life_Expectancy",79.3
+"Canada","2010",47448.01322,"Americas","Northern America",34004889,"Female_Life_Expectancy",83.3
+"Canada","2000",24190.24962,"Americas","Northern America",30685730,"Male_Life_Expectancy",76.5
+"Canada","2000",24190.24962,"Americas","Northern America",30685730,"Female_Life_Expectancy",81.5
+"Central African Republic","2019",467.9074406,"Africa","Sub-Saharan Africa",4745185,"Male_Life_Expectancy",50.2
+"Central African Republic","2019",467.9074406,"Africa","Sub-Saharan Africa",4745185,"Female_Life_Expectancy",56.3
+"Central African Republic","2015",377.4230017,"Africa","Sub-Saharan Africa",4493170,"Male_Life_Expectancy",48.2
+"Central African Republic","2015",377.4230017,"Africa","Sub-Saharan Africa",4493170,"Female_Life_Expectancy",53
+"Central African Republic","2010",488.4214018,"Africa","Sub-Saharan Africa",4386768,"Male_Life_Expectancy",46.7
+"Central African Republic","2010",488.4214018,"Africa","Sub-Saharan Africa",4386768,"Female_Life_Expectancy",50.4
+"Central African Republic","2000",251.2068774,"Africa","Sub-Saharan Africa",3640427,"Male_Life_Expectancy",43.2
+"Central African Republic","2000",251.2068774,"Africa","Sub-Saharan Africa",3640427,"Female_Life_Expectancy",45.5
+"Chad","2019",709.5403101,"Africa","Sub-Saharan Africa",15946876,"Male_Life_Expectancy",58
+"Chad","2019",709.5403101,"Africa","Sub-Saharan Africa",15946876,"Female_Life_Expectancy",61.3
+"Chad","2015",776.0195323,"Africa","Sub-Saharan Africa",14110975,"Male_Life_Expectancy",56.2
+"Chad","2015",776.0195323,"Africa","Sub-Saharan Africa",14110975,"Female_Life_Expectancy",59.6
+"Chad","2010",892.5687203,"Africa","Sub-Saharan Africa",11952136,"Male_Life_Expectancy",53.9
+"Chad","2010",892.5687203,"Africa","Sub-Saharan Africa",11952136,"Female_Life_Expectancy",57.4
+"Chad","2000",165.7629866,"Africa","Sub-Saharan Africa",8355654,"Male_Life_Expectancy",49.3
+"Chad","2000",165.7629866,"Africa","Sub-Saharan Africa",8355654,"Female_Life_Expectancy",53
+"Chile","2019",14896.45387,"Americas","Latin America and the Caribbean",18952038,"Male_Life_Expectancy",78.1
+"Chile","2019",14896.45387,"Americas","Latin America and the Caribbean",18952038,"Female_Life_Expectancy",83.2
+"Chile","2015",13574.17183,"Americas","Latin America and the Caribbean",17969353,"Male_Life_Expectancy",77
+"Chile","2015",13574.17183,"Americas","Latin America and the Caribbean",17969353,"Female_Life_Expectancy",82.5
+"Chile","2010",12808.03459,"Americas","Latin America and the Caribbean",17062536,"Male_Life_Expectancy",75.5
+"Chile","2010",12808.03459,"Americas","Latin America and the Caribbean",17062536,"Female_Life_Expectancy",81.3
+"Chile","2000",5074.901624,"Americas","Latin America and the Caribbean",15342353,"Male_Life_Expectancy",73.6
+"Chile","2000",5074.901624,"Americas","Latin America and the Caribbean",15342353,"Female_Life_Expectancy",79.8
+"China","2019",10216.63033,"Asia","Eastern Asia",1397715000,"Male_Life_Expectancy",74.7
+"China","2019",10216.63033,"Asia","Eastern Asia",1397715000,"Female_Life_Expectancy",80.5
+"China","2015",8066.942635,"Asia","Eastern Asia",1371220000,"Male_Life_Expectancy",73.9
+"China","2015",8066.942635,"Asia","Eastern Asia",1371220000,"Female_Life_Expectancy",79.9
+"China","2010",4550.453108,"Asia","Eastern Asia",1337705000,"Male_Life_Expectancy",72.3
+"China","2010",4550.453108,"Asia","Eastern Asia",1337705000,"Female_Life_Expectancy",77.9
+"China","2000",959.3724836,"Asia","Eastern Asia",1262645000,"Male_Life_Expectancy",69.3
+"China","2000",959.3724836,"Asia","Eastern Asia",1262645000,"Female_Life_Expectancy",74.2
+"Colombia","2019",6428.676206,"Americas","Latin America and the Caribbean",50339443,"Male_Life_Expectancy",76.7
+"Colombia","2019",6428.676206,"Americas","Latin America and the Caribbean",50339443,"Female_Life_Expectancy",81.9
+"Colombia","2015",6175.87603,"Americas","Latin America and the Caribbean",47520667,"Male_Life_Expectancy",75.6
+"Colombia","2015",6175.87603,"Americas","Latin America and the Caribbean",47520667,"Female_Life_Expectancy",81
+"Colombia","2010",6336.709474,"Americas","Latin America and the Caribbean",45222699,"Male_Life_Expectancy",74
+"Colombia","2010",6336.709474,"Americas","Latin America and the Caribbean",45222699,"Female_Life_Expectancy",80.1
+"Colombia","2000",2520.481089,"Americas","Latin America and the Caribbean",39629965,"Male_Life_Expectancy",69.7
+"Colombia","2000",2520.481089,"Americas","Latin America and the Caribbean",39629965,"Female_Life_Expectancy",77.8
+"Comoros","2019",1370.148207,"Africa","Sub-Saharan Africa",850886,"Male_Life_Expectancy",65.9
+"Comoros","2019",1370.148207,"Africa","Sub-Saharan Africa",850886,"Female_Life_Expectancy",68.9
+"Comoros","2015",1242.60319,"Africa","Sub-Saharan Africa",777424,"Male_Life_Expectancy",65.1
+"Comoros","2015",1242.60319,"Africa","Sub-Saharan Africa",777424,"Female_Life_Expectancy",67.8
+"Comoros","2010",1316.498848,"Africa","Sub-Saharan Africa",689692,"Male_Life_Expectancy",63.6
+"Comoros","2010",1316.498848,"Africa","Sub-Saharan Africa",689692,"Female_Life_Expectancy",66.4
+"Comoros","2000",645.8186908,"Africa","Sub-Saharan Africa",542357,"Male_Life_Expectancy",60.2
+"Comoros","2000",645.8186908,"Africa","Sub-Saharan Africa",542357,"Female_Life_Expectancy",62.9
+"Costa Rica","2019",12243.81143,"Americas","Latin America and the Caribbean",5047561,"Male_Life_Expectancy",78.3
+"Costa Rica","2019",12243.81143,"Americas","Latin America and the Caribbean",5047561,"Female_Life_Expectancy",83.4
+"Costa Rica","2015",11299.13554,"Americas","Latin America and the Caribbean",4847804,"Male_Life_Expectancy",78.2
+"Costa Rica","2015",11299.13554,"Americas","Latin America and the Caribbean",4847804,"Female_Life_Expectancy",83.5
+"Costa Rica","2010",8141.913127,"Americas","Latin America and the Caribbean",4577378,"Male_Life_Expectancy",77
+"Costa Rica","2010",8141.913127,"Americas","Latin America and the Caribbean",4577378,"Female_Life_Expectancy",82.2
+"Costa Rica","2000",3772.870012,"Americas","Latin America and the Caribbean",3962372,"Male_Life_Expectancy",75.5
+"Costa Rica","2000",3772.870012,"Americas","Latin America and the Caribbean",3962372,"Female_Life_Expectancy",80.6
+"Croatia","2019",14936.10055,"Europe","Southern Europe",4067500,"Male_Life_Expectancy",75.5
+"Croatia","2019",14936.10055,"Europe","Southern Europe",4067500,"Female_Life_Expectancy",81.6
+"Croatia","2015",11781.73479,"Europe","Southern Europe",4203604,"Male_Life_Expectancy",74.3
+"Croatia","2015",11781.73479,"Europe","Southern Europe",4203604,"Female_Life_Expectancy",80.7
+"Croatia","2010",13949.3265,"Europe","Southern Europe",4295427,"Male_Life_Expectancy",73.4
+"Croatia","2010",13949.3265,"Europe","Southern Europe",4295427,"Female_Life_Expectancy",79.9
+"Croatia","2000",4841.586733,"Europe","Southern Europe",4468302,"Male_Life_Expectancy",70.7
+"Croatia","2000",4841.586733,"Europe","Southern Europe",4468302,"Female_Life_Expectancy",77.9
+"Cuba","2015",7694.01192,"Americas","Latin America and the Caribbean",11324781,"Male_Life_Expectancy",75.7
+"Cuba","2015",7694.01192,"Americas","Latin America and the Caribbean",11324781,"Female_Life_Expectancy",80.2
+"Cuba","2010",5730.354775,"Americas","Latin America and the Caribbean",11225832,"Male_Life_Expectancy",75.5
+"Cuba","2010",5730.354775,"Americas","Latin America and the Caribbean",11225832,"Female_Life_Expectancy",79.8
+"Cuba","2000",2747.098575,"Americas","Latin America and the Caribbean",11126430,"Male_Life_Expectancy",74.6
+"Cuba","2000",2747.098575,"Americas","Latin America and the Caribbean",11126430,"Female_Life_Expectancy",79
+"Cyprus","2019",27858.371,"Asia","Western Asia",1198575,"Male_Life_Expectancy",81.1
+"Cyprus","2019",27858.371,"Asia","Western Asia",1198575,"Female_Life_Expectancy",85.1
+"Cyprus","2015",23333.71491,"Asia","Western Asia",1160985,"Male_Life_Expectancy",79.9
+"Cyprus","2015",23333.71491,"Asia","Western Asia",1160985,"Female_Life_Expectancy",84.1
+"Cyprus","2010",31023.63833,"Asia","Western Asia",1112612,"Male_Life_Expectancy",78.9
+"Cyprus","2010",31023.63833,"Asia","Western Asia",1112612,"Female_Life_Expectancy",83.1
+"Cyprus","2000",14388.34806,"Asia","Western Asia",943290,"Male_Life_Expectancy",76.5
+"Cyprus","2000",14388.34806,"Asia","Western Asia",943290,"Female_Life_Expectancy",81
+"Denmark","2019",60170.34264,"Europe","Northern Europe",5818553,"Male_Life_Expectancy",79.6
+"Denmark","2019",60170.34264,"Europe","Northern Europe",5818553,"Female_Life_Expectancy",83
+"Denmark","2015",53254.85637,"Europe","Northern Europe",5683483,"Male_Life_Expectancy",78.8
+"Denmark","2015",53254.85637,"Europe","Northern Europe",5683483,"Female_Life_Expectancy",82.4
+"Denmark","2010",58041.39844,"Europe","Northern Europe",5547683,"Male_Life_Expectancy",77.2
+"Denmark","2010",58041.39844,"Europe","Northern Europe",5547683,"Female_Life_Expectancy",81.1
+"Denmark","2000",30743.54768,"Europe","Northern Europe",5339616,"Male_Life_Expectancy",74.7
+"Denmark","2000",30743.54768,"Europe","Northern Europe",5339616,"Female_Life_Expectancy",79.1
+"Djibouti","2019",3414.92487,"Africa","Sub-Saharan Africa",973560,"Male_Life_Expectancy",64.1
+"Djibouti","2019",3414.92487,"Africa","Sub-Saharan Africa",973560,"Female_Life_Expectancy",67.8
+"Djibouti","2015",2658.978753,"Africa","Sub-Saharan Africa",913993,"Male_Life_Expectancy",62.8
+"Djibouti","2015",2658.978753,"Africa","Sub-Saharan Africa",913993,"Female_Life_Expectancy",66.6
+"Djibouti","2010",1343.26873,"Africa","Sub-Saharan Africa",840198,"Male_Life_Expectancy",60.6
+"Djibouti","2010",1343.26873,"Africa","Sub-Saharan Africa",840198,"Female_Life_Expectancy",63.3
+"Djibouti","2000",768.1760767,"Africa","Sub-Saharan Africa",717584,"Male_Life_Expectancy",57.9
+"Djibouti","2000",768.1760767,"Africa","Sub-Saharan Africa",717584,"Female_Life_Expectancy",62
+"Dominican Republic","2019",8282.116359,"Americas","Latin America and the Caribbean",10738958,"Male_Life_Expectancy",69.8
+"Dominican Republic","2019",8282.116359,"Americas","Latin America and the Caribbean",10738958,"Female_Life_Expectancy",76.2
+"Dominican Republic","2015",6921.517228,"Americas","Latin America and the Caribbean",10281680,"Male_Life_Expectancy",68.6
+"Dominican Republic","2015",6921.517228,"Americas","Latin America and the Caribbean",10281680,"Female_Life_Expectancy",75.2
+"Dominican Republic","2010",5555.389722,"Americas","Latin America and the Caribbean",9695121,"Male_Life_Expectancy",70.4
+"Dominican Republic","2010",5555.389722,"Americas","Latin America and the Caribbean",9695121,"Female_Life_Expectancy",76.1
+"Dominican Republic","2000",2869.105861,"Americas","Latin America and the Caribbean",8471321,"Male_Life_Expectancy",70.2
+"Dominican Republic","2000",2869.105861,"Americas","Latin America and the Caribbean",8471321,"Female_Life_Expectancy",76.7
+"Ecuador","2019",6183.823825,"Americas","Latin America and the Caribbean",17373662,"Male_Life_Expectancy",76.4
+"Ecuador","2019",6183.823825,"Americas","Latin America and the Caribbean",17373662,"Female_Life_Expectancy",80.5
+"Ecuador","2015",6124.491643,"Americas","Latin America and the Caribbean",16212020,"Male_Life_Expectancy",74.9
+"Ecuador","2015",6124.491643,"Americas","Latin America and the Caribbean",16212020,"Female_Life_Expectancy",79.5
+"Ecuador","2010",4633.590358,"Americas","Latin America and the Caribbean",15011117,"Male_Life_Expectancy",72.3
+"Ecuador","2010",4633.590358,"Americas","Latin America and the Caribbean",15011117,"Female_Life_Expectancy",77.9
+"Ecuador","2000",1445.279324,"Americas","Latin America and the Caribbean",12681123,"Male_Life_Expectancy",71.9
+"Ecuador","2000",1445.279324,"Americas","Latin America and the Caribbean",12681123,"Female_Life_Expectancy",77.3
+"El Salvador","2019",4187.250031,"Americas","Latin America and the Caribbean",6453553,"Male_Life_Expectancy",70.6
+"El Salvador","2019",4187.250031,"Americas","Latin America and the Caribbean",6453553,"Female_Life_Expectancy",79.1
+"El Salvador","2015",3705.577946,"Americas","Latin America and the Caribbean",6325124,"Male_Life_Expectancy",68.1
+"El Salvador","2015",3705.577946,"Americas","Latin America and the Caribbean",6325124,"Female_Life_Expectancy",78
+"El Salvador","2010",2983.229771,"Americas","Latin America and the Caribbean",6183875,"Male_Life_Expectancy",70.6
+"El Salvador","2010",2983.229771,"Americas","Latin America and the Caribbean",6183875,"Female_Life_Expectancy",78
+"El Salvador","2000",2001.538009,"Americas","Latin America and the Caribbean",5887936,"Male_Life_Expectancy",68.4
+"El Salvador","2000",2001.538009,"Americas","Latin America and the Caribbean",5887936,"Female_Life_Expectancy",76.5
+"Equatorial Guinea","2019",8131.923888,"Africa","Sub-Saharan Africa",1355986,"Male_Life_Expectancy",60.9
+"Equatorial Guinea","2019",8131.923888,"Africa","Sub-Saharan Africa",1355986,"Female_Life_Expectancy",63.6
+"Equatorial Guinea","2015",11283.46561,"Africa","Sub-Saharan Africa",1168568,"Male_Life_Expectancy",60.3
+"Equatorial Guinea","2015",11283.46561,"Africa","Sub-Saharan Africa",1168568,"Female_Life_Expectancy",61.8
+"Equatorial Guinea","2010",17288.8596,"Africa","Sub-Saharan Africa",943639,"Male_Life_Expectancy",59.8
+"Equatorial Guinea","2010",17288.8596,"Africa","Sub-Saharan Africa",943639,"Female_Life_Expectancy",59.1
+"Equatorial Guinea","2000",1725.554738,"Africa","Sub-Saharan Africa",606181,"Male_Life_Expectancy",52.4
+"Equatorial Guinea","2000",1725.554738,"Africa","Sub-Saharan Africa",606181,"Female_Life_Expectancy",56.5
+"Eritrea","2010",501.3556333,"Africa","Sub-Saharan Africa",3170435,"Male_Life_Expectancy",57.8
+"Eritrea","2010",501.3556333,"Africa","Sub-Saharan Africa",3170435,"Female_Life_Expectancy",64
+"Eritrea","2000",308.1337836,"Africa","Sub-Saharan Africa",2292416,"Male_Life_Expectancy",51.2
+"Eritrea","2000",308.1337836,"Africa","Sub-Saharan Africa",2292416,"Female_Life_Expectancy",58.5
+"Estonia","2019",23723.30611,"Europe","Northern Europe",1326590,"Male_Life_Expectancy",74.7
+"Estonia","2019",23723.30611,"Europe","Northern Europe",1326590,"Female_Life_Expectancy",82.6
+"Estonia","2015",17522.23019,"Europe","Northern Europe",1315407,"Male_Life_Expectancy",73
+"Estonia","2015",17522.23019,"Europe","Northern Europe",1315407,"Female_Life_Expectancy",81.7
+"Estonia","2010",14790.82092,"Europe","Northern Europe",1331475,"Male_Life_Expectancy",70.9
+"Estonia","2010",14790.82092,"Europe","Northern Europe",1331475,"Female_Life_Expectancy",80.4
+"Estonia","2000",4075.970639,"Europe","Northern Europe",1396985,"Male_Life_Expectancy",65.6
+"Estonia","2000",4075.970639,"Europe","Northern Europe",1396985,"Female_Life_Expectancy",76.2
+"Eswatini","2019",3894.679807,"Africa","Sub-Saharan Africa",1148130,"Male_Life_Expectancy",53.4
+"Eswatini","2019",3894.679807,"Africa","Sub-Saharan Africa",1148130,"Female_Life_Expectancy",63.2
+"Eswatini","2015",3679.799799,"Africa","Sub-Saharan Africa",1104044,"Male_Life_Expectancy",50.3
+"Eswatini","2015",3679.799799,"Africa","Sub-Saharan Africa",1104044,"Female_Life_Expectancy",58.7
+"Eswatini","2010",4168.505177,"Africa","Sub-Saharan Africa",1064837,"Male_Life_Expectancy",44.9
+"Eswatini","2010",4168.505177,"Africa","Sub-Saharan Africa",1064837,"Female_Life_Expectancy",50.8
+"Eswatini","2000",1728.70534,"Africa","Sub-Saharan Africa",1005435,"Male_Life_Expectancy",44.8
+"Eswatini","2000",1728.70534,"Africa","Sub-Saharan Africa",1005435,"Female_Life_Expectancy",49.4
+"Ethiopia","2019",855.7608623,"Africa","Sub-Saharan Africa",112078730,"Male_Life_Expectancy",66.9
+"Ethiopia","2019",855.7608623,"Africa","Sub-Saharan Africa",112078730,"Female_Life_Expectancy",70.5
+"Ethiopia","2015",640.5418913,"Africa","Sub-Saharan Africa",100835458,"Male_Life_Expectancy",65
+"Ethiopia","2015",640.5418913,"Africa","Sub-Saharan Africa",100835458,"Female_Life_Expectancy",68.6
+"Ethiopia","2010",341.5541149,"Africa","Sub-Saharan Africa",87639964,"Male_Life_Expectancy",61.3
+"Ethiopia","2010",341.5541149,"Africa","Sub-Saharan Africa",87639964,"Female_Life_Expectancy",64.5
+"Ethiopia","2000",124.4608003,"Africa","Sub-Saharan Africa",66224804,"Male_Life_Expectancy",49.5
+"Ethiopia","2000",124.4608003,"Africa","Sub-Saharan Africa",66224804,"Female_Life_Expectancy",51.7
+"Fiji","2019",6175.88872,"Oceania","Melanesia",889953,"Male_Life_Expectancy",65.9
+"Fiji","2019",6175.88872,"Oceania","Melanesia",889953,"Female_Life_Expectancy",70.3
+"Fiji","2015",5390.745258,"Oceania","Melanesia",868627,"Male_Life_Expectancy",65.8
+"Fiji","2015",5390.745258,"Oceania","Melanesia",868627,"Female_Life_Expectancy",70.1
+"Fiji","2010",3652.527437,"Oceania","Melanesia",859818,"Male_Life_Expectancy",65.9
+"Fiji","2010",3652.527437,"Oceania","Melanesia",859818,"Female_Life_Expectancy",69.5
+"Fiji","2000",2076.568784,"Oceania","Melanesia",811006,"Male_Life_Expectancy",63.7
+"Fiji","2000",2076.568784,"Oceania","Melanesia",811006,"Female_Life_Expectancy",68.4
+"Finland","2019",48782.78848,"Europe","Northern Europe",5520314,"Male_Life_Expectancy",79.2
+"Finland","2019",48782.78848,"Europe","Northern Europe",5520314,"Female_Life_Expectancy",84
+"Finland","2015",42784.69836,"Europe","Northern Europe",5479531,"Male_Life_Expectancy",78.5
+"Finland","2015",42784.69836,"Europe","Northern Europe",5479531,"Female_Life_Expectancy",83.9
+"Finland","2010",46459.97325,"Europe","Northern Europe",5363352,"Male_Life_Expectancy",76.7
+"Finland","2010",46459.97325,"Europe","Northern Europe",5363352,"Female_Life_Expectancy",83
+"Finland","2000",24285.46682,"Europe","Northern Europe",5176209,"Male_Life_Expectancy",74.1
+"Finland","2000",24285.46682,"Europe","Northern Europe",5176209,"Female_Life_Expectancy",80.9
+"France","2019",40493.92857,"Europe","Western Europe",67059887,"Male_Life_Expectancy",79.8
+"France","2019",40493.92857,"Europe","Western Europe",67059887,"Female_Life_Expectancy",85.1
+"France","2015",36638.18493,"Europe","Western Europe",66548272,"Male_Life_Expectancy",79
+"France","2015",36638.18493,"Europe","Western Europe",66548272,"Female_Life_Expectancy",84.7
+"France","2010",40638.334,"Europe","Western Europe",65027507,"Male_Life_Expectancy",78
+"France","2010",40638.334,"Europe","Western Europe",65027507,"Female_Life_Expectancy",84.3
+"France","2000",22364.02939,"Europe","Western Europe",60912500,"Male_Life_Expectancy",75.2
+"France","2000",22364.02939,"Europe","Western Europe",60912500,"Female_Life_Expectancy",82.5
+"Gabon","2019",7767.013404,"Africa","Sub-Saharan Africa",2172579,"Male_Life_Expectancy",63.6
+"Gabon","2019",7767.013404,"Africa","Sub-Saharan Africa",2172579,"Female_Life_Expectancy",69.7
+"Gabon","2015",7384.71587,"Africa","Sub-Saharan Africa",1947686,"Male_Life_Expectancy",62.1
+"Gabon","2015",7384.71587,"Africa","Sub-Saharan Africa",1947686,"Female_Life_Expectancy",68.1
+"Gabon","2010",8849.3553,"Africa","Sub-Saharan Africa",1624140,"Male_Life_Expectancy",60.1
+"Gabon","2010",8849.3553,"Africa","Sub-Saharan Africa",1624140,"Female_Life_Expectancy",64.3
+"Gabon","2000",4125.716664,"Africa","Sub-Saharan Africa",1228360,"Male_Life_Expectancy",56.1
+"Gabon","2000",4125.716664,"Africa","Sub-Saharan Africa",1228360,"Female_Life_Expectancy",60.1
+"Georgia","2019",4697.704576,"Asia","Western Asia",3720382,"Male_Life_Expectancy",68.8
+"Georgia","2019",4697.704576,"Asia","Western Asia",3720382,"Female_Life_Expectancy",77.8
+"Georgia","2015",4014.185944,"Asia","Western Asia",3725276,"Male_Life_Expectancy",68.2
+"Georgia","2015",4014.185944,"Asia","Western Asia",3725276,"Female_Life_Expectancy",76.9
+"Georgia","2010",3233.295943,"Asia","Western Asia",3786695,"Male_Life_Expectancy",67.4
+"Georgia","2010",3233.295943,"Asia","Western Asia",3786695,"Female_Life_Expectancy",76.3
+"Georgia","2000",749.9085236,"Asia","Western Asia",4077131,"Male_Life_Expectancy",65.6
+"Georgia","2000",749.9085236,"Asia","Western Asia",4077131,"Female_Life_Expectancy",73.1
+"Germany","2019",46445.2491,"Europe","Western Europe",83132799,"Male_Life_Expectancy",78.7
+"Germany","2019",46445.2491,"Europe","Western Europe",83132799,"Female_Life_Expectancy",84.8
+"Germany","2015",41086.72967,"Europe","Western Europe",81686611,"Male_Life_Expectancy",78.1
+"Germany","2015",41086.72967,"Europe","Western Europe",81686611,"Female_Life_Expectancy",82.7
+"Germany","2010",41531.9342,"Europe","Western Europe",81776930,"Male_Life_Expectancy",77.8
+"Germany","2010",41531.9342,"Europe","Western Europe",81776930,"Female_Life_Expectancy",82.5
+"Germany","2000",23635.92922,"Europe","Western Europe",82211508,"Male_Life_Expectancy",75
+"Germany","2000",23635.92922,"Europe","Western Europe",82211508,"Female_Life_Expectancy",80.9
+"Ghana","2019",2202.115567,"Africa","Sub-Saharan Africa",30417856,"Male_Life_Expectancy",63.7
+"Ghana","2019",2202.115567,"Africa","Sub-Saharan Africa",30417856,"Female_Life_Expectancy",69.2
+"Ghana","2015",1743.850996,"Africa","Sub-Saharan Africa",27849205,"Male_Life_Expectancy",62
+"Ghana","2015",1743.850996,"Africa","Sub-Saharan Africa",27849205,"Female_Life_Expectancy",67.4
+"Ghana","2010",1299.344949,"Africa","Sub-Saharan Africa",24779619,"Male_Life_Expectancy",59.7
+"Ghana","2010",1299.344949,"Africa","Sub-Saharan Africa",24779619,"Female_Life_Expectancy",64.5
+"Ghana","2000",258.4709595,"Africa","Sub-Saharan Africa",19278856,"Male_Life_Expectancy",57.7
+"Ghana","2000",258.4709595,"Africa","Sub-Saharan Africa",19278856,"Female_Life_Expectancy",60.8
+"Greece","2019",19582.53598,"Europe","Southern Europe",10716322,"Male_Life_Expectancy",78.6
+"Greece","2019",19582.53598,"Europe","Southern Europe",10716322,"Female_Life_Expectancy",83.6
+"Greece","2015",18167.77373,"Europe","Southern Europe",10820883,"Male_Life_Expectancy",77.8
+"Greece","2015",18167.77373,"Europe","Southern Europe",10820883,"Female_Life_Expectancy",82.9
+"Greece","2010",26917.75895,"Europe","Southern Europe",11121341,"Male_Life_Expectancy",77.5
+"Greece","2010",26917.75895,"Europe","Southern Europe",11121341,"Female_Life_Expectancy",82.7
+"Greece","2000",12042.95371,"Europe","Southern Europe",10805808,"Male_Life_Expectancy",75.5
+"Greece","2000",12042.95371,"Europe","Southern Europe",10805808,"Female_Life_Expectancy",80.9
+"Grenada","2019",10808.67212,"Americas","Latin America and the Caribbean",112003,"Male_Life_Expectancy",70.6
+"Grenada","2019",10808.67212,"Americas","Latin America and the Caribbean",112003,"Female_Life_Expectancy",75.3
+"Grenada","2015",9096.870646,"Americas","Latin America and the Caribbean",109599,"Male_Life_Expectancy",70.4
+"Grenada","2015",9096.870646,"Americas","Latin America and the Caribbean",109599,"Female_Life_Expectancy",75.1
+"Grenada","2010",7257.756622,"Americas","Latin America and the Caribbean",106233,"Male_Life_Expectancy",69.2
+"Grenada","2010",7257.756622,"Americas","Latin America and the Caribbean",106233,"Female_Life_Expectancy",75.5
+"Grenada","2000",5057.173965,"Americas","Latin America and the Caribbean",102833,"Male_Life_Expectancy",68.6
+"Grenada","2000",5057.173965,"Americas","Latin America and the Caribbean",102833,"Female_Life_Expectancy",76
+"Guatemala","2019",4619.985258,"Americas","Latin America and the Caribbean",16604026,"Male_Life_Expectancy",69
+"Guatemala","2019",4619.985258,"Americas","Latin America and the Caribbean",16604026,"Female_Life_Expectancy",75
+"Guatemala","2015",3994.636913,"Americas","Latin America and the Caribbean",15567419,"Male_Life_Expectancy",67.8
+"Guatemala","2015",3994.636913,"Americas","Latin America and the Caribbean",15567419,"Female_Life_Expectancy",74
+"Guatemala","2010",2898.942215,"Americas","Latin America and the Caribbean",14259687,"Male_Life_Expectancy",65.8
+"Guatemala","2010",2898.942215,"Americas","Latin America and the Caribbean",14259687,"Female_Life_Expectancy",72.8
+"Guatemala","2000",1664.298958,"Americas","Latin America and the Caribbean",11589761,"Male_Life_Expectancy",63.3
+"Guatemala","2000",1664.298958,"Americas","Latin America and the Caribbean",11589761,"Female_Life_Expectancy",70.3
+"Guinea","2019",962.8399086,"Africa","Sub-Saharan Africa",12771246,"Male_Life_Expectancy",59.5
+"Guinea","2019",962.8399086,"Africa","Sub-Saharan Africa",12771246,"Female_Life_Expectancy",62.3
+"Guinea","2015",769.2560137,"Africa","Sub-Saharan Africa",11432088,"Male_Life_Expectancy",57.3
+"Guinea","2015",769.2560137,"Africa","Sub-Saharan Africa",11432088,"Female_Life_Expectancy",60.1
+"Guinea","2010",672.4244026,"Africa","Sub-Saharan Africa",10192176,"Male_Life_Expectancy",56.6
+"Guinea","2010",672.4244026,"Africa","Sub-Saharan Africa",10192176,"Female_Life_Expectancy",59.3
+"Guinea","2000",363.482479,"Africa","Sub-Saharan Africa",8240730,"Male_Life_Expectancy",53.1
+"Guinea","2000",363.482479,"Africa","Sub-Saharan Africa",8240730,"Female_Life_Expectancy",55.3
+"Guinea-Bissau","2019",697.2949269,"Africa","Sub-Saharan Africa",1920922,"Male_Life_Expectancy",57.4
+"Guinea-Bissau","2019",697.2949269,"Africa","Sub-Saharan Africa",1920922,"Female_Life_Expectancy",63
+"Guinea-Bissau","2015",603.4011182,"Africa","Sub-Saharan Africa",1737202,"Male_Life_Expectancy",55.5
+"Guinea-Bissau","2015",603.4011182,"Africa","Sub-Saharan Africa",1737202,"Female_Life_Expectancy",60.8
+"Guinea-Bissau","2010",558.1761345,"Africa","Sub-Saharan Africa",1522599,"Male_Life_Expectancy",53
+"Guinea-Bissau","2010",558.1761345,"Africa","Sub-Saharan Africa",1522599,"Female_Life_Expectancy",57.7
+"Guinea-Bissau","2000",308.1441193,"Africa","Sub-Saharan Africa",1201301,"Male_Life_Expectancy",47.8
+"Guinea-Bissau","2000",308.1441193,"Africa","Sub-Saharan Africa",1201301,"Female_Life_Expectancy",52.8
+"Guyana","2019",6609.586425,"Americas","Latin America and the Caribbean",782766,"Male_Life_Expectancy",62.5
+"Guyana","2019",6609.586425,"Americas","Latin America and the Caribbean",782766,"Female_Life_Expectancy",69.4
+"Guyana","2015",5576.833337,"Americas","Latin America and the Caribbean",767432,"Male_Life_Expectancy",62.3
+"Guyana","2015",5576.833337,"Americas","Latin America and the Caribbean",767432,"Female_Life_Expectancy",69.2
+"Guyana","2010",4580.662462,"Americas","Latin America and the Caribbean",749436,"Male_Life_Expectancy",61.6
+"Guyana","2010",4580.662462,"Americas","Latin America and the Caribbean",749436,"Female_Life_Expectancy",68.2
+"Guyana","2000",954.4041525,"Americas","Latin America and the Caribbean",746715,"Male_Life_Expectancy",59.8
+"Guyana","2000",954.4041525,"Americas","Latin America and the Caribbean",746715,"Female_Life_Expectancy",66.5
+"Haiti","2019",1272.490925,"Americas","Latin America and the Caribbean",11263077,"Male_Life_Expectancy",63.3
+"Haiti","2019",1272.490925,"Americas","Latin America and the Caribbean",11263077,"Female_Life_Expectancy",64.8
+"Haiti","2015",1389.11952,"Americas","Latin America and the Caribbean",10695542,"Male_Life_Expectancy",62.1
+"Haiti","2015",1389.11952,"Americas","Latin America and the Caribbean",10695542,"Female_Life_Expectancy",63.1
+"Haiti","2010",1172.098543,"Americas","Latin America and the Caribbean",9949322,"Male_Life_Expectancy",28
+"Haiti","2010",1172.098543,"Americas","Latin America and the Caribbean",9949322,"Female_Life_Expectancy",35.4
+"Haiti","2000",811.5339742,"Americas","Latin America and the Caribbean",8463806,"Male_Life_Expectancy",57
+"Haiti","2000",811.5339742,"Americas","Latin America and the Caribbean",8463806,"Female_Life_Expectancy",57.2
+"Honduras","2019",2574.912191,"Americas","Latin America and the Caribbean",9746117,"Male_Life_Expectancy",70.7
+"Honduras","2019",2574.912191,"Americas","Latin America and the Caribbean",9746117,"Female_Life_Expectancy",73.2
+"Honduras","2015",2302.201379,"Americas","Latin America and the Caribbean",9112916,"Male_Life_Expectancy",67.6
+"Honduras","2015",2302.201379,"Americas","Latin America and the Caribbean",9112916,"Female_Life_Expectancy",72.1
+"Honduras","2010",1904.346465,"Americas","Latin America and the Caribbean",8317470,"Male_Life_Expectancy",70.2
+"Honduras","2010",1904.346465,"Americas","Latin America and the Caribbean",8317470,"Female_Life_Expectancy",72.1
+"Honduras","2000",1080.462129,"Americas","Latin America and the Caribbean",6574509,"Male_Life_Expectancy",69.1
+"Honduras","2000",1080.462129,"Americas","Latin America and the Caribbean",6574509,"Female_Life_Expectancy",71
+"Hungary","2019",16731.82151,"Europe","Eastern Europe",9769949,"Male_Life_Expectancy",73.1
+"Hungary","2019",16731.82151,"Europe","Eastern Europe",9769949,"Female_Life_Expectancy",79.6
+"Hungary","2015",12706.89121,"Europe","Eastern Europe",9843028,"Male_Life_Expectancy",72.2
+"Hungary","2015",12706.89121,"Europe","Eastern Europe",9843028,"Female_Life_Expectancy",78.7
+"Hungary","2010",13191.62126,"Europe","Eastern Europe",10000023,"Male_Life_Expectancy",70.6
+"Hungary","2010",13191.62126,"Europe","Eastern Europe",10000023,"Female_Life_Expectancy",78.4
+"Hungary","2000",4624.281657,"Europe","Eastern Europe",10210971,"Male_Life_Expectancy",67.1
+"Hungary","2000",4624.281657,"Europe","Eastern Europe",10210971,"Female_Life_Expectancy",75.6
+"Iceland","2019",66944.83308,"Europe","Northern Europe",361313,"Male_Life_Expectancy",80.8
+"Iceland","2019",66944.83308,"Europe","Northern Europe",361313,"Female_Life_Expectancy",83.9
+"Iceland","2015",52564.42918,"Europe","Northern Europe",330815,"Male_Life_Expectancy",80.7
+"Iceland","2015",52564.42918,"Europe","Northern Europe",330815,"Female_Life_Expectancy",83.6
+"Iceland","2010",43024.92349,"Europe","Northern Europe",318041,"Male_Life_Expectancy",80
+"Iceland","2010",43024.92349,"Europe","Northern Europe",318041,"Female_Life_Expectancy",83.3
+"Iceland","2000",32018.0637,"Europe","Northern Europe",281205,"Male_Life_Expectancy",77.7
+"Iceland","2000",32018.0637,"Europe","Northern Europe",281205,"Female_Life_Expectancy",81.6
+"India","2019",2099.599048,"Asia","Southern Asia",1366417754,"Male_Life_Expectancy",69.5
+"India","2019",2099.599048,"Asia","Southern Asia",1366417754,"Female_Life_Expectancy",72.2
+"India","2015",1605.605434,"Asia","Southern Asia",1310152403,"Male_Life_Expectancy",68.1
+"India","2015",1605.605434,"Asia","Southern Asia",1310152403,"Female_Life_Expectancy",70.6
+"India","2010",1357.563719,"Asia","Southern Asia",1234281170,"Male_Life_Expectancy",65.7
+"India","2010",1357.563719,"Asia","Southern Asia",1234281170,"Female_Life_Expectancy",68.9
+"India","2000",443.3141934,"Asia","Southern Asia",1056575549,"Male_Life_Expectancy",61.3
+"India","2000",443.3141934,"Asia","Southern Asia",1056575549,"Female_Life_Expectancy",62.9
+"Indonesia","2019",4135.569263,"Asia","South-eastern Asia",270625568,"Male_Life_Expectancy",69.4
+"Indonesia","2019",4135.569263,"Asia","South-eastern Asia",270625568,"Female_Life_Expectancy",73.3
+"Indonesia","2015",3331.695128,"Asia","South-eastern Asia",258383256,"Male_Life_Expectancy",68.8
+"Indonesia","2015",3331.695128,"Asia","South-eastern Asia",258383256,"Female_Life_Expectancy",72.5
+"Indonesia","2010",3122.362815,"Asia","South-eastern Asia",241834215,"Male_Life_Expectancy",67.5
+"Indonesia","2010",3122.362815,"Asia","South-eastern Asia",241834215,"Female_Life_Expectancy",71
+"Indonesia","2000",780.190201,"Asia","South-eastern Asia",211513823,"Male_Life_Expectancy",65.8
+"Indonesia","2000",780.190201,"Asia","South-eastern Asia",211513823,"Female_Life_Expectancy",68.6
+"Iraq","2019",5955.10901,"Asia","Western Asia",39309783,"Male_Life_Expectancy",69.9
+"Iraq","2019",5955.10901,"Asia","Western Asia",39309783,"Female_Life_Expectancy",75
+"Iraq","2015",4989.803075,"Asia","Western Asia",35572261,"Male_Life_Expectancy",67.3
+"Iraq","2015",4989.803075,"Asia","Western Asia",35572261,"Female_Life_Expectancy",73.4
+"Iraq","2010",4655.424995,"Asia","Western Asia",29741976,"Male_Life_Expectancy",67.8
+"Iraq","2010",4655.424995,"Asia","Western Asia",29741976,"Female_Life_Expectancy",72.8
+"Ireland","2019",78660.95646,"Europe","Northern Europe",4941444,"Male_Life_Expectancy",80.2
+"Ireland","2019",78660.95646,"Europe","Northern Europe",4941444,"Female_Life_Expectancy",83.5
+"Ireland","2015",61995.4228,"Europe","Northern Europe",4701957,"Male_Life_Expectancy",79.3
+"Ireland","2015",61995.4228,"Europe","Northern Europe",4701957,"Female_Life_Expectancy",82.9
+"Ireland","2010",48715.17691,"Europe","Northern Europe",4560155,"Male_Life_Expectancy",78.3
+"Ireland","2010",48715.17691,"Europe","Northern Europe",4560155,"Female_Life_Expectancy",82.4
+"Ireland","2000",26241.36461,"Europe","Northern Europe",3805174,"Male_Life_Expectancy",73.8
+"Ireland","2000",26241.36461,"Europe","Northern Europe",3805174,"Female_Life_Expectancy",79
+"Israel","2019",43592.08358,"Asia","Western Asia",9053300,"Male_Life_Expectancy",80.8
+"Israel","2019",43592.08358,"Asia","Western Asia",9053300,"Female_Life_Expectancy",84.4
+"Israel","2015",35776.79516,"Asia","Western Asia",8380100,"Male_Life_Expectancy",80
+"Israel","2015",35776.79516,"Asia","Western Asia",8380100,"Female_Life_Expectancy",83.8
+"Israel","2010",30693.59306,"Asia","Western Asia",7623600,"Male_Life_Expectancy",79.6
+"Israel","2010",30693.59306,"Asia","Western Asia",7623600,"Female_Life_Expectancy",83.3
+"Israel","2000",21043.57492,"Asia","Western Asia",6289000,"Male_Life_Expectancy",76.4
+"Israel","2000",21043.57492,"Asia","Western Asia",6289000,"Female_Life_Expectancy",80.7
+"Italy","2019",33228.23668,"Europe","Southern Europe",60297396,"Male_Life_Expectancy",80.9
+"Italy","2019",33228.23668,"Europe","Southern Europe",60297396,"Female_Life_Expectancy",84.9
+"Italy","2015",30230.2263,"Europe","Southern Europe",60730582,"Male_Life_Expectancy",80
+"Italy","2015",30230.2263,"Europe","Southern Europe",60730582,"Female_Life_Expectancy",84.3
+"Italy","2010",36000.52012,"Europe","Southern Europe",59277417,"Male_Life_Expectancy",79.4
+"Italy","2010",36000.52012,"Europe","Southern Europe",59277417,"Female_Life_Expectancy",84.2
+"Italy","2000",20087.59199,"Europe","Southern Europe",56942108,"Male_Life_Expectancy",76.4
+"Italy","2000",20087.59199,"Europe","Southern Europe",56942108,"Female_Life_Expectancy",82.1
+"Jamaica","2019",5582.263778,"Americas","Latin America and the Caribbean",2948279,"Male_Life_Expectancy",74.4
+"Jamaica","2019",5582.263778,"Americas","Latin America and the Caribbean",2948279,"Female_Life_Expectancy",77.7
+"Jamaica","2015",4907.50372,"Americas","Latin America and the Caribbean",2891021,"Male_Life_Expectancy",74.1
+"Jamaica","2015",4907.50372,"Americas","Latin America and the Caribbean",2891021,"Female_Life_Expectancy",77.7
+"Jamaica","2010",4704.054455,"Americas","Latin America and the Caribbean",2810460,"Male_Life_Expectancy",73.3
+"Jamaica","2010",4704.054455,"Americas","Latin America and the Caribbean",2810460,"Female_Life_Expectancy",78.5
+"Jamaica","2000",3384.694861,"Americas","Latin America and the Caribbean",2654701,"Male_Life_Expectancy",72
+"Jamaica","2000",3384.694861,"Americas","Latin America and the Caribbean",2654701,"Female_Life_Expectancy",76.5
+"Japan","2019",40246.88013,"Asia","Eastern Asia",126264931,"Male_Life_Expectancy",81.5
+"Japan","2019",40246.88013,"Asia","Eastern Asia",126264931,"Female_Life_Expectancy",86.9
+"Japan","2015",34524.46986,"Asia","Eastern Asia",127141000,"Male_Life_Expectancy",80.7
+"Japan","2015",34524.46986,"Asia","Eastern Asia",127141000,"Female_Life_Expectancy",86.4
+"Japan","2010",44507.67639,"Asia","Eastern Asia",128070000,"Male_Life_Expectancy",79.5
+"Japan","2010",44507.67639,"Asia","Eastern Asia",128070000,"Female_Life_Expectancy",85.8
+"Japan","2000",38532.04088,"Asia","Eastern Asia",126843000,"Male_Life_Expectancy",77.7
+"Japan","2000",38532.04088,"Asia","Eastern Asia",126843000,"Female_Life_Expectancy",84.4
+"Jordan","2019",4405.488412,"Asia","Western Asia",10101694,"Male_Life_Expectancy",77
+"Jordan","2019",4405.488412,"Asia","Western Asia",10101694,"Female_Life_Expectancy",78.8
+"Jordan","2015",4164.107876,"Asia","Western Asia",9266575,"Male_Life_Expectancy",77
+"Jordan","2015",4164.107876,"Asia","Western Asia",9266575,"Female_Life_Expectancy",78.8
+"Jordan","2010",3736.646494,"Asia","Western Asia",7261539,"Male_Life_Expectancy",75.6
+"Jordan","2010",3736.646494,"Asia","Western Asia",7261539,"Female_Life_Expectancy",77.6
+"Jordan","2000",1651.622443,"Asia","Western Asia",5122493,"Male_Life_Expectancy",73.1
+"Jordan","2000",1651.622443,"Asia","Western Asia",5122493,"Female_Life_Expectancy",72.5
+"Kazakhstan","2019",9812.390376,"Asia","Central Asia",18513930,"Male_Life_Expectancy",70
+"Kazakhstan","2019",9812.390376,"Asia","Central Asia",18513930,"Female_Life_Expectancy",77.6
+"Kazakhstan","2015",10510.77189,"Asia","Central Asia",17542806,"Male_Life_Expectancy",67.4
+"Kazakhstan","2015",10510.77189,"Asia","Central Asia",17542806,"Female_Life_Expectancy",76.2
+"Kazakhstan","2010",9070.488253,"Asia","Central Asia",16321872,"Male_Life_Expectancy",63.6
+"Kazakhstan","2010",9070.488253,"Asia","Central Asia",16321872,"Female_Life_Expectancy",73.4
+"Kazakhstan","2000",1229.000958,"Asia","Central Asia",14883626,"Male_Life_Expectancy",57.6
+"Kazakhstan","2000",1229.000958,"Asia","Central Asia",14883626,"Female_Life_Expectancy",69.2
+"Kenya","2019",1816.546916,"Africa","Sub-Saharan Africa",52573973,"Male_Life_Expectancy",63.7
+"Kenya","2019",1816.546916,"Africa","Sub-Saharan Africa",52573973,"Female_Life_Expectancy",68.4
+"Kenya","2015",1336.883349,"Africa","Sub-Saharan Africa",47878336,"Male_Life_Expectancy",61.7
+"Kenya","2015",1336.883349,"Africa","Sub-Saharan Africa",47878336,"Female_Life_Expectancy",66.6
+"Kenya","2010",951.6879611,"Africa","Sub-Saharan Africa",42030676,"Male_Life_Expectancy",59.2
+"Kenya","2010",951.6879611,"Africa","Sub-Saharan Africa",42030676,"Female_Life_Expectancy",63.1
+"Kenya","2000",397.4826588,"Africa","Sub-Saharan Africa",31964557,"Male_Life_Expectancy",52.8
+"Kenya","2000",397.4826588,"Africa","Sub-Saharan Africa",31964557,"Female_Life_Expectancy",54.9
+"Kiribati","2019",1655.078839,"Oceania","Micronesia",117606,"Male_Life_Expectancy",56.1
+"Kiribati","2019",1655.078839,"Oceania","Micronesia",117606,"Female_Life_Expectancy",62.8
+"Kiribati","2015",1542.57525,"Oceania","Micronesia",110930,"Male_Life_Expectancy",55.1
+"Kiribati","2015",1542.57525,"Oceania","Micronesia",110930,"Female_Life_Expectancy",61.4
+"Kiribati","2010",1516.811869,"Oceania","Micronesia",102927,"Male_Life_Expectancy",54.8
+"Kiribati","2010",1516.811869,"Oceania","Micronesia",102927,"Female_Life_Expectancy",61.4
+"Kiribati","2000",796.8881748,"Oceania","Micronesia",84396,"Male_Life_Expectancy",52.3
+"Kiribati","2000",796.8881748,"Oceania","Micronesia",84396,"Female_Life_Expectancy",59.4
+"Kuwait","2019",32000.44847,"Asia","Western Asia",4207083,"Male_Life_Expectancy",79.3
+"Kuwait","2019",32000.44847,"Asia","Western Asia",4207083,"Female_Life_Expectancy",83.9
+"Kuwait","2015",29869.52939,"Asia","Western Asia",3835591,"Male_Life_Expectancy",79.5
+"Kuwait","2015",29869.52939,"Asia","Western Asia",3835591,"Female_Life_Expectancy",83.8
+"Kuwait","2010",38577.49828,"Asia","Western Asia",2991884,"Male_Life_Expectancy",78.8
+"Kuwait","2010",38577.49828,"Asia","Western Asia",2991884,"Female_Life_Expectancy",81.4
+"Kuwait","2000",18440.37852,"Asia","Western Asia",2045123,"Male_Life_Expectancy",76.4
+"Kuwait","2000",18440.37852,"Asia","Western Asia",2045123,"Female_Life_Expectancy",80.1
+"Latvia","2019",17828.89466,"Europe","Northern Europe",1912789,"Male_Life_Expectancy",70.6
+"Latvia","2019",17828.89466,"Europe","Northern Europe",1912789,"Female_Life_Expectancy",79.8
+"Latvia","2015",13774.60527,"Europe","Northern Europe",1977527,"Male_Life_Expectancy",69.9
+"Latvia","2015",13774.60527,"Europe","Northern Europe",1977527,"Female_Life_Expectancy",79.3
+"Latvia","2010",11383.52241,"Europe","Northern Europe",2097555,"Male_Life_Expectancy",67.8
+"Latvia","2010",11383.52241,"Europe","Northern Europe",2097555,"Female_Life_Expectancy",77.8
+"Latvia","2000",3357.586436,"Europe","Northern Europe",2367550,"Male_Life_Expectancy",64.6
+"Latvia","2000",3357.586436,"Europe","Northern Europe",2367550,"Female_Life_Expectancy",75.6
+"Lebanon","2019",7583.694722,"Asia","Western Asia",6855713,"Male_Life_Expectancy",74
+"Lebanon","2019",7583.694722,"Asia","Western Asia",6855713,"Female_Life_Expectancy",79.2
+"Lebanon","2015",7644.548657,"Asia","Western Asia",6532678,"Male_Life_Expectancy",73.5
+"Lebanon","2015",7644.548657,"Asia","Western Asia",6532678,"Female_Life_Expectancy",78.8
+"Lebanon","2010",7761.646191,"Asia","Western Asia",4953061,"Male_Life_Expectancy",73.3
+"Lebanon","2010",7761.646191,"Asia","Western Asia",4953061,"Female_Life_Expectancy",78.1
+"Lebanon","2000",4491.637259,"Asia","Western Asia",3842778,"Male_Life_Expectancy",73
+"Lebanon","2000",4491.637259,"Asia","Western Asia",3842778,"Female_Life_Expectancy",76.1
+"Lesotho","2019",1118.131284,"Africa","Sub-Saharan Africa",2125268,"Male_Life_Expectancy",47.7
+"Lesotho","2019",1118.131284,"Africa","Sub-Saharan Africa",2125268,"Female_Life_Expectancy",54.2
+"Lesotho","2015",1152.139829,"Africa","Sub-Saharan Africa",2059021,"Male_Life_Expectancy",45.1
+"Lesotho","2015",1152.139829,"Africa","Sub-Saharan Africa",2059021,"Female_Life_Expectancy",50.6
+"Lesotho","2010",1137.2757,"Africa","Sub-Saharan Africa",1995581,"Male_Life_Expectancy",44.5
+"Lesotho","2010",1137.2757,"Africa","Sub-Saharan Africa",1995581,"Female_Life_Expectancy",50.7
+"Lesotho","2000",436.488352,"Africa","Sub-Saharan Africa",2032804,"Male_Life_Expectancy",45.5
+"Lesotho","2000",436.488352,"Africa","Sub-Saharan Africa",2032804,"Female_Life_Expectancy",50.7
+"Liberia","2019",621.8929536,"Africa","Sub-Saharan Africa",4937374,"Male_Life_Expectancy",63.2
+"Liberia","2019",621.8929536,"Africa","Sub-Saharan Africa",4937374,"Female_Life_Expectancy",65
+"Liberia","2015",710.3838577,"Africa","Sub-Saharan Africa",4472230,"Male_Life_Expectancy",60.6
+"Liberia","2015",710.3838577,"Africa","Sub-Saharan Africa",4472230,"Female_Life_Expectancy",61.7
+"Liberia","2010",513.4456986,"Africa","Sub-Saharan Africa",3891356,"Male_Life_Expectancy",60.1
+"Liberia","2010",513.4456986,"Africa","Sub-Saharan Africa",3891356,"Female_Life_Expectancy",61.3
+"Liberia","2000",306.8328947,"Africa","Sub-Saharan Africa",2848456,"Male_Life_Expectancy",52.9
+"Liberia","2000",306.8328947,"Africa","Sub-Saharan Africa",2848456,"Female_Life_Expectancy",54.7
+"Libya","2019",7685.949267,"Africa","Northern Africa",6777452,"Male_Life_Expectancy",74.2
+"Libya","2019",7685.949267,"Africa","Northern Africa",6777452,"Female_Life_Expectancy",77.3
+"Libya","2015",4337.919139,"Africa","Northern Africa",6418315,"Male_Life_Expectancy",72.4
+"Libya","2015",4337.919139,"Africa","Northern Africa",6418315,"Female_Life_Expectancy",76.9
+"Libya","2010",12064.78069,"Africa","Northern Africa",6197663,"Male_Life_Expectancy",74.8
+"Libya","2010",12064.78069,"Africa","Northern Africa",6197663,"Female_Life_Expectancy",77.3
+"Libya","2000",7142.774452,"Africa","Northern Africa",5357891,"Male_Life_Expectancy",72.7
+"Libya","2000",7142.774452,"Africa","Northern Africa",5357891,"Female_Life_Expectancy",76.3
+"Lithuania","2019",19601.89083,"Europe","Northern Europe",2786844,"Male_Life_Expectancy",71.2
+"Lithuania","2019",19601.89083,"Europe","Northern Europe",2786844,"Female_Life_Expectancy",80.4
+"Lithuania","2015",14258.22933,"Europe","Northern Europe",2904910,"Male_Life_Expectancy",69.1
+"Lithuania","2015",14258.22933,"Europe","Northern Europe",2904910,"Female_Life_Expectancy",79.5
+"Lithuania","2010",11990.66302,"Europe","Northern Europe",3097282,"Male_Life_Expectancy",67.5
+"Lithuania","2010",11990.66302,"Europe","Northern Europe",3097282,"Female_Life_Expectancy",78.7
+"Lithuania","2000",3293.229979,"Europe","Northern Europe",3499536,"Male_Life_Expectancy",66.7
+"Lithuania","2000",3293.229979,"Europe","Northern Europe",3499536,"Female_Life_Expectancy",77.2
+"Luxembourg","2019",114704.5942,"Europe","Western Europe",619896,"Male_Life_Expectancy",80.6
+"Luxembourg","2019",114704.5942,"Europe","Western Europe",619896,"Female_Life_Expectancy",84.2
+"Luxembourg","2015",101376.4966,"Europe","Western Europe",569604,"Male_Life_Expectancy",80.3
+"Luxembourg","2015",101376.4966,"Europe","Western Europe",569604,"Female_Life_Expectancy",84.3
+"Luxembourg","2010",104965.3061,"Europe","Western Europe",506953,"Male_Life_Expectancy",78.6
+"Luxembourg","2010",104965.3061,"Europe","Western Europe",506953,"Female_Life_Expectancy",83.1
+"Luxembourg","2000",48735.99549,"Europe","Western Europe",436300,"Male_Life_Expectancy",75.1
+"Luxembourg","2000",48735.99549,"Europe","Western Europe",436300,"Female_Life_Expectancy",81.1
+"Madagascar","2019",523.3590645,"Africa","Sub-Saharan Africa",26969307,"Male_Life_Expectancy",64.1
+"Madagascar","2019",523.3590645,"Africa","Sub-Saharan Africa",26969307,"Female_Life_Expectancy",66.6
+"Madagascar","2015",467.2353994,"Africa","Sub-Saharan Africa",24234088,"Male_Life_Expectancy",62.9
+"Madagascar","2015",467.2353994,"Africa","Sub-Saharan Africa",24234088,"Female_Life_Expectancy",65.5
+"Madagascar","2010",471.959197,"Africa","Sub-Saharan Africa",21151640,"Male_Life_Expectancy",61.4
+"Madagascar","2010",471.959197,"Africa","Sub-Saharan Africa",21151640,"Female_Life_Expectancy",64.2
+"Madagascar","2000",293.6071574,"Africa","Sub-Saharan Africa",15766806,"Male_Life_Expectancy",57.5
+"Madagascar","2000",293.6071574,"Africa","Sub-Saharan Africa",15766806,"Female_Life_Expectancy",60.2
+"Malawi","2019",411.5523404,"Africa","Sub-Saharan Africa",18628747,"Male_Life_Expectancy",62.3
+"Malawi","2019",411.5523404,"Africa","Sub-Saharan Africa",18628747,"Female_Life_Expectancy",68.9
+"Malawi","2015",380.5970331,"Africa","Sub-Saharan Africa",16745303,"Male_Life_Expectancy",59.7
+"Malawi","2015",380.5970331,"Africa","Sub-Saharan Africa",16745303,"Female_Life_Expectancy",66.5
+"Malawi","2010",478.6685897,"Africa","Sub-Saharan Africa",14539612,"Male_Life_Expectancy",54.4
+"Malawi","2010",478.6685897,"Africa","Sub-Saharan Africa",14539612,"Female_Life_Expectancy",59.2
+"Malawi","2000",156.3857186,"Africa","Sub-Saharan Africa",11148758,"Male_Life_Expectancy",44
+"Malawi","2000",156.3857186,"Africa","Sub-Saharan Africa",11148758,"Female_Life_Expectancy",45.6
+"Malaysia","2019",11414.20698,"Asia","South-eastern Asia",31949777,"Male_Life_Expectancy",72.6
+"Malaysia","2019",11414.20698,"Asia","South-eastern Asia",31949777,"Female_Life_Expectancy",77.1
+"Malaysia","2015",9955.243708,"Asia","South-eastern Asia",30270962,"Male_Life_Expectancy",73
+"Malaysia","2015",9955.243708,"Asia","South-eastern Asia",30270962,"Female_Life_Expectancy",77.1
+"Malaysia","2010",9040.566251,"Asia","South-eastern Asia",28208035,"Male_Life_Expectancy",72.2
+"Malaysia","2010",9040.566251,"Asia","South-eastern Asia",28208035,"Female_Life_Expectancy",76.5
+"Malaysia","2000",4043.662051,"Asia","South-eastern Asia",23194257,"Male_Life_Expectancy",70.6
+"Malaysia","2000",4043.662051,"Asia","South-eastern Asia",23194257,"Female_Life_Expectancy",75.3
+"Maldives","2019",10626.5134,"Asia","Southern Asia",530953,"Male_Life_Expectancy",78.6
+"Maldives","2019",10626.5134,"Asia","Southern Asia",530953,"Female_Life_Expectancy",80.8
+"Maldives","2015",9033.439867,"Asia","Southern Asia",454915,"Male_Life_Expectancy",77.6
+"Maldives","2015",9033.439867,"Asia","Southern Asia",454915,"Female_Life_Expectancy",79.5
+"Maldives","2010",7076.662423,"Asia","Southern Asia",365734,"Male_Life_Expectancy",76
+"Maldives","2010",7076.662423,"Asia","Southern Asia",365734,"Female_Life_Expectancy",78.2
+"Maldives","2000",2234.579866,"Asia","Southern Asia",279398,"Male_Life_Expectancy",70.4
+"Maldives","2000",2234.579866,"Asia","Southern Asia",279398,"Female_Life_Expectancy",71.5
+"Mali","2019",879.0080104,"Africa","Sub-Saharan Africa",19658031,"Male_Life_Expectancy",62.2
+"Mali","2019",879.0080104,"Africa","Sub-Saharan Africa",19658031,"Female_Life_Expectancy",63.4
+"Mali","2015",751.4747889,"Africa","Sub-Saharan Africa",17438778,"Male_Life_Expectancy",60.4
+"Mali","2015",751.4747889,"Africa","Sub-Saharan Africa",17438778,"Female_Life_Expectancy",61.4
+"Mali","2010",710.2742022,"Africa","Sub-Saharan Africa",15049353,"Male_Life_Expectancy",58.6
+"Mali","2010",710.2742022,"Africa","Sub-Saharan Africa",15049353,"Female_Life_Expectancy",59.5
+"Mali","2000",269.8711377,"Africa","Sub-Saharan Africa",10946445,"Male_Life_Expectancy",52.6
+"Mali","2000",269.8711377,"Africa","Sub-Saharan Africa",10946445,"Female_Life_Expectancy",52.7
+"Malta","2019",29820.60325,"Europe","Southern Europe",502653,"Male_Life_Expectancy",79.9
+"Malta","2019",29820.60325,"Europe","Southern Europe",502653,"Female_Life_Expectancy",83.8
+"Malta","2015",24921.60357,"Europe","Southern Europe",445053,"Male_Life_Expectancy",79.6
+"Malta","2015",24921.60357,"Europe","Southern Europe",445053,"Female_Life_Expectancy",83.6
+"Malta","2010",21799.17439,"Europe","Southern Europe",414508,"Male_Life_Expectancy",78.2
+"Malta","2010",21799.17439,"Europe","Southern Europe",414508,"Female_Life_Expectancy",82.5
+"Malta","2000",10432.32806,"Europe","Southern Europe",390087,"Male_Life_Expectancy",75.5
+"Malta","2000",10432.32806,"Europe","Southern Europe",390087,"Female_Life_Expectancy",80.1
+"Mauritania","2019",1679.444873,"Africa","Sub-Saharan Africa",4525696,"Male_Life_Expectancy",68.1
+"Mauritania","2019",1679.444873,"Africa","Sub-Saharan Africa",4525696,"Female_Life_Expectancy",68.7
+"Mauritania","2015",1524.072883,"Africa","Sub-Saharan Africa",4046301,"Male_Life_Expectancy",67.2
+"Mauritania","2015",1524.072883,"Africa","Sub-Saharan Africa",4046301,"Female_Life_Expectancy",67.7
+"Mauritania","2010",1610.923908,"Africa","Sub-Saharan Africa",3494195,"Male_Life_Expectancy",65.4
+"Mauritania","2010",1610.923908,"Africa","Sub-Saharan Africa",3494195,"Female_Life_Expectancy",65.9
+"Mauritania","2000",676.5676584,"Africa","Sub-Saharan Africa",2630219,"Male_Life_Expectancy",61.8
+"Mauritania","2000",676.5676584,"Africa","Sub-Saharan Africa",2630219,"Female_Life_Expectancy",62.2
+"Mauritius","2019",11099.24028,"Africa","Sub-Saharan Africa",1265711,"Male_Life_Expectancy",71
+"Mauritius","2019",11099.24028,"Africa","Sub-Saharan Africa",1265711,"Female_Life_Expectancy",77.3
+"Mauritius","2015",9260.447303,"Africa","Sub-Saharan Africa",1262605,"Male_Life_Expectancy",71
+"Mauritius","2015",9260.447303,"Africa","Sub-Saharan Africa",1262605,"Female_Life_Expectancy",77.4
+"Mauritius","2010",8000.376432,"Africa","Sub-Saharan Africa",1250400,"Male_Life_Expectancy",69.8
+"Mauritius","2010",8000.376432,"Africa","Sub-Saharan Africa",1250400,"Female_Life_Expectancy",76.8
+"Mauritius","2000",3929.075495,"Africa","Sub-Saharan Africa",1186873,"Male_Life_Expectancy",67.7
+"Mauritius","2000",3929.075495,"Africa","Sub-Saharan Africa",1186873,"Female_Life_Expectancy",74.8
+"Mexico","2019",9946.033829,"Americas","Latin America and the Caribbean",127575529,"Male_Life_Expectancy",73.1
+"Mexico","2019",9946.033829,"Americas","Latin America and the Caribbean",127575529,"Female_Life_Expectancy",78.9
+"Mexico","2015",9616.645006,"Americas","Latin America and the Caribbean",121858258,"Male_Life_Expectancy",73.1
+"Mexico","2015",9616.645006,"Americas","Latin America and the Caribbean",121858258,"Female_Life_Expectancy",78.6
+"Mexico","2010",9271.398233,"Americas","Latin America and the Caribbean",114092963,"Male_Life_Expectancy",72.2
+"Mexico","2010",9271.398233,"Americas","Latin America and the Caribbean",114092963,"Female_Life_Expectancy",78
+"Mexico","2000",7157.8145,"Americas","Latin America and the Caribbean",98899845,"Male_Life_Expectancy",71.7
+"Mexico","2000",7157.8145,"Americas","Latin America and the Caribbean",98899845,"Female_Life_Expectancy",77.1
+"Mongolia","2019",4339.843279,"Asia","Eastern Asia",3225167,"Male_Life_Expectancy",63.8
+"Mongolia","2019",4339.843279,"Asia","Eastern Asia",3225167,"Female_Life_Expectancy",72.8
+"Mongolia","2015",3918.579174,"Asia","Eastern Asia",2998439,"Male_Life_Expectancy",63.4
+"Mongolia","2015",3918.579174,"Asia","Eastern Asia",2998439,"Female_Life_Expectancy",72.1
+"Mongolia","2010",2643.292914,"Asia","Eastern Asia",2719896,"Male_Life_Expectancy",61.1
+"Mongolia","2010",2643.292914,"Asia","Eastern Asia",2719896,"Female_Life_Expectancy",69.5
+"Mongolia","2000",474.2168965,"Asia","Eastern Asia",2397418,"Male_Life_Expectancy",57.3
+"Mongolia","2000",474.2168965,"Asia","Eastern Asia",2397418,"Female_Life_Expectancy",64.1
+"Montenegro","2019",8908.934792,"Europe","Southern Europe",622137,"Male_Life_Expectancy",73.2
+"Montenegro","2019",8908.934792,"Europe","Southern Europe",622137,"Female_Life_Expectancy",78.7
+"Montenegro","2015",6514.569188,"Europe","Southern Europe",622159,"Male_Life_Expectancy",72.8
+"Montenegro","2015",6514.569188,"Europe","Southern Europe",622159,"Female_Life_Expectancy",77.7
+"Montenegro","2010",6688.318598,"Europe","Southern Europe",619428,"Male_Life_Expectancy",72.3
+"Montenegro","2010",6688.318598,"Europe","Southern Europe",619428,"Female_Life_Expectancy",77.1
+"Montenegro","2000",1627.072633,"Europe","Southern Europe",604950,"Male_Life_Expectancy",70.9
+"Montenegro","2000",1627.072633,"Europe","Southern Europe",604950,"Female_Life_Expectancy",76.3
+"Morocco","2019",3204.095003,"Africa","Northern Africa",36471769,"Male_Life_Expectancy",71.7
+"Morocco","2019",3204.095003,"Africa","Northern Africa",36471769,"Female_Life_Expectancy",74.3
+"Morocco","2015",2875.257985,"Africa","Northern Africa",34663603,"Male_Life_Expectancy",71.4
+"Morocco","2015",2875.257985,"Africa","Northern Africa",34663603,"Female_Life_Expectancy",73.6
+"Morocco","2010",2839.925168,"Africa","Northern Africa",32343389,"Male_Life_Expectancy",71.1
+"Morocco","2010",2839.925168,"Africa","Northern Africa",32343389,"Female_Life_Expectancy",72.3
+"Morocco","2000",1334.943051,"Africa","Northern Africa",28793679,"Male_Life_Expectancy",68.1
+"Morocco","2000",1334.943051,"Africa","Northern Africa",28793679,"Female_Life_Expectancy",70.6
+"Mozambique","2019",503.5707727,"Africa","Sub-Saharan Africa",30366036,"Male_Life_Expectancy",54.5
+"Mozambique","2019",503.5707727,"Africa","Sub-Saharan Africa",30366036,"Female_Life_Expectancy",61.7
+"Mozambique","2015",589.8590281,"Africa","Sub-Saharan Africa",27042002,"Male_Life_Expectancy",52.4
+"Mozambique","2015",589.8590281,"Africa","Sub-Saharan Africa",27042002,"Female_Life_Expectancy",59.4
+"Mozambique","2010",471.904203,"Africa","Sub-Saharan Africa",23531574,"Male_Life_Expectancy",50.7
+"Mozambique","2010",471.904203,"Africa","Sub-Saharan Africa",23531574,"Female_Life_Expectancy",56.3
+"Mozambique","2000",319.3595848,"Africa","Sub-Saharan Africa",17711927,"Male_Life_Expectancy",48.4
+"Mozambique","2000",319.3595848,"Africa","Sub-Saharan Africa",17711927,"Female_Life_Expectancy",53.1
+"Myanmar","2019",1407.813143,"Asia","South-eastern Asia",54045420,"Male_Life_Expectancy",65.9
+"Myanmar","2019",1407.813143,"Asia","South-eastern Asia",54045420,"Female_Life_Expectancy",72.2
+"Myanmar","2015",1287.430487,"Asia","South-eastern Asia",52680726,"Male_Life_Expectancy",64.3
+"Myanmar","2015",1287.430487,"Asia","South-eastern Asia",52680726,"Female_Life_Expectancy",70.7
+"Myanmar","2010",979.05163,"Asia","South-eastern Asia",50600818,"Male_Life_Expectancy",61.6
+"Myanmar","2010",979.05163,"Asia","South-eastern Asia",50600818,"Female_Life_Expectancy",67.9
+"Myanmar","2000",190.6062319,"Asia","South-eastern Asia",46719701,"Male_Life_Expectancy",57.3
+"Myanmar","2000",190.6062319,"Asia","South-eastern Asia",46719701,"Female_Life_Expectancy",62.7
+"Namibia","2019",4957.458222,"Africa","Sub-Saharan Africa",2494530,"Male_Life_Expectancy",60.6
+"Namibia","2019",4957.458222,"Africa","Sub-Saharan Africa",2494530,"Female_Life_Expectancy",68.4
+"Namibia","2015",4869.378373,"Africa","Sub-Saharan Africa",2314904,"Male_Life_Expectancy",59.4
+"Namibia","2015",4869.378373,"Africa","Sub-Saharan Africa",2314904,"Female_Life_Expectancy",66.2
+"Namibia","2010",5318.00694,"Africa","Sub-Saharan Africa",2118874,"Male_Life_Expectancy",57.3
+"Namibia","2010",5318.00694,"Africa","Sub-Saharan Africa",2118874,"Female_Life_Expectancy",64.7
+"Namibia","2000",2136.440243,"Africa","Sub-Saharan Africa",1794571,"Male_Life_Expectancy",51
+"Namibia","2000",2136.440243,"Africa","Sub-Saharan Africa",1794571,"Female_Life_Expectancy",55.5
+"Nepal","2019",1071.050761,"Asia","Southern Asia",28608710,"Male_Life_Expectancy",68.9
+"Nepal","2019",1071.050761,"Asia","Southern Asia",28608710,"Female_Life_Expectancy",72.7
+"Nepal","2015",792.5528906,"Asia","Southern Asia",27015031,"Male_Life_Expectancy",67.3
+"Nepal","2015",792.5528906,"Asia","Southern Asia",27015031,"Female_Life_Expectancy",71.4
+"Nepal","2010",592.4010975,"Asia","Southern Asia",27013212,"Male_Life_Expectancy",67.5
+"Nepal","2010",592.4010975,"Asia","Southern Asia",27013212,"Female_Life_Expectancy",70.9
+"Nepal","2000",229.4902871,"Asia","Southern Asia",23941110,"Male_Life_Expectancy",63.9
+"Nepal","2000",229.4902871,"Asia","Southern Asia",23941110,"Female_Life_Expectancy",66.6
+"Netherlands","2019",52331.31673,"Europe","Western Europe",17332850,"Male_Life_Expectancy",80.4
+"Netherlands","2019",52331.31673,"Europe","Western Europe",17332850,"Female_Life_Expectancy",83.1
+"Netherlands","2015",45175.23189,"Europe","Western Europe",16939923,"Male_Life_Expectancy",79.7
+"Netherlands","2015",45175.23189,"Europe","Western Europe",16939923,"Female_Life_Expectancy",82.8
+"Netherlands","2010",50950.03434,"Europe","Western Europe",16615394,"Male_Life_Expectancy",78.7
+"Netherlands","2010",50950.03434,"Europe","Western Europe",16615394,"Female_Life_Expectancy",82.5
+"Netherlands","2000",26149.41108,"Europe","Western Europe",15925513,"Male_Life_Expectancy",75.5
+"Netherlands","2000",26149.41108,"Europe","Western Europe",15925513,"Female_Life_Expectancy",80.4
+"New Zealand","2019",42084.35337,"Oceania","Australia and New Zealand",4917000,"Male_Life_Expectancy",80.4
+"New Zealand","2019",42084.35337,"Oceania","Australia and New Zealand",4917000,"Female_Life_Expectancy",83.5
+"New Zealand","2015",38615.99518,"Oceania","Australia and New Zealand",4595700,"Male_Life_Expectancy",79.7
+"New Zealand","2015",38615.99518,"Oceania","Australia and New Zealand",4595700,"Female_Life_Expectancy",82.9
+"New Zealand","2010",33700.12604,"Oceania","Australia and New Zealand",4350700,"Male_Life_Expectancy",79.1
+"New Zealand","2010",33700.12604,"Oceania","Australia and New Zealand",4350700,"Female_Life_Expectancy",82.7
+"New Zealand","2000",13641.10272,"Oceania","Australia and New Zealand",3857700,"Male_Life_Expectancy",76
+"New Zealand","2000",13641.10272,"Oceania","Australia and New Zealand",3857700,"Female_Life_Expectancy",81.1
+"Nicaragua","2019",1912.903745,"Americas","Latin America and the Caribbean",6545502,"Male_Life_Expectancy",72.1
+"Nicaragua","2019",1912.903745,"Americas","Latin America and the Caribbean",6545502,"Female_Life_Expectancy",77.9
+"Nicaragua","2015",2049.84969,"Americas","Latin America and the Caribbean",6223240,"Male_Life_Expectancy",71.8
+"Nicaragua","2015",2049.84969,"Americas","Latin America and the Caribbean",6223240,"Female_Life_Expectancy",77.3
+"Nicaragua","2010",1503.870423,"Americas","Latin America and the Caribbean",5824065,"Male_Life_Expectancy",71.4
+"Nicaragua","2010",1503.870423,"Americas","Latin America and the Caribbean",5824065,"Female_Life_Expectancy",76.7
+"Nicaragua","2000",1007.501429,"Americas","Latin America and the Caribbean",5069302,"Male_Life_Expectancy",70.8
+"Nicaragua","2000",1007.501429,"Americas","Latin America and the Caribbean",5069302,"Female_Life_Expectancy",75.7
+"Niger","2019",553.8950504,"Africa","Sub-Saharan Africa",23310715,"Male_Life_Expectancy",62.1
+"Niger","2019",553.8950504,"Africa","Sub-Saharan Africa",23310715,"Female_Life_Expectancy",64.6
+"Niger","2015",484.2386326,"Africa","Sub-Saharan Africa",20001663,"Male_Life_Expectancy",60.3
+"Niger","2015",484.2386326,"Africa","Sub-Saharan Africa",20001663,"Female_Life_Expectancy",62.9
+"Niger","2010",476.8695322,"Africa","Sub-Saharan Africa",16464025,"Male_Life_Expectancy",57.8
+"Niger","2010",476.8695322,"Africa","Sub-Saharan Africa",16464025,"Female_Life_Expectancy",60.2
+"Niger","2000",197.3414059,"Africa","Sub-Saharan Africa",11331557,"Male_Life_Expectancy",49.7
+"Niger","2000",197.3414059,"Africa","Sub-Saharan Africa",11331557,"Female_Life_Expectancy",51
+"Nigeria","2019",2229.858696,"Africa","Sub-Saharan Africa",200963599,"Male_Life_Expectancy",61.2
+"Nigeria","2019",2229.858696,"Africa","Sub-Saharan Africa",200963599,"Female_Life_Expectancy",64.1
+"Nigeria","2015",2687.480145,"Africa","Sub-Saharan Africa",181137448,"Male_Life_Expectancy",59.6
+"Nigeria","2015",2687.480145,"Africa","Sub-Saharan Africa",181137448,"Female_Life_Expectancy",62.8
+"Nigeria","2010",2280.437424,"Africa","Sub-Saharan Africa",158503197,"Male_Life_Expectancy",57.8
+"Nigeria","2010",2280.437424,"Africa","Sub-Saharan Africa",158503197,"Female_Life_Expectancy",60.8
+"Nigeria","2000",567.930736,"Africa","Sub-Saharan Africa",122283850,"Male_Life_Expectancy",52.2
+"Nigeria","2000",567.930736,"Africa","Sub-Saharan Africa",122283850,"Female_Life_Expectancy",55.2
+"Norway","2019",75419.63487,"Europe","Northern Europe",5347896,"Male_Life_Expectancy",81.1
+"Norway","2019",75419.63487,"Europe","Northern Europe",5347896,"Female_Life_Expectancy",84.1
+"Norway","2015",74355.51586,"Europe","Northern Europe",5188607,"Male_Life_Expectancy",80.3
+"Norway","2015",74355.51586,"Europe","Northern Europe",5188607,"Female_Life_Expectancy",83.7
+"Norway","2010",87693.79007,"Europe","Northern Europe",4889252,"Male_Life_Expectancy",78.8
+"Norway","2010",87693.79007,"Europe","Northern Europe",4889252,"Female_Life_Expectancy",82.9
+"Norway","2000",38131.46061,"Europe","Northern Europe",4490967,"Male_Life_Expectancy",75.9
+"Norway","2000",38131.46061,"Europe","Northern Europe",4490967,"Female_Life_Expectancy",81.2
+"Oman","2019",15343.062,"Asia","Western Asia",4974986,"Male_Life_Expectancy",73
+"Oman","2019",15343.062,"Asia","Western Asia",4974986,"Female_Life_Expectancy",75.3
+"Oman","2015",16028.61152,"Asia","Western Asia",4267348,"Male_Life_Expectancy",71.4
+"Oman","2015",16028.61152,"Asia","Western Asia",4267348,"Female_Life_Expectancy",74.1
+"Oman","2010",18712.5763,"Asia","Western Asia",3041434,"Male_Life_Expectancy",69
+"Oman","2010",18712.5763,"Asia","Western Asia",3041434,"Female_Life_Expectancy",72.5
+"Oman","2000",8601.271932,"Asia","Western Asia",2267973,"Male_Life_Expectancy",67.3
+"Oman","2000",8601.271932,"Asia","Western Asia",2267973,"Female_Life_Expectancy",71.5
+"Pakistan","2019",1284.702041,"Asia","Southern Asia",216565318,"Male_Life_Expectancy",64.6
+"Pakistan","2019",1284.702041,"Asia","Southern Asia",216565318,"Female_Life_Expectancy",66.7
+"Pakistan","2015",1356.667756,"Asia","Southern Asia",199426964,"Male_Life_Expectancy",63.1
+"Pakistan","2015",1356.667756,"Asia","Southern Asia",199426964,"Female_Life_Expectancy",65.4
+"Pakistan","2010",987.409723,"Asia","Southern Asia",179424641,"Male_Life_Expectancy",61.5
+"Pakistan","2010",987.409723,"Asia","Southern Asia",179424641,"Female_Life_Expectancy",63.9
+"Pakistan","2000",576.1956006,"Asia","Southern Asia",142343578,"Male_Life_Expectancy",59.3
+"Pakistan","2000",576.1956006,"Asia","Southern Asia",142343578,"Female_Life_Expectancy",61
+"Panama","2019",15731.01603,"Americas","Latin America and the Caribbean",4246439,"Male_Life_Expectancy",76.6
+"Panama","2019",15731.01603,"Americas","Latin America and the Caribbean",4246439,"Female_Life_Expectancy",82.1
+"Panama","2015",13630.30797,"Americas","Latin America and the Caribbean",3968487,"Male_Life_Expectancy",76.2
+"Panama","2015",13630.30797,"Americas","Latin America and the Caribbean",3968487,"Female_Life_Expectancy",81.4
+"Panama","2010",8082.028459,"Americas","Latin America and the Caribbean",3642687,"Male_Life_Expectancy",74.6
+"Panama","2010",8082.028459,"Americas","Latin America and the Caribbean",3642687,"Female_Life_Expectancy",80.6
+"Panama","2000",4060.324493,"Americas","Latin America and the Caribbean",3030328,"Male_Life_Expectancy",74.6
+"Panama","2000",4060.324493,"Americas","Latin America and the Caribbean",3030328,"Female_Life_Expectancy",80.1
+"Papua New Guinea","2019",2829.170309,"Oceania","Melanesia",8776109,"Male_Life_Expectancy",63.4
+"Papua New Guinea","2019",2829.170309,"Oceania","Melanesia",8776109,"Female_Life_Expectancy",67.4
+"Papua New Guinea","2015",2679.345589,"Oceania","Melanesia",8107775,"Male_Life_Expectancy",62.6
+"Papua New Guinea","2015",2679.345589,"Oceania","Melanesia",8107775,"Female_Life_Expectancy",66.5
+"Papua New Guinea","2010",1949.352517,"Oceania","Melanesia",7310507,"Male_Life_Expectancy",61.5
+"Papua New Guinea","2010",1949.352517,"Oceania","Melanesia",7310507,"Female_Life_Expectancy",65.4
+"Papua New Guinea","2000",602.1869023,"Oceania","Melanesia",5847586,"Male_Life_Expectancy",61.1
+"Papua New Guinea","2000",602.1869023,"Oceania","Melanesia",5847586,"Female_Life_Expectancy",65.6
+"Paraguay","2019",5414.799138,"Americas","Latin America and the Caribbean",7044636,"Male_Life_Expectancy",73.1
+"Paraguay","2019",5414.799138,"Americas","Latin America and the Caribbean",7044636,"Female_Life_Expectancy",78.8
+"Paraguay","2015",5406.703857,"Americas","Latin America and the Caribbean",6688746,"Male_Life_Expectancy",72.8
+"Paraguay","2015",5406.703857,"Americas","Latin America and the Caribbean",6688746,"Female_Life_Expectancy",78.6
+"Paraguay","2010",4355.934939,"Americas","Latin America and the Caribbean",6248020,"Male_Life_Expectancy",72.5
+"Paraguay","2010",4355.934939,"Americas","Latin America and the Caribbean",6248020,"Female_Life_Expectancy",77.7
+"Paraguay","2000",1663.605252,"Americas","Latin America and the Caribbean",5323201,"Male_Life_Expectancy",72.6
+"Paraguay","2000",1663.605252,"Americas","Latin America and the Caribbean",5323201,"Female_Life_Expectancy",77.1
+"Peru","2019",6977.695784,"Americas","Latin America and the Caribbean",32510453,"Male_Life_Expectancy",78.5
+"Peru","2019",6977.695784,"Americas","Latin America and the Caribbean",32510453,"Female_Life_Expectancy",81.3
+"Peru","2015",6229.101696,"Americas","Latin America and the Caribbean",30470734,"Male_Life_Expectancy",77.6
+"Peru","2015",6229.101696,"Americas","Latin America and the Caribbean",30470734,"Female_Life_Expectancy",80.6
+"Peru","2010",5082.354757,"Americas","Latin America and the Caribbean",29027674,"Male_Life_Expectancy",75.6
+"Peru","2010",5082.354757,"Americas","Latin America and the Caribbean",29027674,"Female_Life_Expectancy",78.9
+"Peru","2000",1955.588006,"Americas","Latin America and the Caribbean",26459944,"Male_Life_Expectancy",72.9
+"Peru","2000",1955.588006,"Americas","Latin America and the Caribbean",26459944,"Female_Life_Expectancy",75.9
+"Philippines","2019",3485.084218,"Asia","South-eastern Asia",108116615,"Male_Life_Expectancy",67.4
+"Philippines","2019",3485.084218,"Asia","South-eastern Asia",108116615,"Female_Life_Expectancy",73.6
+"Philippines","2015",3001.040371,"Asia","South-eastern Asia",102113212,"Male_Life_Expectancy",67.1
+"Philippines","2015",3001.040371,"Asia","South-eastern Asia",102113212,"Female_Life_Expectancy",73.7
+"Philippines","2010",2217.474009,"Asia","South-eastern Asia",93966780,"Male_Life_Expectancy",66.6
+"Philippines","2010",2217.474009,"Asia","South-eastern Asia",93966780,"Female_Life_Expectancy",73.5
+"Philippines","2000",1072.809064,"Asia","South-eastern Asia",77991755,"Male_Life_Expectancy",65.5
+"Philippines","2000",1072.809064,"Asia","South-eastern Asia",77991755,"Female_Life_Expectancy",72.9
+"Poland","2019",15692.50703,"Europe","Eastern Europe",37970874,"Male_Life_Expectancy",74.5
+"Poland","2019",15692.50703,"Europe","Eastern Europe",37970874,"Female_Life_Expectancy",81.9
+"Poland","2015",12578.49547,"Europe","Eastern Europe",37986412,"Male_Life_Expectancy",73.4
+"Poland","2015",12578.49547,"Europe","Eastern Europe",37986412,"Female_Life_Expectancy",81.1
+"Poland","2010",12613.011,"Europe","Eastern Europe",38042794,"Male_Life_Expectancy",72.1
+"Poland","2010",12613.011,"Europe","Eastern Europe",38042794,"Female_Life_Expectancy",80.4
+"Poland","2000",4501.454067,"Europe","Eastern Europe",38258629,"Male_Life_Expectancy",69.5
+"Poland","2000",4501.454067,"Europe","Eastern Europe",38258629,"Female_Life_Expectancy",77.9
+"Portugal","2019",23252.05852,"Europe","Southern Europe",10269417,"Male_Life_Expectancy",78.6
+"Portugal","2019",23252.05852,"Europe","Southern Europe",10269417,"Female_Life_Expectancy",84.4
+"Portugal","2015",19242.36647,"Europe","Southern Europe",10358076,"Male_Life_Expectancy",77.9
+"Portugal","2015",19242.36647,"Europe","Southern Europe",10358076,"Female_Life_Expectancy",83.7
+"Portugal","2010",22498.69086,"Europe","Southern Europe",10573100,"Male_Life_Expectancy",76.6
+"Portugal","2010",22498.69086,"Europe","Southern Europe",10573100,"Female_Life_Expectancy",82.7
+"Portugal","2000",11497.75346,"Europe","Southern Europe",10289898,"Male_Life_Expectancy",73.1
+"Portugal","2000",11497.75346,"Europe","Southern Europe",10289898,"Female_Life_Expectancy",80.1
+"Qatar","2019",62088.06183,"Asia","Western Asia",2832067,"Male_Life_Expectancy",78
+"Qatar","2019",62088.06183,"Asia","Western Asia",2832067,"Female_Life_Expectancy",76.6
+"Qatar","2015",63039.06349,"Asia","Western Asia",2565710,"Male_Life_Expectancy",77.2
+"Qatar","2015",63039.06349,"Asia","Western Asia",2565710,"Female_Life_Expectancy",75.9
+"Qatar","2010",67403.1603,"Asia","Western Asia",1856327,"Male_Life_Expectancy",75
+"Qatar","2010",67403.1603,"Asia","Western Asia",1856327,"Female_Life_Expectancy",73.9
+"Qatar","2000",29976.11704,"Asia","Western Asia",592468,"Male_Life_Expectancy",71.1
+"Qatar","2000",29976.11704,"Asia","Western Asia",592468,"Female_Life_Expectancy",71.7
+"North Macedonia","2019",6022.216179,"Europe","Southern Europe",2083459,"Male_Life_Expectancy",72.8
+"North Macedonia","2019",6022.216179,"Europe","Southern Europe",2083459,"Female_Life_Expectancy",76.9
+"North Macedonia","2015",4840.273123,"Europe","Southern Europe",2079328,"Male_Life_Expectancy",71.7
+"North Macedonia","2015",4840.273123,"Europe","Southern Europe",2079328,"Female_Life_Expectancy",75.9
+"North Macedonia","2010",4542.899717,"Europe","Southern Europe",2070741,"Male_Life_Expectancy",70.9
+"North Macedonia","2010",4542.899717,"Europe","Southern Europe",2070741,"Female_Life_Expectancy",75.4
+"North Macedonia","2000",1854.145956,"Europe","Southern Europe",2034819,"Male_Life_Expectancy",68.9
+"North Macedonia","2000",1854.145956,"Europe","Southern Europe",2034819,"Female_Life_Expectancy",73.5
+"Romania","2019",12919.52964,"Europe","Eastern Europe",19356544,"Male_Life_Expectancy",72
+"Romania","2019",12919.52964,"Europe","Eastern Europe",19356544,"Female_Life_Expectancy",79.3
+"Romania","2015",8969.148921,"Europe","Eastern Europe",19815616,"Male_Life_Expectancy",71.3
+"Romania","2015",8969.148921,"Europe","Eastern Europe",19815616,"Female_Life_Expectancy",78.4
+"Romania","2010",8214.076893,"Europe","Eastern Europe",20246871,"Male_Life_Expectancy",70.1
+"Romania","2010",8214.076893,"Europe","Eastern Europe",20246871,"Female_Life_Expectancy",77.4
+"Romania","2000",1659.90764,"Europe","Eastern Europe",22442971,"Male_Life_Expectancy",68
+"Romania","2000",1659.90764,"Europe","Eastern Europe",22442971,"Female_Life_Expectancy",74.9
+"Russian Federation","2019",11584.99538,"Europe","Eastern Europe",144373535,"Male_Life_Expectancy",68.2
+"Russian Federation","2019",11584.99538,"Europe","Eastern Europe",144373535,"Female_Life_Expectancy",78
+"Russian Federation","2015",9313.013625,"Europe","Eastern Europe",144096870,"Male_Life_Expectancy",65.8
+"Russian Federation","2015",9313.013625,"Europe","Eastern Europe",144096870,"Female_Life_Expectancy",76.6
+"Russian Federation","2010",10674.99578,"Europe","Eastern Europe",142849468,"Male_Life_Expectancy",62.9
+"Russian Federation","2010",10674.99578,"Europe","Eastern Europe",142849468,"Female_Life_Expectancy",74.7
+"Russian Federation","2000",1771.594059,"Europe","Eastern Europe",146596869,"Male_Life_Expectancy",59
+"Russian Federation","2000",1771.594059,"Europe","Eastern Europe",146596869,"Female_Life_Expectancy",72.3
+"Rwanda","2019",820.0252417,"Africa","Sub-Saharan Africa",12626950,"Male_Life_Expectancy",66.9
+"Rwanda","2019",820.0252417,"Africa","Sub-Saharan Africa",12626950,"Female_Life_Expectancy",71.2
+"Rwanda","2015",751.6393697,"Africa","Sub-Saharan Africa",11369071,"Male_Life_Expectancy",65.5
+"Rwanda","2015",751.6393697,"Africa","Sub-Saharan Africa",11369071,"Female_Life_Expectancy",69.8
+"Rwanda","2010",610.0124006,"Africa","Sub-Saharan Africa",10039338,"Male_Life_Expectancy",62.3
+"Rwanda","2010",610.0124006,"Africa","Sub-Saharan Africa",10039338,"Female_Life_Expectancy",66.5
+"Rwanda","2000",260.7780161,"Africa","Sub-Saharan Africa",7933681,"Male_Life_Expectancy",45.9
+"Rwanda","2000",260.7780161,"Africa","Sub-Saharan Africa",7933681,"Female_Life_Expectancy",49.2
+"Samoa","2019",4324.014018,"Oceania","Polynesia",197097,"Male_Life_Expectancy",69.2
+"Samoa","2019",4324.014018,"Oceania","Polynesia",197097,"Female_Life_Expectancy",71.8
+"Samoa","2015",4073.66601,"Oceania","Polynesia",193513,"Male_Life_Expectancy",68.7
+"Samoa","2015",4073.66601,"Oceania","Polynesia",193513,"Female_Life_Expectancy",71.5
+"Samoa","2010",3566.362378,"Oceania","Polynesia",185949,"Male_Life_Expectancy",68.1
+"Samoa","2010",3566.362378,"Oceania","Polynesia",185949,"Female_Life_Expectancy",71.2
+"Samoa","2000",1542.066736,"Oceania","Polynesia",174454,"Male_Life_Expectancy",66.5
+"Samoa","2000",1542.066736,"Oceania","Polynesia",174454,"Female_Life_Expectancy",70.8
+"Sao Tome and Principe","2019",1946.643614,"Africa","Sub-Saharan Africa",215056,"Male_Life_Expectancy",68.8
+"Sao Tome and Principe","2019",1946.643614,"Africa","Sub-Saharan Africa",215056,"Female_Life_Expectancy",72
+"Sao Tome and Principe","2015",1584.82776,"Africa","Sub-Saharan Africa",199432,"Male_Life_Expectancy",68
+"Sao Tome and Principe","2015",1584.82776,"Africa","Sub-Saharan Africa",199432,"Female_Life_Expectancy",71.1
+"Sao Tome and Principe","2010",1090.264878,"Africa","Sub-Saharan Africa",180371,"Male_Life_Expectancy",66.9
+"Sao Tome and Principe","2010",1090.264878,"Africa","Sub-Saharan Africa",180371,"Female_Life_Expectancy",69.5
+"Saudi Arabia","2019",23139.79866,"Asia","Western Asia",34268528,"Male_Life_Expectancy",73.1
+"Saudi Arabia","2019",23139.79866,"Asia","Western Asia",34268528,"Female_Life_Expectancy",76.1
+"Saudi Arabia","2015",20627.93278,"Asia","Western Asia",31717667,"Male_Life_Expectancy",71.7
+"Saudi Arabia","2015",20627.93278,"Asia","Western Asia",31717667,"Female_Life_Expectancy",75.2
+"Saudi Arabia","2010",19262.55252,"Asia","Western Asia",27421461,"Male_Life_Expectancy",70.4
+"Saudi Arabia","2010",19262.55252,"Asia","Western Asia",27421461,"Female_Life_Expectancy",73.7
+"Saudi Arabia","2000",9171.330145,"Asia","Western Asia",20663843,"Male_Life_Expectancy",69.6
+"Saudi Arabia","2000",9171.330145,"Asia","Western Asia",20663843,"Female_Life_Expectancy",71.6
+"Senegal","2019",1446.830965,"Africa","Sub-Saharan Africa",16296364,"Male_Life_Expectancy",66.8
+"Senegal","2019",1446.830965,"Africa","Sub-Saharan Africa",16296364,"Female_Life_Expectancy",70.1
+"Senegal","2015",1219.248662,"Africa","Sub-Saharan Africa",14578459,"Male_Life_Expectancy",65.5
+"Senegal","2015",1219.248662,"Africa","Sub-Saharan Africa",14578459,"Female_Life_Expectancy",68.8
+"Senegal","2010",1280.22547,"Africa","Sub-Saharan Africa",12678148,"Male_Life_Expectancy",63.7
+"Senegal","2010",1280.22547,"Africa","Sub-Saharan Africa",12678148,"Female_Life_Expectancy",67.2
+"Senegal","2000",604.654066,"Africa","Sub-Saharan Africa",9797734,"Male_Life_Expectancy",56.9
+"Senegal","2000",604.654066,"Africa","Sub-Saharan Africa",9797734,"Female_Life_Expectancy",60.3
+"Serbia","2019",7411.836116,"Europe","Southern Europe",6944975,"Male_Life_Expectancy",73.5
+"Serbia","2019",7411.836116,"Europe","Southern Europe",6944975,"Female_Life_Expectancy",78.3
+"Serbia","2015",5588.980728,"Europe","Southern Europe",7095383,"Male_Life_Expectancy",72.7
+"Serbia","2015",5588.980728,"Europe","Southern Europe",7095383,"Female_Life_Expectancy",77.8
+"Serbia","2010",5735.422857,"Europe","Southern Europe",7291436,"Male_Life_Expectancy",71.6
+"Serbia","2010",5735.422857,"Europe","Southern Europe",7291436,"Female_Life_Expectancy",76.8
+"Serbia","2000",914.7857199,"Europe","Southern Europe",7516346,"Male_Life_Expectancy",68.7
+"Serbia","2000",914.7857199,"Europe","Southern Europe",7516346,"Female_Life_Expectancy",74.3
+"Seychelles","2019",17448.27029,"Africa","Sub-Saharan Africa",97625,"Male_Life_Expectancy",70
+"Seychelles","2019",17448.27029,"Africa","Sub-Saharan Africa",97625,"Female_Life_Expectancy",77.1
+"Seychelles","2015",14745.34146,"Africa","Sub-Saharan Africa",93419,"Male_Life_Expectancy",70
+"Seychelles","2015",14745.34146,"Africa","Sub-Saharan Africa",93419,"Female_Life_Expectancy",76.8
+"Seychelles","2010",10804.68447,"Africa","Sub-Saharan Africa",89770,"Male_Life_Expectancy",69.6
+"Seychelles","2010",10804.68447,"Africa","Sub-Saharan Africa",89770,"Female_Life_Expectancy",76.8
+"Seychelles","2000",7578.851053,"Africa","Sub-Saharan Africa",81131,"Male_Life_Expectancy",67.8
+"Seychelles","2000",7578.851053,"Africa","Sub-Saharan Africa",81131,"Female_Life_Expectancy",76.3
+"Sierra Leone","2019",527.5336344,"Africa","Sub-Saharan Africa",7813215,"Male_Life_Expectancy",59.6
+"Sierra Leone","2019",527.5336344,"Africa","Sub-Saharan Africa",7813215,"Female_Life_Expectancy",61.9
+"Sierra Leone","2015",588.2284527,"Africa","Sub-Saharan Africa",7171914,"Male_Life_Expectancy",55.9
+"Sierra Leone","2015",588.2284527,"Africa","Sub-Saharan Africa",7171914,"Female_Life_Expectancy",57.9
+"Sierra Leone","2010",401.8350014,"Africa","Sub-Saharan Africa",6415634,"Male_Life_Expectancy",53.7
+"Sierra Leone","2010",401.8350014,"Africa","Sub-Saharan Africa",6415634,"Female_Life_Expectancy",55.8
+"Sierra Leone","2000",138.6986922,"Africa","Sub-Saharan Africa",4584571,"Male_Life_Expectancy",46.8
+"Sierra Leone","2000",138.6986922,"Africa","Sub-Saharan Africa",4584571,"Female_Life_Expectancy",50.7
+"Singapore","2019",65233.28244,"Asia","South-eastern Asia",5703569,"Male_Life_Expectancy",81
+"Singapore","2019",65233.28244,"Asia","South-eastern Asia",5703569,"Female_Life_Expectancy",85.5
+"Singapore","2015",55646.61875,"Asia","South-eastern Asia",5535002,"Male_Life_Expectancy",80.7
+"Singapore","2015",55646.61875,"Asia","South-eastern Asia",5535002,"Female_Life_Expectancy",84.9
+"Singapore","2010",47236.96023,"Asia","South-eastern Asia",5076732,"Male_Life_Expectancy",79.4
+"Singapore","2010",47236.96023,"Asia","South-eastern Asia",5076732,"Female_Life_Expectancy",84
+"Singapore","2000",23852.32703,"Asia","South-eastern Asia",4027887,"Male_Life_Expectancy",76.2
+"Singapore","2000",23852.32703,"Asia","South-eastern Asia",4027887,"Female_Life_Expectancy",80.7
+"Slovenia","2019",25946.18219,"Europe","Southern Europe",2087946,"Male_Life_Expectancy",78.6
+"Slovenia","2019",25946.18219,"Europe","Southern Europe",2087946,"Female_Life_Expectancy",84.1
+"Slovenia","2015",20881.76693,"Europe","Southern Europe",2063531,"Male_Life_Expectancy",77.6
+"Slovenia","2015",20881.76693,"Europe","Southern Europe",2063531,"Female_Life_Expectancy",83.3
+"Slovenia","2010",23509.54314,"Europe","Southern Europe",2048583,"Male_Life_Expectancy",76.2
+"Slovenia","2010",23509.54314,"Europe","Southern Europe",2048583,"Female_Life_Expectancy",82.7
+"Slovenia","2000",10201.30354,"Europe","Southern Europe",1988925,"Male_Life_Expectancy",72.2
+"Slovenia","2000",10201.30354,"Europe","Southern Europe",1988925,"Female_Life_Expectancy",79.7
+"Solomon Islands","2019",2373.63247,"Oceania","Melanesia",669823,"Male_Life_Expectancy",62.9
+"Solomon Islands","2019",2373.63247,"Oceania","Melanesia",669823,"Female_Life_Expectancy",67.9
+"Solomon Islands","2015",2167.173826,"Oceania","Melanesia",603118,"Male_Life_Expectancy",62.3
+"Solomon Islands","2015",2167.173826,"Oceania","Melanesia",603118,"Female_Life_Expectancy",67.4
+"Solomon Islands","2010",1604.20583,"Oceania","Melanesia",527861,"Male_Life_Expectancy",61.3
+"Solomon Islands","2010",1604.20583,"Oceania","Melanesia",527861,"Female_Life_Expectancy",66.4
+"Solomon Islands","2000",1040.007194,"Oceania","Melanesia",412660,"Male_Life_Expectancy",60.1
+"Solomon Islands","2000",1040.007194,"Oceania","Melanesia",412660,"Female_Life_Expectancy",65.2
+"South Africa","2019",6001.400814,"Africa","Sub-Saharan Africa",58558270,"Male_Life_Expectancy",62.2
+"South Africa","2019",6001.400814,"Africa","Sub-Saharan Africa",58558270,"Female_Life_Expectancy",68.3
+"South Africa","2015",5734.633629,"Africa","Sub-Saharan Africa",55386367,"Male_Life_Expectancy",59.8
+"South Africa","2015",5734.633629,"Africa","Sub-Saharan Africa",55386367,"Female_Life_Expectancy",65.3
+"South Africa","2010",7328.615629,"Africa","Sub-Saharan Africa",51216964,"Male_Life_Expectancy",55
+"South Africa","2010",7328.615629,"Africa","Sub-Saharan Africa",51216964,"Female_Life_Expectancy",59.2
+"South Africa","2000",3032.427138,"Africa","Sub-Saharan Africa",44967708,"Male_Life_Expectancy",53.1
+"South Africa","2000",3032.427138,"Africa","Sub-Saharan Africa",44967708,"Female_Life_Expectancy",58.6
+"South Sudan","2015",1119.651333,"Africa","Sub-Saharan Africa",10715658,"Male_Life_Expectancy",59.8
+"South Sudan","2015",1119.651333,"Africa","Sub-Saharan Africa",10715658,"Female_Life_Expectancy",64.3
+"South Sudan","2010",1535.708184,"Africa","Sub-Saharan Africa",9508364,"Male_Life_Expectancy",59.2
+"South Sudan","2010",1535.708184,"Africa","Sub-Saharan Africa",9508364,"Female_Life_Expectancy",63.1
+"Spain","2019",29600.37825,"Europe","Southern Europe",47076781,"Male_Life_Expectancy",80.7
+"Spain","2019",29600.37825,"Europe","Southern Europe",47076781,"Female_Life_Expectancy",85.7
+"Spain","2015",25732.01836,"Europe","Southern Europe",46444832,"Male_Life_Expectancy",79.7
+"Spain","2015",25732.01836,"Europe","Southern Europe",46444832,"Female_Life_Expectancy",84.9
+"Spain","2010",30502.71971,"Europe","Southern Europe",46576897,"Male_Life_Expectancy",78.8
+"Spain","2010",30502.71971,"Europe","Southern Europe",46576897,"Female_Life_Expectancy",84.6
+"Spain","2000",14713.06571,"Europe","Southern Europe",40567864,"Male_Life_Expectancy",75.7
+"Spain","2000",14713.06571,"Europe","Southern Europe",40567864,"Female_Life_Expectancy",82.5
+"Sri Lanka","2019",3853.083693,"Asia","Southern Asia",21803000,"Male_Life_Expectancy",73.8
+"Sri Lanka","2019",3853.083693,"Asia","Southern Asia",21803000,"Female_Life_Expectancy",79.8
+"Sri Lanka","2015",3843.780672,"Asia","Southern Asia",20970000,"Male_Life_Expectancy",73
+"Sri Lanka","2015",3843.780672,"Asia","Southern Asia",20970000,"Female_Life_Expectancy",79.4
+"Sri Lanka","2010",2799.648876,"Asia","Southern Asia",20261737,"Male_Life_Expectancy",69.4
+"Sri Lanka","2010",2799.648876,"Asia","Southern Asia",20261737,"Female_Life_Expectancy",77.3
+"Sri Lanka","2000",869.6965166,"Asia","Southern Asia",18777601,"Male_Life_Expectancy",67.9
+"Sri Lanka","2000",869.6965166,"Asia","Southern Asia",18777601,"Female_Life_Expectancy",76.3
+"Sudan","2019",441.5056034,"Africa","Northern Africa",42813238,"Male_Life_Expectancy",67.6
+"Sudan","2019",441.5056034,"Africa","Northern Africa",42813238,"Female_Life_Expectancy",70.8
+"Sudan","2015",1909.738755,"Africa","Northern Africa",38902950,"Male_Life_Expectancy",66.2
+"Sudan","2015",1909.738755,"Africa","Northern Africa",38902950,"Female_Life_Expectancy",69.7
+"Sudan","2010",1401.477474,"Africa","Northern Africa",34545013,"Male_Life_Expectancy",64.7
+"Sudan","2010",1401.477474,"Africa","Northern Africa",34545013,"Female_Life_Expectancy",68.4
+"Sudan","2000",366.1728076,"Africa","Northern Africa",27275015,"Male_Life_Expectancy",60.4
+"Sudan","2000",366.1728076,"Africa","Northern Africa",27275015,"Female_Life_Expectancy",64.7
+"Suriname","2019",6359.833614,"Americas","Latin America and the Caribbean",581363,"Male_Life_Expectancy",68.5
+"Suriname","2019",6359.833614,"Americas","Latin America and the Caribbean",581363,"Female_Life_Expectancy",74.6
+"Suriname","2015",8562.081369,"Americas","Latin America and the Caribbean",559136,"Male_Life_Expectancy",69.5
+"Suriname","2015",8562.081369,"Americas","Latin America and the Caribbean",559136,"Female_Life_Expectancy",75.8
+"Suriname","2010",8255.874872,"Americas","Latin America and the Caribbean",529126,"Male_Life_Expectancy",68.7
+"Suriname","2010",8255.874872,"Americas","Latin America and the Caribbean",529126,"Female_Life_Expectancy",75.1
+"Suriname","2000",2012.281651,"Americas","Latin America and the Caribbean",470944,"Male_Life_Expectancy",67.1
+"Suriname","2000",2012.281651,"Americas","Latin America and the Caribbean",470944,"Female_Life_Expectancy",73
+"Sweden","2019",51615.02065,"Europe","Northern Europe",10285453,"Male_Life_Expectancy",80.8
+"Sweden","2019",51615.02065,"Europe","Northern Europe",10285453,"Female_Life_Expectancy",84
+"Sweden","2015",51545.48361,"Europe","Northern Europe",9799186,"Male_Life_Expectancy",80
+"Sweden","2015",51545.48361,"Europe","Northern Europe",9799186,"Female_Life_Expectancy",83.5
+"Sweden","2010",52869.04429,"Europe","Northern Europe",9378126,"Male_Life_Expectancy",79.4
+"Sweden","2010",52869.04429,"Europe","Northern Europe",9378126,"Female_Life_Expectancy",83.1
+"Sweden","2000",29624.91267,"Europe","Northern Europe",8872109,"Male_Life_Expectancy",77.3
+"Sweden","2000",29624.91267,"Europe","Northern Europe",8872109,"Female_Life_Expectancy",81.8
+"Switzerland","2019",81993.72713,"Europe","Western Europe",8574832,"Male_Life_Expectancy",81.8
+"Switzerland","2019",81993.72713,"Europe","Western Europe",8574832,"Female_Life_Expectancy",85.1
+"Switzerland","2015",82081.59716,"Europe","Western Europe",8282396,"Male_Life_Expectancy",80.6
+"Switzerland","2015",82081.59716,"Europe","Western Europe",8282396,"Female_Life_Expectancy",84.5
+"Switzerland","2010",74605.72108,"Europe","Western Europe",7824909,"Male_Life_Expectancy",80
+"Switzerland","2010",74605.72108,"Europe","Western Europe",7824909,"Female_Life_Expectancy",84.2
+"Switzerland","2000",37868.32303,"Europe","Western Europe",7184250,"Male_Life_Expectancy",76.9
+"Switzerland","2000",37868.32303,"Europe","Western Europe",7184250,"Female_Life_Expectancy",82.3
+"Syrian Arab Republic","2000",1177.629268,"Asia","Western Asia",16410848,"Male_Life_Expectancy",70.4
+"Syrian Arab Republic","2000",1177.629268,"Asia","Western Asia",16410848,"Female_Life_Expectancy",72.7
+"Tajikistan","2019",870.7875893,"Asia","Central Asia",9321018,"Male_Life_Expectancy",67.6
+"Tajikistan","2019",870.7875893,"Asia","Central Asia",9321018,"Female_Life_Expectancy",71.5
+"Tajikistan","2015",929.0958572,"Asia","Central Asia",8454028,"Male_Life_Expectancy",66.7
+"Tajikistan","2015",929.0958572,"Asia","Central Asia",8454028,"Female_Life_Expectancy",70.8
+"Tajikistan","2010",749.552711,"Asia","Central Asia",7527394,"Male_Life_Expectancy",66
+"Tajikistan","2010",749.552711,"Asia","Central Asia",7527394,"Female_Life_Expectancy",70.2
+"Tajikistan","2000",138.4288795,"Asia","Central Asia",6216341,"Male_Life_Expectancy",63.5
+"Tajikistan","2000",138.4288795,"Asia","Central Asia",6216341,"Female_Life_Expectancy",67.8
+"Thailand","2019",7806.742211,"Asia","South-eastern Asia",69625582,"Male_Life_Expectancy",74.4
+"Thailand","2019",7806.742211,"Asia","South-eastern Asia",69625582,"Female_Life_Expectancy",81
+"Thailand","2015",5840.046523,"Asia","South-eastern Asia",68714511,"Male_Life_Expectancy",74.1
+"Thailand","2015",5840.046523,"Asia","South-eastern Asia",68714511,"Female_Life_Expectancy",80.7
+"Thailand","2010",5076.340174,"Asia","South-eastern Asia",67195028,"Male_Life_Expectancy",73.2
+"Thailand","2010",5076.340174,"Asia","South-eastern Asia",67195028,"Female_Life_Expectancy",79.3
+"Thailand","2000",2007.735175,"Asia","South-eastern Asia",62952642,"Male_Life_Expectancy",67.5
+"Thailand","2000",2007.735175,"Asia","South-eastern Asia",62952642,"Female_Life_Expectancy",75.2
+"Timor-Leste","2019",1560.509822,"Asia","South-eastern Asia",1293119,"Male_Life_Expectancy",67.9
+"Timor-Leste","2019",1560.509822,"Asia","South-eastern Asia",1293119,"Female_Life_Expectancy",71.4
+"Timor-Leste","2015",1332.782859,"Asia","South-eastern Asia",1196302,"Male_Life_Expectancy",67.3
+"Timor-Leste","2015",1332.782859,"Asia","South-eastern Asia",1196302,"Female_Life_Expectancy",70.5
+"Timor-Leste","2010",806.4091016,"Asia","South-eastern Asia",1093523,"Male_Life_Expectancy",66.8
+"Timor-Leste","2010",806.4091016,"Asia","South-eastern Asia",1093523,"Female_Life_Expectancy",69.4
+"Timor-Leste","2000",415.0859486,"Asia","South-eastern Asia",884366,"Male_Life_Expectancy",61.9
+"Timor-Leste","2000",415.0859486,"Asia","South-eastern Asia",884366,"Female_Life_Expectancy",63.4
+"Togo","2019",679.2902491,"Africa","Sub-Saharan Africa",8082366,"Male_Life_Expectancy",61.5
+"Togo","2019",679.2902491,"Africa","Sub-Saharan Africa",8082366,"Female_Life_Expectancy",67.2
+"Togo","2015",570.910279,"Africa","Sub-Saharan Africa",7323158,"Male_Life_Expectancy",59.2
+"Togo","2015",570.910279,"Africa","Sub-Saharan Africa",7323158,"Female_Life_Expectancy",64.8
+"Togo","2010",534.0443668,"Africa","Sub-Saharan Africa",6421679,"Male_Life_Expectancy",57
+"Togo","2010",534.0443668,"Africa","Sub-Saharan Africa",6421679,"Female_Life_Expectancy",61.8
+"Togo","2000",302.2063943,"Africa","Sub-Saharan Africa",4924402,"Male_Life_Expectancy",53.9
+"Togo","2000",302.2063943,"Africa","Sub-Saharan Africa",4924402,"Female_Life_Expectancy",58.1
+"Tonga","2019",4903.152903,"Oceania","Polynesia",104494,"Male_Life_Expectancy",69.8
+"Tonga","2019",4903.152903,"Oceania","Polynesia",104494,"Female_Life_Expectancy",75.6
+"Tonga","2015",4336.196576,"Oceania","Polynesia",100781,"Male_Life_Expectancy",69.4
+"Tonga","2015",4336.196576,"Oceania","Polynesia",100781,"Female_Life_Expectancy",75.5
+"Tonga","2010",3527.782706,"Oceania","Polynesia",103986,"Male_Life_Expectancy",69.1
+"Tonga","2010",3527.782706,"Oceania","Polynesia",103986,"Female_Life_Expectancy",75.5
+"Tonga","2000",2090.878047,"Oceania","Polynesia",97973,"Male_Life_Expectancy",68
+"Tonga","2000",2090.878047,"Oceania","Polynesia",97973,"Female_Life_Expectancy",74.2
+"Trinidad and Tobago","2019",17397.98176,"Americas","Latin America and the Caribbean",1394973,"Male_Life_Expectancy",72.5
+"Trinidad and Tobago","2019",17397.98176,"Americas","Latin America and the Caribbean",1394973,"Female_Life_Expectancy",79.9
+"Trinidad and Tobago","2015",18289.70434,"Americas","Latin America and the Caribbean",1370328,"Male_Life_Expectancy",71.1
+"Trinidad and Tobago","2015",18289.70434,"Americas","Latin America and the Caribbean",1370328,"Female_Life_Expectancy",78.3
+"Trinidad and Tobago","2010",16683.35538,"Americas","Latin America and the Caribbean",1328147,"Male_Life_Expectancy",68.7
+"Trinidad and Tobago","2010",16683.35538,"Americas","Latin America and the Caribbean",1328147,"Female_Life_Expectancy",75.7
+"Trinidad and Tobago","2000",6435.164683,"Americas","Latin America and the Caribbean",1267153,"Male_Life_Expectancy",66.9
+"Trinidad and Tobago","2000",6435.164683,"Americas","Latin America and the Caribbean",1267153,"Female_Life_Expectancy",72.6
+"Tunisia","2019",3317.453593,"Africa","Northern Africa",11694719,"Male_Life_Expectancy",74.9
+"Tunisia","2019",3317.453593,"Africa","Northern Africa",11694719,"Female_Life_Expectancy",79.2
+"Tunisia","2015",3861.688531,"Africa","Northern Africa",11179949,"Male_Life_Expectancy",74.6
+"Tunisia","2015",3861.688531,"Africa","Northern Africa",11179949,"Female_Life_Expectancy",78.8
+"Tunisia","2010",4141.976353,"Africa","Northern Africa",10635244,"Male_Life_Expectancy",73.9
+"Tunisia","2010",4141.976353,"Africa","Northern Africa",10635244,"Female_Life_Expectancy",78.2
+"Tunisia","2000",2211.826817,"Africa","Northern Africa",9708350,"Male_Life_Expectancy",71.9
+"Tunisia","2000",2211.826817,"Africa","Northern Africa",9708350,"Female_Life_Expectancy",76.5
+"Turkey","2019",9126.561346,"Asia","Western Asia",83429615,"Male_Life_Expectancy",76.4
+"Turkey","2019",9126.561346,"Asia","Western Asia",83429615,"Female_Life_Expectancy",80.7
+"Turkey","2015",11006.24974,"Asia","Western Asia",78529409,"Male_Life_Expectancy",75.4
+"Turkey","2015",11006.24974,"Asia","Western Asia",78529409,"Female_Life_Expectancy",80.1
+"Turkey","2010",10742.43007,"Asia","Western Asia",72326988,"Male_Life_Expectancy",74.6
+"Turkey","2010",10742.43007,"Asia","Western Asia",72326988,"Female_Life_Expectancy",79.1
+"Turkey","2000",4337.478141,"Asia","Western Asia",63240194,"Male_Life_Expectancy",71.9
+"Turkey","2000",4337.478141,"Asia","Western Asia",63240194,"Female_Life_Expectancy",76.8
+"Turkmenistan","2015",6432.680702,"Asia","Central Asia",5565287,"Male_Life_Expectancy",65.7
+"Turkmenistan","2015",6432.680702,"Asia","Central Asia",5565287,"Female_Life_Expectancy",72.6
+"Turkmenistan","2010",4439.200382,"Asia","Central Asia",5087213,"Male_Life_Expectancy",63.6
+"Turkmenistan","2010",4439.200382,"Asia","Central Asia",5087213,"Female_Life_Expectancy",71.1
+"Turkmenistan","2000",643.174726,"Asia","Central Asia",4516133,"Male_Life_Expectancy",59.3
+"Turkmenistan","2000",643.174726,"Asia","Central Asia",4516133,"Female_Life_Expectancy",67.4
+"Uganda","2019",794.3410779,"Africa","Sub-Saharan Africa",44269594,"Male_Life_Expectancy",63.2
+"Uganda","2019",794.3410779,"Africa","Sub-Saharan Africa",44269594,"Female_Life_Expectancy",70.1
+"Uganda","2015",843.6294158,"Africa","Sub-Saharan Africa",38225453,"Male_Life_Expectancy",60.8
+"Uganda","2015",843.6294158,"Africa","Sub-Saharan Africa",38225453,"Female_Life_Expectancy",68.1
+"Uganda","2010",819.0073159,"Africa","Sub-Saharan Africa",32428167,"Male_Life_Expectancy",57
+"Uganda","2010",819.0073159,"Africa","Sub-Saharan Africa",32428167,"Female_Life_Expectancy",62.2
+"Uganda","2000",261.8689977,"Africa","Sub-Saharan Africa",23650172,"Male_Life_Expectancy",46.8
+"Uganda","2000",261.8689977,"Africa","Sub-Saharan Africa",23650172,"Female_Life_Expectancy",50.8
+"Ukraine","2019",3659.031312,"Europe","Eastern Europe",44385155,"Male_Life_Expectancy",68
+"Ukraine","2019",3659.031312,"Europe","Eastern Europe",44385155,"Female_Life_Expectancy",77.8
+"Ukraine","2015",2124.662319,"Europe","Eastern Europe",45154036,"Male_Life_Expectancy",67.2
+"Ukraine","2015",2124.662319,"Europe","Eastern Europe",45154036,"Female_Life_Expectancy",77
+"Ukraine","2010",2965.139715,"Europe","Eastern Europe",45870741,"Male_Life_Expectancy",65.2
+"Ukraine","2010",2965.139715,"Europe","Eastern Europe",45870741,"Female_Life_Expectancy",75.1
+"Ukraine","2000",635.7005351,"Europe","Eastern Europe",49176500,"Male_Life_Expectancy",62.1
+"Ukraine","2000",635.7005351,"Europe","Eastern Europe",49176500,"Female_Life_Expectancy",73.2
+"United Arab Emirates","2019",43103.32306,"Asia","Western Asia",9770529,"Male_Life_Expectancy",75.1
+"United Arab Emirates","2019",43103.32306,"Asia","Western Asia",9770529,"Female_Life_Expectancy",78.4
+"United Arab Emirates","2015",38663.38381,"Asia","Western Asia",9262900,"Male_Life_Expectancy",74.3
+"United Arab Emirates","2015",38663.38381,"Asia","Western Asia",9262900,"Female_Life_Expectancy",77.8
+"United Arab Emirates","2010",33893.30351,"Asia","Western Asia",8549988,"Male_Life_Expectancy",73.9
+"United Arab Emirates","2010",33893.30351,"Asia","Western Asia",8549988,"Female_Life_Expectancy",77.4
+"United Arab Emirates","2000",33291.41937,"Asia","Western Asia",3134062,"Male_Life_Expectancy",72.2
+"United Arab Emirates","2000",33291.41937,"Asia","Western Asia",3134062,"Female_Life_Expectancy",75.1
+"Uruguay","2019",16190.12696,"Americas","Latin America and the Caribbean",3461734,"Male_Life_Expectancy",73.5
+"Uruguay","2019",16190.12696,"Americas","Latin America and the Caribbean",3461734,"Female_Life_Expectancy",80.6
+"Uruguay","2015",15613.76427,"Americas","Latin America and the Caribbean",3412009,"Male_Life_Expectancy",73.3
+"Uruguay","2015",15613.76427,"Americas","Latin America and the Caribbean",3412009,"Female_Life_Expectancy",80.6
+"Uruguay","2010",11992.01663,"Americas","Latin America and the Caribbean",3359275,"Male_Life_Expectancy",72.5
+"Uruguay","2010",11992.01663,"Americas","Latin America and the Caribbean",3359275,"Female_Life_Expectancy",80
+"Uruguay","2000",6875.021328,"Americas","Latin America and the Caribbean",3319736,"Male_Life_Expectancy",70.8
+"Uruguay","2000",6875.021328,"Americas","Latin America and the Caribbean",3319736,"Female_Life_Expectancy",78.8
+"Uzbekistan","2019",1724.841134,"Asia","Central Asia",33580650,"Male_Life_Expectancy",70.8
+"Uzbekistan","2019",1724.841134,"Asia","Central Asia",33580650,"Female_Life_Expectancy",75.2
+"Uzbekistan","2015",2615.025134,"Asia","Central Asia",31298900,"Male_Life_Expectancy",69
+"Uzbekistan","2015",2615.025134,"Asia","Central Asia",31298900,"Female_Life_Expectancy",73.9
+"Uzbekistan","2010",1634.312095,"Asia","Central Asia",28562400,"Male_Life_Expectancy",67.5
+"Uzbekistan","2010",1634.312095,"Asia","Central Asia",28562400,"Female_Life_Expectancy",72.9
+"Uzbekistan","2000",558.2268024,"Asia","Central Asia",24650400,"Male_Life_Expectancy",62.4
+"Uzbekistan","2000",558.2268024,"Asia","Central Asia",24650400,"Female_Life_Expectancy",68.2
+"Vanuatu","2019",3115.35862,"Oceania","Melanesia",299882,"Male_Life_Expectancy",62.7
+"Vanuatu","2019",3115.35862,"Oceania","Melanesia",299882,"Female_Life_Expectancy",68.3
+"Vanuatu","2015",2801.939848,"Oceania","Melanesia",271130,"Male_Life_Expectancy",62
+"Vanuatu","2015",2801.939848,"Oceania","Melanesia",271130,"Female_Life_Expectancy",67.7
+"Vanuatu","2010",2966.857116,"Oceania","Melanesia",236211,"Male_Life_Expectancy",61.9
+"Vanuatu","2010",2966.857116,"Oceania","Melanesia",236211,"Female_Life_Expectancy",67.5
+"Vanuatu","2000",1470.572265,"Oceania","Melanesia",184972,"Male_Life_Expectancy",61.4
+"Vanuatu","2000",1470.572265,"Oceania","Melanesia",184972,"Female_Life_Expectancy",66.9
+"Zambia","2019",1305.063254,"Africa","Sub-Saharan Africa",17861030,"Male_Life_Expectancy",59.5
+"Zambia","2019",1305.063254,"Africa","Sub-Saharan Africa",17861030,"Female_Life_Expectancy",65.4
+"Zambia","2015",1337.795586,"Africa","Sub-Saharan Africa",15879361,"Male_Life_Expectancy",57.9
+"Zambia","2015",1337.795586,"Africa","Sub-Saharan Africa",15879361,"Female_Life_Expectancy",63
+"Zambia","2010",1489.459306,"Africa","Sub-Saharan Africa",13605984,"Male_Life_Expectancy",54.3
+"Zambia","2010",1489.459306,"Africa","Sub-Saharan Africa",13605984,"Female_Life_Expectancy",59.1
+"Zambia","2000",345.6895544,"Africa","Sub-Saharan Africa",10415944,"Male_Life_Expectancy",43.7
+"Zambia","2000",345.6895544,"Africa","Sub-Saharan Africa",10415944,"Female_Life_Expectancy",45.2
+"Zimbabwe","2019",1463.98591,"Africa","Sub-Saharan Africa",14645468,"Male_Life_Expectancy",57.5
+"Zimbabwe","2019",1463.98591,"Africa","Sub-Saharan Africa",14645468,"Female_Life_Expectancy",63.6
+"Zimbabwe","2015",1445.071062,"Africa","Sub-Saharan Africa",13814629,"Male_Life_Expectancy",55.7
+"Zimbabwe","2015",1445.071062,"Africa","Sub-Saharan Africa",13814629,"Female_Life_Expectancy",61
+"Zimbabwe","2010",948.3318545,"Africa","Sub-Saharan Africa",12697723,"Male_Life_Expectancy",49.6
+"Zimbabwe","2010",948.3318545,"Africa","Sub-Saharan Africa",12697723,"Female_Life_Expectancy",53.2
+"Zimbabwe","2000",563.0577411,"Africa","Sub-Saharan Africa",11881477,"Male_Life_Expectancy",45.1
+"Zimbabwe","2000",563.0577411,"Africa","Sub-Saharan Africa",11881477,"Female_Life_Expectancy",48.1

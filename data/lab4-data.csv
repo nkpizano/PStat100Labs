@@ -1,0 +1,621 @@
+Country Name,Year,Life Expectancy,Male Life Expectancy,Female Life Expectancy,GDP per capita,region,sub-region,Population
+Afghanistan,2019,63.2,63.3,63.2,507.10343190000003,Asia,Southern Asia,38041754.0
+Afghanistan,2015,61.7,61.0,62.3,578.4663529000001,Asia,Southern Asia,34413603.0
+Afghanistan,2010,59.9,59.6,60.3,543.3030418999999,Asia,Southern Asia,29185507.0
+Albania,2019,78.0,76.3,79.9,5353.244856,Europe,Southern Europe,2854191.0
+Albania,2015,77.8,76.1,79.7,3952.801215,Europe,Southern Europe,2880703.0
+Albania,2010,76.2,74.2,78.3,4094.350334,Europe,Southern Europe,2913021.0
+Albania,2000,73.5,70.7,76.9,1126.6833179999999,Europe,Southern Europe,3089027.0
+Algeria,2019,77.1,76.2,78.1,3973.9640719999998,Africa,Northern Africa,43053054.0
+Algeria,2015,76.5,75.6,77.5,4187.509727000001,Africa,Northern Africa,39728025.0
+Algeria,2010,75.9,75.0,76.8,4479.34172,Africa,Northern Africa,35977455.0
+Algeria,2000,72.2,70.9,73.5,1765.0221980000001,Africa,Northern Africa,31042235.0
+Angola,2019,63.1,60.7,65.5,2790.726615,Africa,Sub-Saharan Africa,31825295.0
+Angola,2015,61.7,59.1,64.5,4166.979684,Africa,Sub-Saharan Africa,27884381.0
+Angola,2010,58.1,55.8,60.5,3587.883798,Africa,Sub-Saharan Africa,23356246.0
+Angola,2000,49.3,46.8,52.1,556.8363181,Africa,Sub-Saharan Africa,16395473.0
+Antigua and Barbuda,2019,76.5,74.9,78.0,17112.82113,Americas,Latin America and the Caribbean,97118.0
+Antigua and Barbuda,2015,76.1,74.4,77.8,14286.093159999999,Americas,Latin America and the Caribbean,93566.0
+Antigua and Barbuda,2010,75.9,73.6,78.2,13049.25705,Americas,Latin America and the Caribbean,88028.0
+Antigua and Barbuda,2000,74.6,72.0,77.0,10871.00571,Americas,Latin America and the Caribbean,76016.0
+Argentina,2019,76.6,73.5,79.5,9912.281809,Americas,Latin America and the Caribbean,44938712.0
+Argentina,2015,76.2,72.9,79.3,13789.060419999998,Americas,Latin America and the Caribbean,43131966.0
+Argentina,2010,75.4,72.1,78.6,10385.96443,Americas,Latin America and the Caribbean,40788453.0
+Argentina,2000,74.1,70.3,77.8,7708.100995999999,Americas,Latin America and the Caribbean,36870787.0
+Armenia,2019,76.0,72.5,79.2,4622.733493,Asia,Western Asia,2957731.0
+Armenia,2015,74.5,70.9,77.8,3607.2966969999998,Asia,Western Asia,2925553.0
+Armenia,2010,73.1,69.4,76.6,3218.372707,Asia,Western Asia,2877319.0
+Armenia,2000,71.9,68.6,74.9,622.7421391,Asia,Western Asia,3069591.0
+Australia,2019,83.0,81.3,84.8,55060.3261,Oceania,Australia and New Zealand,25364307.0
+Australia,2015,82.3,80.4,84.2,56755.721710000005,Oceania,Australia and New Zealand,23815995.0
+Australia,2010,81.9,79.8,84.0,52022.1256,Oceania,Australia and New Zealand,22031750.0
+Australia,2000,79.7,77.1,82.2,21679.24784,Oceania,Australia and New Zealand,19153000.0
+Austria,2019,81.6,79.4,83.8,50137.66278,Europe,Western Europe,8877067.0
+Austria,2015,81.0,78.6,83.3,44178.04738,Europe,Western Europe,8642699.0
+Austria,2010,80.4,77.6,83.0,46858.04327,Europe,Western Europe,8363404.0
+Austria,2000,78.2,75.1,81.0,24564.458290000002,Europe,Western Europe,8011566.0
+Azerbaijan,2019,71.4,68.8,74.1,4793.58702,Asia,Western Asia,10023318.0
+Azerbaijan,2015,70.7,67.9,73.4,5500.310382,Asia,Western Asia,9649341.0
+Azerbaijan,2010,69.0,66.3,71.8,5842.805784,Asia,Western Asia,9054332.0
+Azerbaijan,2000,65.5,62.6,68.5,655.0974326,Asia,Western Asia,8048600.0
+Bahrain,2019,75.8,75.0,77.0,23503.977130000003,Asia,Western Asia,1641172.0
+Bahrain,2015,76.5,75.9,77.3,22634.11865,Asia,Western Asia,1371851.0
+Bahrain,2010,74.5,73.8,75.3,20722.137290000002,Asia,Western Asia,1240860.0
+Bahrain,2000,70.5,69.5,71.8,13636.39623,Asia,Western Asia,664611.0
+Bangladesh,2019,74.3,73.0,75.6,1855.7398239999998,Asia,Southern Asia,163046161.0
+Bangladesh,2015,73.6,72.5,74.8,1248.453398,Asia,Southern Asia,156256276.0
+Bangladesh,2010,70.3,68.6,72.2,781.1535936,Asia,Southern Asia,147575430.0
+Bangladesh,2000,65.6,64.1,67.4,418.0689683,Asia,Southern Asia,127657854.0
+Barbados,2019,76.0,74.3,77.7,18148.24493,Americas,Latin America and the Caribbean,287025.0
+Barbados,2015,76.2,75.0,77.4,16525.07325,Americas,Latin America and the Caribbean,285324.0
+Barbados,2010,75.9,74.5,77.2,16056.370980000002,Americas,Latin America and the Caribbean,282131.0
+Barbados,2000,74.5,72.1,76.7,11268.25406,Americas,Latin America and the Caribbean,271515.0
+Belarus,2019,74.8,69.7,79.6,6663.295293,Europe,Eastern Europe,9466856.0
+Belarus,2015,73.8,68.6,78.8,5949.106307,Europe,Eastern Europe,9489616.0
+Belarus,2010,70.4,64.5,76.4,6029.3968,Europe,Eastern Europe,9490583.0
+Belarus,2000,68.8,63.3,74.6,1276.288034,Europe,Eastern Europe,9979610.0
+Belgium,2019,81.4,79.3,83.5,46420.66377,Europe,Western Europe,11484055.0
+Belgium,2015,80.7,78.5,82.9,40991.80814,Europe,Western Europe,11274196.0
+Belgium,2010,79.8,77.2,82.4,44141.87814,Europe,Western Europe,10895586.0
+Belgium,2000,77.7,74.5,80.7,23041.53473,Europe,Western Europe,10251250.0
+Belize,2019,74.4,71.4,77.8,4815.163711,Americas,Latin America and the Caribbean,390353.0
+Belize,2015,74.0,71.1,77.3,4775.955648,Americas,Latin America and the Caribbean,360933.0
+Belize,2010,73.4,70.9,76.1,4270.864345,Americas,Latin America and the Caribbean,322464.0
+Belize,2000,70.3,67.2,74.0,3364.332936,Americas,Latin America and the Caribbean,247315.0
+Benin,2019,63.4,61.2,65.7,1219.4326720000001,Africa,Sub-Saharan Africa,11801151.0
+Benin,2015,62.0,59.7,64.2,1076.797716,Africa,Sub-Saharan Africa,10575952.0
+Benin,2010,60.5,58.0,62.9,1036.533952,Africa,Sub-Saharan Africa,9199259.0
+Benin,2000,56.6,54.3,58.8,511.400227,Africa,Sub-Saharan Africa,6865951.0
+Bhutan,2019,73.1,72.0,74.4,3316.175714,Asia,Southern Asia,763092.0
+Bhutan,2015,72.2,71.1,73.5,2752.6642079999997,Asia,Southern Asia,727876.0
+Bhutan,2010,71.0,69.9,72.3,2258.183141,Asia,Southern Asia,685503.0
+Bhutan,2000,65.7,64.9,66.6,718.1878307,Asia,Southern Asia,591021.0
+Bosnia and Herzegovina,2019,76.8,74.4,79.1,6108.510696,Europe,Southern Europe,3301000.0
+Bosnia and Herzegovina,2015,76.3,73.9,78.6,4727.277712,Europe,Southern Europe,3429361.0
+Bosnia and Herzegovina,2010,76.2,73.8,78.5,4635.517779,Europe,Southern Europe,3705472.0
+Bosnia and Herzegovina,2000,75.4,72.6,78.0,1467.7764769999999,Europe,Southern Europe,3751176.0
+Botswana,2019,62.2,58.9,65.5,7961.325181,Africa,Sub-Saharan Africa,2303697.0
+Botswana,2015,60.9,57.8,63.9,6799.870178,Africa,Sub-Saharan Africa,2120716.0
+Botswana,2010,58.1,55.1,61.4,6434.815724,Africa,Sub-Saharan Africa,1987105.0
+Botswana,2000,45.6,43.9,47.8,3522.3086780000003,Africa,Sub-Saharan Africa,1643334.0
+Brazil,2019,75.9,72.4,79.4,8717.186278,Americas,Latin America and the Caribbean,211049527.0
+Brazil,2015,75.1,71.7,78.6,8814.000987000001,Americas,Latin America and the Caribbean,204471769.0
+Brazil,2010,74.1,70.6,77.7,11286.24302,Americas,Latin America and the Caribbean,195713635.0
+Brazil,2000,71.5,67.9,75.2,3749.75325,Americas,Latin America and the Caribbean,174790340.0
+Brunei Darussalam,2019,74.3,73.4,75.4,31086.751119999997,Asia,South-eastern Asia,433285.0
+Brunei Darussalam,2015,74.4,73.4,75.5,31164.56203,Asia,South-eastern Asia,414907.0
+Brunei Darussalam,2010,74.6,73.3,75.8,35269.55311,Asia,South-eastern Asia,388646.0
+Brunei Darussalam,2000,72.2,70.9,73.7,18012.55626,Asia,South-eastern Asia,333165.0
+Bulgaria,2019,75.1,71.6,78.6,9828.148515,Europe,Eastern Europe,6975761.0
+Bulgaria,2015,74.6,71.2,78.0,7055.935673000001,Europe,Eastern Europe,7177991.0
+Bulgaria,2010,73.6,70.2,77.2,6812.406338,Europe,Eastern Europe,7395599.0
+Bulgaria,2000,71.6,68.4,75.0,1621.242961,Europe,Eastern Europe,8170172.0
+Burkina Faso,2019,62.7,60.1,65.2,786.8956312999999,Africa,Sub-Saharan Africa,20321378.0
+Burkina Faso,2015,60.9,58.2,63.4,653.3269795,Africa,Sub-Saharan Africa,18110624.0
+Burkina Faso,2010,58.6,56.2,60.8,647.8358465,Africa,Sub-Saharan Africa,15605217.0
+Burkina Faso,2000,51.6,49.9,53.1,254.71752909999998,Africa,Sub-Saharan Africa,11607942.0
+Burundi,2019,63.8,61.5,66.1,261.2474725,Africa,Sub-Saharan Africa,11530580.0
+Burundi,2015,62.0,59.8,64.3,305.5497728,Africa,Sub-Saharan Africa,10160030.0
+Burundi,2010,58.6,56.9,60.3,234.2356469,Africa,Sub-Saharan Africa,8675602.0
+Burundi,2000,43.8,41.8,45.9,136.4639708,Africa,Sub-Saharan Africa,6378871.0
+Cabo Verde,2019,74.0,69.9,77.9,3603.781793,Africa,Sub-Saharan Africa,549935.0
+Cabo Verde,2015,74.9,72.2,77.6,3043.013984,Africa,Sub-Saharan Africa,524743.0
+Cabo Verde,2010,74.1,70.8,77.3,3378.25486,Africa,Sub-Saharan Africa,492654.0
+Cabo Verde,2000,71.0,66.9,74.6,1259.323656,Africa,Sub-Saharan Africa,428188.0
+Cambodia,2019,70.1,67.2,72.7,1643.1213890000001,Asia,South-eastern Asia,16486542.0
+Cambodia,2015,69.2,66.2,71.9,1162.90492,Asia,South-eastern Asia,15521436.0
+Cambodia,2010,67.2,64.2,70.0,785.5022829,Asia,South-eastern Asia,14312212.0
+Cambodia,2000,58.7,56.0,61.2,302.57716360000006,Asia,South-eastern Asia,12155239.0
+Cameroon,2019,62.4,60.3,64.5,1507.450206,Africa,Sub-Saharan Africa,25876380.0
+Cameroon,2015,59.1,57.3,61.0,1327.503017,Africa,Sub-Saharan Africa,23298368.0
+Cameroon,2010,56.6,55.1,58.1,1286.515572,Africa,Sub-Saharan Africa,20341241.0
+Cameroon,2000,52.8,51.3,54.4,649.9918454,Africa,Sub-Saharan Africa,15513945.0
+Canada,2019,82.2,80.4,84.1,46194.725230000004,Americas,Northern America,37589262.0
+Canada,2015,81.8,79.9,83.6,43585.51198,Americas,Northern America,35702908.0
+Canada,2010,81.3,79.3,83.3,47448.01322,Americas,Northern America,34004889.0
+Canada,2000,79.1,76.5,81.5,24190.24962,Americas,Northern America,30685730.0
+Central African Republic,2019,53.1,50.2,56.3,467.90744060000003,Africa,Sub-Saharan Africa,4745185.0
+Central African Republic,2015,50.5,48.2,53.0,377.4230017,Africa,Sub-Saharan Africa,4493170.0
+Central African Republic,2010,48.5,46.7,50.4,488.4214018,Africa,Sub-Saharan Africa,4386768.0
+Central African Republic,2000,44.3,43.2,45.5,251.20687740000002,Africa,Sub-Saharan Africa,3640427.0
+Chad,2019,59.6,58.0,61.3,709.5403100999999,Africa,Sub-Saharan Africa,15946876.0
+Chad,2015,57.9,56.2,59.6,776.0195323,Africa,Sub-Saharan Africa,14110975.0
+Chad,2010,55.7,53.9,57.4,892.5687203,Africa,Sub-Saharan Africa,11952136.0
+Chad,2000,51.1,49.3,53.0,165.7629866,Africa,Sub-Saharan Africa,8355654.0
+Chile,2019,80.7,78.1,83.2,14896.45387,Americas,Latin America and the Caribbean,18952038.0
+Chile,2015,79.8,77.0,82.5,13574.171830000001,Americas,Latin America and the Caribbean,17969353.0
+Chile,2010,78.5,75.5,81.3,12808.034590000001,Americas,Latin America and the Caribbean,17062536.0
+Chile,2000,76.8,73.6,79.8,5074.901624,Americas,Latin America and the Caribbean,15342353.0
+China,2019,77.4,74.7,80.5,10216.63033,Asia,Eastern Asia,1397715000.0
+China,2015,76.6,73.9,79.9,8066.942634999999,Asia,Eastern Asia,1371220000.0
+China,2010,74.9,72.3,77.9,4550.453108,Asia,Eastern Asia,1337705000.0
+China,2000,71.6,69.3,74.2,959.3724836000001,Asia,Eastern Asia,1262645000.0
+Colombia,2019,79.3,76.7,81.9,6428.676206,Americas,Latin America and the Caribbean,50339443.0
+Colombia,2015,78.4,75.6,81.0,6175.876029999999,Americas,Latin America and the Caribbean,47520667.0
+Colombia,2010,77.1,74.0,80.1,6336.709474,Americas,Latin America and the Caribbean,45222699.0
+Colombia,2000,73.7,69.7,77.8,2520.481089,Americas,Latin America and the Caribbean,39629965.0
+Comoros,2019,67.4,65.9,68.9,1370.148207,Africa,Sub-Saharan Africa,850886.0
+Comoros,2015,66.5,65.1,67.8,1242.60319,Africa,Sub-Saharan Africa,777424.0
+Comoros,2010,65.0,63.6,66.4,1316.498848,Africa,Sub-Saharan Africa,689692.0
+Comoros,2000,61.5,60.2,62.9,645.8186908,Africa,Sub-Saharan Africa,542357.0
+Costa Rica,2019,80.8,78.3,83.4,12243.81143,Americas,Latin America and the Caribbean,5047561.0
+Costa Rica,2015,80.8,78.2,83.5,11299.135540000001,Americas,Latin America and the Caribbean,4847804.0
+Costa Rica,2010,79.6,77.0,82.2,8141.913127,Americas,Latin America and the Caribbean,4577378.0
+Costa Rica,2000,78.0,75.5,80.6,3772.870012,Americas,Latin America and the Caribbean,3962372.0
+Croatia,2019,78.6,75.5,81.6,14936.10055,Europe,Southern Europe,4067500.0
+Croatia,2015,77.6,74.3,80.7,11781.73479,Europe,Southern Europe,4203604.0
+Croatia,2010,76.7,73.4,79.9,13949.3265,Europe,Southern Europe,4295427.0
+Croatia,2000,74.4,70.7,77.9,4841.586733,Europe,Southern Europe,4468302.0
+Cuba,2015,77.9,75.7,80.2,7694.01192,Americas,Latin America and the Caribbean,11324781.0
+Cuba,2010,77.7,75.5,79.8,5730.354775,Americas,Latin America and the Caribbean,11225832.0
+Cuba,2000,76.8,74.6,79.0,2747.098575,Americas,Latin America and the Caribbean,11126430.0
+Cyprus,2019,83.1,81.1,85.1,27858.371,Asia,Western Asia,1198575.0
+Cyprus,2015,82.0,79.9,84.1,23333.71491,Asia,Western Asia,1160985.0
+Cyprus,2010,81.0,78.9,83.1,31023.63833,Asia,Western Asia,1112612.0
+Cyprus,2000,78.7,76.5,81.0,14388.34806,Asia,Western Asia,943290.0
+Denmark,2019,81.3,79.6,83.0,60170.342639999995,Europe,Northern Europe,5818553.0
+Denmark,2015,80.6,78.8,82.4,53254.85637,Europe,Northern Europe,5683483.0
+Denmark,2010,79.2,77.2,81.1,58041.39844,Europe,Northern Europe,5547683.0
+Denmark,2000,76.9,74.7,79.1,30743.54768,Europe,Northern Europe,5339616.0
+Djibouti,2019,65.8,64.1,67.8,3414.9248700000003,Africa,Sub-Saharan Africa,973560.0
+Djibouti,2015,64.6,62.8,66.6,2658.9787530000003,Africa,Sub-Saharan Africa,913993.0
+Djibouti,2010,61.9,60.6,63.3,1343.26873,Africa,Sub-Saharan Africa,840198.0
+Djibouti,2000,59.8,57.9,62.0,768.1760767000001,Africa,Sub-Saharan Africa,717584.0
+Dominican Republic,2019,72.8,69.8,76.2,8282.116359,Americas,Latin America and the Caribbean,10738958.0
+Dominican Republic,2015,71.8,68.6,75.2,6921.517228,Americas,Latin America and the Caribbean,10281680.0
+Dominican Republic,2010,73.2,70.4,76.1,5555.389722,Americas,Latin America and the Caribbean,9695121.0
+Dominican Republic,2000,73.2,70.2,76.7,2869.105861,Americas,Latin America and the Caribbean,8471321.0
+Ecuador,2019,78.4,76.4,80.5,6183.823825,Americas,Latin America and the Caribbean,17373662.0
+Ecuador,2015,77.2,74.9,79.5,6124.491643,Americas,Latin America and the Caribbean,16212020.0
+Ecuador,2010,75.0,72.3,77.9,4633.5903579999995,Americas,Latin America and the Caribbean,15011117.0
+Ecuador,2000,74.5,71.9,77.3,1445.279324,Americas,Latin America and the Caribbean,12681123.0
+El Salvador,2019,75.0,70.6,79.1,4187.2500310000005,Americas,Latin America and the Caribbean,6453553.0
+El Salvador,2015,73.2,68.1,78.0,3705.577946,Americas,Latin America and the Caribbean,6325124.0
+El Salvador,2010,74.5,70.6,78.0,2983.2297710000003,Americas,Latin America and the Caribbean,6183875.0
+El Salvador,2000,72.5,68.4,76.5,2001.5380089999999,Americas,Latin America and the Caribbean,5887936.0
+Equatorial Guinea,2019,62.2,60.9,63.6,8131.923887999999,Africa,Sub-Saharan Africa,1355986.0
+Equatorial Guinea,2015,61.1,60.3,61.8,11283.46561,Africa,Sub-Saharan Africa,1168568.0
+Equatorial Guinea,2010,59.7,59.8,59.1,17288.8596,Africa,Sub-Saharan Africa,943639.0
+Equatorial Guinea,2000,54.3,52.4,56.5,1725.5547379999998,Africa,Sub-Saharan Africa,606181.0
+Eritrea,2010,60.7,57.8,64.0,501.3556333000001,Africa,Sub-Saharan Africa,3170435.0
+Eritrea,2000,54.5,51.2,58.5,308.1337836,Africa,Sub-Saharan Africa,2292416.0
+Estonia,2019,78.9,74.7,82.6,23723.306109999998,Europe,Northern Europe,1326590.0
+Estonia,2015,77.6,73.0,81.7,17522.230190000002,Europe,Northern Europe,1315407.0
+Estonia,2010,75.9,70.9,80.4,14790.820919999998,Europe,Northern Europe,1331475.0
+Estonia,2000,70.9,65.6,76.2,4075.970639,Europe,Northern Europe,1396985.0
+Eswatini,2019,57.7,53.4,63.2,3894.679807,Africa,Sub-Saharan Africa,1148130.0
+Eswatini,2015,54.0,50.3,58.7,3679.7997990000003,Africa,Sub-Saharan Africa,1104044.0
+Eswatini,2010,47.4,44.9,50.8,4168.505177,Africa,Sub-Saharan Africa,1064837.0
+Eswatini,2000,47.0,44.8,49.4,1728.7053399999998,Africa,Sub-Saharan Africa,1005435.0
+Ethiopia,2019,68.7,66.9,70.5,855.7608623,Africa,Sub-Saharan Africa,112078730.0
+Ethiopia,2015,66.8,65.0,68.6,640.5418913,Africa,Sub-Saharan Africa,100835458.0
+Ethiopia,2010,62.9,61.3,64.5,341.5541149,Africa,Sub-Saharan Africa,87639964.0
+Ethiopia,2000,50.6,49.5,51.7,124.4608003,Africa,Sub-Saharan Africa,66224804.0
+Fiji,2019,68.0,65.9,70.3,6175.88872,Oceania,Melanesia,889953.0
+Fiji,2015,67.8,65.8,70.1,5390.745258,Oceania,Melanesia,868627.0
+Fiji,2010,67.6,65.9,69.5,3652.5274369999997,Oceania,Melanesia,859818.0
+Fiji,2000,65.9,63.7,68.4,2076.568784,Oceania,Melanesia,811006.0
+Finland,2019,81.6,79.2,84.0,48782.78848,Europe,Northern Europe,5520314.0
+Finland,2015,81.2,78.5,83.9,42784.69836,Europe,Northern Europe,5479531.0
+Finland,2010,79.9,76.7,83.0,46459.97325,Europe,Northern Europe,5363352.0
+Finland,2000,77.6,74.1,80.9,24285.466819999998,Europe,Northern Europe,5176209.0
+France,2019,82.5,79.8,85.1,40493.92857,Europe,Western Europe,67059887.0
+France,2015,81.9,79.0,84.7,36638.18493,Europe,Western Europe,66548272.0
+France,2010,81.2,78.0,84.3,40638.334,Europe,Western Europe,65027507.0
+France,2000,78.9,75.2,82.5,22364.02939,Europe,Western Europe,60912500.0
+Gabon,2019,66.5,63.6,69.7,7767.013404,Africa,Sub-Saharan Africa,2172579.0
+Gabon,2015,64.9,62.1,68.1,7384.71587,Africa,Sub-Saharan Africa,1947686.0
+Gabon,2010,62.2,60.1,64.3,8849.3553,Africa,Sub-Saharan Africa,1624140.0
+Gabon,2000,58.1,56.1,60.1,4125.7166640000005,Africa,Sub-Saharan Africa,1228360.0
+Georgia,2019,73.3,68.8,77.8,4697.704576,Asia,Western Asia,3720382.0
+Georgia,2015,72.6,68.2,76.9,4014.185944,Asia,Western Asia,3725276.0
+Georgia,2010,71.9,67.4,76.3,3233.295943,Asia,Western Asia,3786695.0
+Georgia,2000,69.4,65.6,73.1,749.9085236000001,Asia,Western Asia,4077131.0
+Germany,2019,81.7,78.7,84.8,46445.2491,Europe,Western Europe,83132799.0
+Germany,2015,80.4,78.1,82.7,41086.72967,Europe,Western Europe,81686611.0
+Germany,2010,80.2,77.8,82.5,41531.9342,Europe,Western Europe,81776930.0
+Germany,2000,78.1,75.0,80.9,23635.929219999998,Europe,Western Europe,82211508.0
+Ghana,2019,66.3,63.7,69.2,2202.1155670000003,Africa,Sub-Saharan Africa,30417856.0
+Ghana,2015,64.5,62.0,67.4,1743.8509960000001,Africa,Sub-Saharan Africa,27849205.0
+Ghana,2010,62.0,59.7,64.5,1299.344949,Africa,Sub-Saharan Africa,24779619.0
+Ghana,2000,59.2,57.7,60.8,258.4709595,Africa,Sub-Saharan Africa,19278856.0
+Greece,2019,81.1,78.6,83.6,19582.53598,Europe,Southern Europe,10716322.0
+Greece,2015,80.4,77.8,82.9,18167.77373,Europe,Southern Europe,10820883.0
+Greece,2010,80.1,77.5,82.7,26917.75895,Europe,Southern Europe,11121341.0
+Greece,2000,78.2,75.5,80.9,12042.95371,Europe,Southern Europe,10805808.0
+Grenada,2019,72.9,70.6,75.3,10808.672120000001,Americas,Latin America and the Caribbean,112003.0
+Grenada,2015,72.7,70.4,75.1,9096.870646,Americas,Latin America and the Caribbean,109599.0
+Grenada,2010,72.0,69.2,75.5,7257.756622,Americas,Latin America and the Caribbean,106233.0
+Grenada,2000,72.0,68.6,76.0,5057.173965,Americas,Latin America and the Caribbean,102833.0
+Guatemala,2019,72.0,69.0,75.0,4619.985258,Americas,Latin America and the Caribbean,16604026.0
+Guatemala,2015,70.9,67.8,74.0,3994.6369130000003,Americas,Latin America and the Caribbean,15567419.0
+Guatemala,2010,69.3,65.8,72.8,2898.942215,Americas,Latin America and the Caribbean,14259687.0
+Guatemala,2000,66.8,63.3,70.3,1664.298958,Americas,Latin America and the Caribbean,11589761.0
+Guinea,2019,61.0,59.5,62.3,962.8399086000001,Africa,Sub-Saharan Africa,12771246.0
+Guinea,2015,58.8,57.3,60.1,769.2560137,Africa,Sub-Saharan Africa,11432088.0
+Guinea,2010,58.1,56.6,59.3,672.4244026,Africa,Sub-Saharan Africa,10192176.0
+Guinea,2000,54.3,53.1,55.3,363.482479,Africa,Sub-Saharan Africa,8240730.0
+Guinea-Bissau,2019,60.2,57.4,63.0,697.2949269,Africa,Sub-Saharan Africa,1920922.0
+Guinea-Bissau,2015,58.2,55.5,60.8,603.4011182,Africa,Sub-Saharan Africa,1737202.0
+Guinea-Bissau,2010,55.4,53.0,57.7,558.1761345,Africa,Sub-Saharan Africa,1522599.0
+Guinea-Bissau,2000,50.3,47.8,52.8,308.1441193,Africa,Sub-Saharan Africa,1201301.0
+Guyana,2019,65.7,62.5,69.4,6609.586425,Americas,Latin America and the Caribbean,782766.0
+Guyana,2015,65.6,62.3,69.2,5576.833337,Americas,Latin America and the Caribbean,767432.0
+Guyana,2010,64.8,61.6,68.2,4580.662461999999,Americas,Latin America and the Caribbean,749436.0
+Guyana,2000,63.0,59.8,66.5,954.4041525,Americas,Latin America and the Caribbean,746715.0
+Haiti,2019,64.1,63.3,64.8,1272.490925,Americas,Latin America and the Caribbean,11263077.0
+Haiti,2015,62.6,62.1,63.1,1389.11952,Americas,Latin America and the Caribbean,10695542.0
+Haiti,2010,31.3,28.0,35.4,1172.098543,Americas,Latin America and the Caribbean,9949322.0
+Haiti,2000,57.0,57.0,57.2,811.5339742000001,Americas,Latin America and the Caribbean,8463806.0
+Honduras,2019,71.9,70.7,73.2,2574.912191,Americas,Latin America and the Caribbean,9746117.0
+Honduras,2015,69.8,67.6,72.1,2302.201379,Americas,Latin America and the Caribbean,9112916.0
+Honduras,2010,71.1,70.2,72.1,1904.3464649999999,Americas,Latin America and the Caribbean,8317470.0
+Honduras,2000,70.0,69.1,71.0,1080.462129,Americas,Latin America and the Caribbean,6574509.0
+Hungary,2019,76.4,73.1,79.6,16731.821509999998,Europe,Eastern Europe,9769949.0
+Hungary,2015,75.6,72.2,78.7,12706.89121,Europe,Eastern Europe,9843028.0
+Hungary,2010,74.6,70.6,78.4,13191.62126,Europe,Eastern Europe,10000023.0
+Hungary,2000,71.3,67.1,75.6,4624.281657,Europe,Eastern Europe,10210971.0
+Iceland,2019,82.3,80.8,83.9,66944.83308,Europe,Northern Europe,361313.0
+Iceland,2015,82.1,80.7,83.6,52564.42918,Europe,Northern Europe,330815.0
+Iceland,2010,81.7,80.0,83.3,43024.92349,Europe,Northern Europe,318041.0
+Iceland,2000,79.7,77.7,81.6,32018.0637,Europe,Northern Europe,281205.0
+India,2019,70.8,69.5,72.2,2099.599048,Asia,Southern Asia,1366417754.0
+India,2015,69.3,68.1,70.6,1605.605434,Asia,Southern Asia,1310152403.0
+India,2010,67.2,65.7,68.9,1357.563719,Asia,Southern Asia,1234281170.0
+India,2000,62.1,61.3,62.9,443.31419339999997,Asia,Southern Asia,1056575549.0
+Indonesia,2019,71.3,69.4,73.3,4135.569263,Asia,South-eastern Asia,270625568.0
+Indonesia,2015,70.6,68.8,72.5,3331.6951280000003,Asia,South-eastern Asia,258383256.0
+Indonesia,2010,69.3,67.5,71.0,3122.362815,Asia,South-eastern Asia,241834215.0
+Indonesia,2000,67.2,65.8,68.6,780.190201,Asia,South-eastern Asia,211513823.0
+Iraq,2019,72.4,69.9,75.0,5955.10901,Asia,Western Asia,39309783.0
+Iraq,2015,70.3,67.3,73.4,4989.803075,Asia,Western Asia,35572261.0
+Iraq,2010,70.2,67.8,72.8,4655.424995,Asia,Western Asia,29741976.0
+Ireland,2019,81.8,80.2,83.5,78660.95646,Europe,Northern Europe,4941444.0
+Ireland,2015,81.1,79.3,82.9,61995.4228,Europe,Northern Europe,4701957.0
+Ireland,2010,80.4,78.3,82.4,48715.17691,Europe,Northern Europe,4560155.0
+Ireland,2000,76.4,73.8,79.0,26241.36461,Europe,Northern Europe,3805174.0
+Israel,2019,82.6,80.8,84.4,43592.08358,Asia,Western Asia,9053300.0
+Israel,2015,81.9,80.0,83.8,35776.79516,Asia,Western Asia,8380100.0
+Israel,2010,81.6,79.6,83.3,30693.593060000003,Asia,Western Asia,7623600.0
+Israel,2000,78.6,76.4,80.7,21043.57492,Asia,Western Asia,6289000.0
+Italy,2019,83.0,80.9,84.9,33228.23668,Europe,Southern Europe,60297396.0
+Italy,2015,82.2,80.0,84.3,30230.2263,Europe,Southern Europe,60730582.0
+Italy,2010,81.9,79.4,84.2,36000.52012,Europe,Southern Europe,59277417.0
+Italy,2000,79.4,76.4,82.1,20087.59199,Europe,Southern Europe,56942108.0
+Jamaica,2019,76.0,74.4,77.7,5582.2637780000005,Americas,Latin America and the Caribbean,2948279.0
+Jamaica,2015,75.9,74.1,77.7,4907.503720000001,Americas,Latin America and the Caribbean,2891021.0
+Jamaica,2010,75.8,73.3,78.5,4704.0544549999995,Americas,Latin America and the Caribbean,2810460.0
+Jamaica,2000,74.2,72.0,76.5,3384.694861,Americas,Latin America and the Caribbean,2654701.0
+Japan,2019,84.3,81.5,86.9,40246.88013,Asia,Eastern Asia,126264931.0
+Japan,2015,83.6,80.7,86.4,34524.469860000005,Asia,Eastern Asia,127141000.0
+Japan,2010,82.7,79.5,85.8,44507.67639,Asia,Eastern Asia,128070000.0
+Japan,2000,81.1,77.7,84.4,38532.04088,Asia,Eastern Asia,126843000.0
+Jordan,2019,77.9,77.0,78.8,4405.488412,Asia,Western Asia,10101694.0
+Jordan,2015,77.8,77.0,78.8,4164.107876,Asia,Western Asia,9266575.0
+Jordan,2010,76.6,75.6,77.6,3736.6464939999996,Asia,Western Asia,7261539.0
+Jordan,2000,72.6,73.1,72.5,1651.622443,Asia,Western Asia,5122493.0
+Kazakhstan,2019,74.0,70.0,77.6,9812.390376000001,Asia,Central Asia,18513930.0
+Kazakhstan,2015,71.9,67.4,76.2,10510.77189,Asia,Central Asia,17542806.0
+Kazakhstan,2010,68.4,63.6,73.4,9070.488253,Asia,Central Asia,16321872.0
+Kazakhstan,2000,63.1,57.6,69.2,1229.000958,Asia,Central Asia,14883626.0
+Kenya,2019,66.1,63.7,68.4,1816.546916,Africa,Sub-Saharan Africa,52573973.0
+Kenya,2015,64.2,61.7,66.6,1336.883349,Africa,Sub-Saharan Africa,47878336.0
+Kenya,2010,61.2,59.2,63.1,951.6879610999999,Africa,Sub-Saharan Africa,42030676.0
+Kenya,2000,53.9,52.8,54.9,397.4826588,Africa,Sub-Saharan Africa,31964557.0
+Kiribati,2019,59.4,56.1,62.8,1655.078839,Oceania,Micronesia,117606.0
+Kiribati,2015,58.2,55.1,61.4,1542.57525,Oceania,Micronesia,110930.0
+Kiribati,2010,58.0,54.8,61.4,1516.811869,Oceania,Micronesia,102927.0
+Kiribati,2000,55.7,52.3,59.4,796.8881748,Oceania,Micronesia,84396.0
+Kuwait,2019,81.0,79.3,83.9,32000.44847,Asia,Western Asia,4207083.0
+Kuwait,2015,81.1,79.5,83.8,29869.529389999996,Asia,Western Asia,3835591.0
+Kuwait,2010,79.8,78.8,81.4,38577.49828,Asia,Western Asia,2991884.0
+Kuwait,2000,77.9,76.4,80.1,18440.37852,Asia,Western Asia,2045123.0
+Latvia,2019,75.4,70.6,79.8,17828.894659999998,Europe,Northern Europe,1912789.0
+Latvia,2015,74.8,69.9,79.3,13774.605269999998,Europe,Northern Europe,1977527.0
+Latvia,2010,72.9,67.8,77.8,11383.52241,Europe,Northern Europe,2097555.0
+Latvia,2000,70.2,64.6,75.6,3357.586436,Europe,Northern Europe,2367550.0
+Lebanon,2019,76.4,74.0,79.2,7583.694722,Asia,Western Asia,6855713.0
+Lebanon,2015,76.0,73.5,78.8,7644.548656999999,Asia,Western Asia,6532678.0
+Lebanon,2010,75.5,73.3,78.1,7761.646191,Asia,Western Asia,4953061.0
+Lebanon,2000,74.6,73.0,76.1,4491.637259,Asia,Western Asia,3842778.0
+Lesotho,2019,50.7,47.7,54.2,1118.131284,Africa,Sub-Saharan Africa,2125268.0
+Lesotho,2015,47.7,45.1,50.6,1152.139829,Africa,Sub-Saharan Africa,2059021.0
+Lesotho,2010,47.4,44.5,50.7,1137.2757,Africa,Sub-Saharan Africa,1995581.0
+Lesotho,2000,47.8,45.5,50.7,436.48835199999996,Africa,Sub-Saharan Africa,2032804.0
+Liberia,2019,64.1,63.2,65.0,621.8929536,Africa,Sub-Saharan Africa,4937374.0
+Liberia,2015,61.2,60.6,61.7,710.3838577,Africa,Sub-Saharan Africa,4472230.0
+Liberia,2010,60.7,60.1,61.3,513.4456986,Africa,Sub-Saharan Africa,3891356.0
+Liberia,2000,53.8,52.9,54.7,306.8328947,Africa,Sub-Saharan Africa,2848456.0
+Libya,2019,75.8,74.2,77.3,7685.949267,Africa,Northern Africa,6777452.0
+Libya,2015,74.6,72.4,76.9,4337.919139,Africa,Northern Africa,6418315.0
+Libya,2010,76.0,74.8,77.3,12064.780690000001,Africa,Northern Africa,6197663.0
+Libya,2000,74.4,72.7,76.3,7142.774452,Africa,Northern Africa,5357891.0
+Lithuania,2019,76.0,71.2,80.4,19601.89083,Europe,Northern Europe,2786844.0
+Lithuania,2015,74.4,69.1,79.5,14258.229330000002,Europe,Northern Europe,2904910.0
+Lithuania,2010,73.1,67.5,78.7,11990.66302,Europe,Northern Europe,3097282.0
+Lithuania,2000,72.0,66.7,77.2,3293.2299789999997,Europe,Northern Europe,3499536.0
+Luxembourg,2019,82.4,80.6,84.2,114704.5942,Europe,Western Europe,619896.0
+Luxembourg,2015,82.3,80.3,84.3,101376.4966,Europe,Western Europe,569604.0
+Luxembourg,2010,80.9,78.6,83.1,104965.3061,Europe,Western Europe,506953.0
+Luxembourg,2000,78.2,75.1,81.1,48735.99549,Europe,Western Europe,436300.0
+Madagascar,2019,65.3,64.1,66.6,523.3590644999999,Africa,Sub-Saharan Africa,26969307.0
+Madagascar,2015,64.2,62.9,65.5,467.2353994,Africa,Sub-Saharan Africa,24234088.0
+Madagascar,2010,62.8,61.4,64.2,471.95919699999996,Africa,Sub-Saharan Africa,21151640.0
+Madagascar,2000,58.8,57.5,60.2,293.60715739999995,Africa,Sub-Saharan Africa,15766806.0
+Malawi,2019,65.6,62.3,68.9,411.5523404,Africa,Sub-Saharan Africa,18628747.0
+Malawi,2015,63.0,59.7,66.5,380.59703310000003,Africa,Sub-Saharan Africa,16745303.0
+Malawi,2010,56.8,54.4,59.2,478.6685897,Africa,Sub-Saharan Africa,14539612.0
+Malawi,2000,44.7,44.0,45.6,156.3857186,Africa,Sub-Saharan Africa,11148758.0
+Malaysia,2019,74.7,72.6,77.1,11414.206979999999,Asia,South-eastern Asia,31949777.0
+Malaysia,2015,75.0,73.0,77.1,9955.243708,Asia,South-eastern Asia,30270962.0
+Malaysia,2010,74.3,72.2,76.5,9040.566251,Asia,South-eastern Asia,28208035.0
+Malaysia,2000,72.8,70.6,75.3,4043.662051,Asia,South-eastern Asia,23194257.0
+Maldives,2019,79.6,78.6,80.8,10626.5134,Asia,Southern Asia,530953.0
+Maldives,2015,78.4,77.6,79.5,9033.439867000001,Asia,Southern Asia,454915.0
+Maldives,2010,77.0,76.0,78.2,7076.662423000001,Asia,Southern Asia,365734.0
+Maldives,2000,71.0,70.4,71.5,2234.579866,Asia,Southern Asia,279398.0
+Mali,2019,62.8,62.2,63.4,879.0080104,Africa,Sub-Saharan Africa,19658031.0
+Mali,2015,60.9,60.4,61.4,751.4747888999999,Africa,Sub-Saharan Africa,17438778.0
+Mali,2010,59.0,58.6,59.5,710.2742022000001,Africa,Sub-Saharan Africa,15049353.0
+Mali,2000,52.6,52.6,52.7,269.87113769999996,Africa,Sub-Saharan Africa,10946445.0
+Malta,2019,81.9,79.9,83.8,29820.60325,Europe,Southern Europe,502653.0
+Malta,2015,81.6,79.6,83.6,24921.60357,Europe,Southern Europe,445053.0
+Malta,2010,80.4,78.2,82.5,21799.17439,Europe,Southern Europe,414508.0
+Malta,2000,77.9,75.5,80.1,10432.32806,Europe,Southern Europe,390087.0
+Mauritania,2019,68.4,68.1,68.7,1679.4448730000001,Africa,Sub-Saharan Africa,4525696.0
+Mauritania,2015,67.4,67.2,67.7,1524.072883,Africa,Sub-Saharan Africa,4046301.0
+Mauritania,2010,65.6,65.4,65.9,1610.923908,Africa,Sub-Saharan Africa,3494195.0
+Mauritania,2000,62.0,61.8,62.2,676.5676584,Africa,Sub-Saharan Africa,2630219.0
+Mauritius,2019,74.1,71.0,77.3,11099.24028,Africa,Sub-Saharan Africa,1265711.0
+Mauritius,2015,74.1,71.0,77.4,9260.447303,Africa,Sub-Saharan Africa,1262605.0
+Mauritius,2010,73.2,69.8,76.8,8000.376431999999,Africa,Sub-Saharan Africa,1250400.0
+Mauritius,2000,71.2,67.7,74.8,3929.0754950000005,Africa,Sub-Saharan Africa,1186873.0
+Mexico,2019,76.0,73.1,78.9,9946.033829,Americas,Latin America and the Caribbean,127575529.0
+Mexico,2015,75.9,73.1,78.6,9616.645006,Americas,Latin America and the Caribbean,121858258.0
+Mexico,2010,75.1,72.2,78.0,9271.398233,Americas,Latin America and the Caribbean,114092963.0
+Mexico,2000,74.4,71.7,77.1,7157.8145,Americas,Latin America and the Caribbean,98899845.0
+Mongolia,2019,68.1,63.8,72.8,4339.843279,Asia,Eastern Asia,3225167.0
+Mongolia,2015,67.6,63.4,72.1,3918.5791740000004,Asia,Eastern Asia,2998439.0
+Mongolia,2010,65.1,61.1,69.5,2643.292914,Asia,Eastern Asia,2719896.0
+Mongolia,2000,60.5,57.3,64.1,474.21689649999996,Asia,Eastern Asia,2397418.0
+Montenegro,2019,75.9,73.2,78.7,8908.934792,Europe,Southern Europe,622137.0
+Montenegro,2015,75.3,72.8,77.7,6514.569188,Europe,Southern Europe,622159.0
+Montenegro,2010,74.7,72.3,77.1,6688.318598,Europe,Southern Europe,619428.0
+Montenegro,2000,73.6,70.9,76.3,1627.072633,Europe,Southern Europe,604950.0
+Morocco,2019,73.0,71.7,74.3,3204.095003,Africa,Northern Africa,36471769.0
+Morocco,2015,72.5,71.4,73.6,2875.257985,Africa,Northern Africa,34663603.0
+Morocco,2010,71.6,71.1,72.3,2839.9251679999998,Africa,Northern Africa,32343389.0
+Morocco,2000,69.3,68.1,70.6,1334.943051,Africa,Northern Africa,28793679.0
+Mozambique,2019,58.1,54.5,61.7,503.5707727,Africa,Sub-Saharan Africa,30366036.0
+Mozambique,2015,55.9,52.4,59.4,589.8590281,Africa,Sub-Saharan Africa,27042002.0
+Mozambique,2010,53.5,50.7,56.3,471.90420300000005,Africa,Sub-Saharan Africa,23531574.0
+Mozambique,2000,50.7,48.4,53.1,319.35958480000005,Africa,Sub-Saharan Africa,17711927.0
+Myanmar,2019,69.1,65.9,72.2,1407.813143,Asia,South-eastern Asia,54045420.0
+Myanmar,2015,67.6,64.3,70.7,1287.4304869999999,Asia,South-eastern Asia,52680726.0
+Myanmar,2010,64.8,61.6,67.9,979.05163,Asia,South-eastern Asia,50600818.0
+Myanmar,2000,60.0,57.3,62.7,190.6062319,Asia,South-eastern Asia,46719701.0
+Namibia,2019,64.6,60.6,68.4,4957.458222,Africa,Sub-Saharan Africa,2494530.0
+Namibia,2015,62.9,59.4,66.2,4869.378373,Africa,Sub-Saharan Africa,2314904.0
+Namibia,2010,60.9,57.3,64.7,5318.00694,Africa,Sub-Saharan Africa,2118874.0
+Namibia,2000,53.3,51.0,55.5,2136.440243,Africa,Sub-Saharan Africa,1794571.0
+Nepal,2019,70.9,68.9,72.7,1071.050761,Asia,Southern Asia,28608710.0
+Nepal,2015,69.4,67.3,71.4,792.5528906000001,Asia,Southern Asia,27015031.0
+Nepal,2010,69.2,67.5,70.9,592.4010975,Asia,Southern Asia,27013212.0
+Nepal,2000,65.3,63.9,66.6,229.4902871,Asia,Southern Asia,23941110.0
+Netherlands,2019,81.8,80.4,83.1,52331.31673,Europe,Western Europe,17332850.0
+Netherlands,2015,81.3,79.7,82.8,45175.231889999995,Europe,Western Europe,16939923.0
+Netherlands,2010,80.7,78.7,82.5,50950.03434,Europe,Western Europe,16615394.0
+Netherlands,2000,78.0,75.5,80.4,26149.41108,Europe,Western Europe,15925513.0
+New Zealand,2019,82.0,80.4,83.5,42084.35337,Oceania,Australia and New Zealand,4917000.0
+New Zealand,2015,81.3,79.7,82.9,38615.99518,Oceania,Australia and New Zealand,4595700.0
+New Zealand,2010,80.9,79.1,82.7,33700.126039999996,Oceania,Australia and New Zealand,4350700.0
+New Zealand,2000,78.6,76.0,81.1,13641.102719999999,Oceania,Australia and New Zealand,3857700.0
+Nicaragua,2019,75.0,72.1,77.9,1912.9037449999998,Americas,Latin America and the Caribbean,6545502.0
+Nicaragua,2015,74.6,71.8,77.3,2049.84969,Americas,Latin America and the Caribbean,6223240.0
+Nicaragua,2010,74.1,71.4,76.7,1503.870423,Americas,Latin America and the Caribbean,5824065.0
+Nicaragua,2000,73.3,70.8,75.7,1007.5014289999999,Americas,Latin America and the Caribbean,5069302.0
+Niger,2019,63.3,62.1,64.6,553.8950504,Africa,Sub-Saharan Africa,23310715.0
+Niger,2015,61.5,60.3,62.9,484.2386326,Africa,Sub-Saharan Africa,20001663.0
+Niger,2010,59.0,57.8,60.2,476.8695322,Africa,Sub-Saharan Africa,16464025.0
+Niger,2000,50.4,49.7,51.0,197.3414059,Africa,Sub-Saharan Africa,11331557.0
+Nigeria,2019,62.6,61.2,64.1,2229.8586960000002,Africa,Sub-Saharan Africa,200963599.0
+Nigeria,2015,61.2,59.6,62.8,2687.480145,Africa,Sub-Saharan Africa,181137448.0
+Nigeria,2010,59.2,57.8,60.8,2280.4374239999997,Africa,Sub-Saharan Africa,158503197.0
+Nigeria,2000,53.6,52.2,55.2,567.930736,Africa,Sub-Saharan Africa,122283850.0
+Norway,2019,82.6,81.1,84.1,75419.63487000001,Europe,Northern Europe,5347896.0
+Norway,2015,82.0,80.3,83.7,74355.51586,Europe,Northern Europe,5188607.0
+Norway,2010,80.9,78.8,82.9,87693.79007,Europe,Northern Europe,4889252.0
+Norway,2000,78.5,75.9,81.2,38131.46061,Europe,Northern Europe,4490967.0
+Oman,2019,73.9,73.0,75.3,15343.062,Asia,Western Asia,4974986.0
+Oman,2015,72.5,71.4,74.1,16028.611519999999,Asia,Western Asia,4267348.0
+Oman,2010,70.4,69.0,72.5,18712.5763,Asia,Western Asia,3041434.0
+Oman,2000,69.1,67.3,71.5,8601.271932,Asia,Western Asia,2267973.0
+Pakistan,2019,65.6,64.6,66.7,1284.702041,Asia,Southern Asia,216565318.0
+Pakistan,2015,64.2,63.1,65.4,1356.667756,Asia,Southern Asia,199426964.0
+Pakistan,2010,62.6,61.5,63.9,987.4097230000001,Asia,Southern Asia,179424641.0
+Pakistan,2000,60.1,59.3,61.0,576.1956006,Asia,Southern Asia,142343578.0
+Panama,2019,79.3,76.6,82.1,15731.01603,Americas,Latin America and the Caribbean,4246439.0
+Panama,2015,78.7,76.2,81.4,13630.307969999998,Americas,Latin America and the Caribbean,3968487.0
+Panama,2010,77.5,74.6,80.6,8082.028459,Americas,Latin America and the Caribbean,3642687.0
+Panama,2000,77.2,74.6,80.1,4060.324493,Americas,Latin America and the Caribbean,3030328.0
+Papua New Guinea,2019,65.3,63.4,67.4,2829.170309,Oceania,Melanesia,8776109.0
+Papua New Guinea,2015,64.5,62.6,66.5,2679.345589,Oceania,Melanesia,8107775.0
+Papua New Guinea,2010,63.4,61.5,65.4,1949.3525170000003,Oceania,Melanesia,7310507.0
+Papua New Guinea,2000,63.3,61.1,65.6,602.1869022999999,Oceania,Melanesia,5847586.0
+Paraguay,2019,75.8,73.1,78.8,5414.799138,Americas,Latin America and the Caribbean,7044636.0
+Paraguay,2015,75.6,72.8,78.6,5406.703857,Americas,Latin America and the Caribbean,6688746.0
+Paraguay,2010,75.0,72.5,77.7,4355.934939,Americas,Latin America and the Caribbean,6248020.0
+Paraguay,2000,74.8,72.6,77.1,1663.605252,Americas,Latin America and the Caribbean,5323201.0
+Peru,2019,79.9,78.5,81.3,6977.6957840000005,Americas,Latin America and the Caribbean,32510453.0
+Peru,2015,79.1,77.6,80.6,6229.101696,Americas,Latin America and the Caribbean,30470734.0
+Peru,2010,77.3,75.6,78.9,5082.354757,Americas,Latin America and the Caribbean,29027674.0
+Peru,2000,74.4,72.9,75.9,1955.588006,Americas,Latin America and the Caribbean,26459944.0
+Philippines,2019,70.4,67.4,73.6,3485.084218,Asia,South-eastern Asia,108116615.0
+Philippines,2015,70.3,67.1,73.7,3001.040371,Asia,South-eastern Asia,102113212.0
+Philippines,2010,70.0,66.6,73.5,2217.474009,Asia,South-eastern Asia,93966780.0
+Philippines,2000,69.0,65.5,72.9,1072.809064,Asia,South-eastern Asia,77991755.0
+Poland,2019,78.3,74.5,81.9,15692.50703,Europe,Eastern Europe,37970874.0
+Poland,2015,77.3,73.4,81.1,12578.49547,Europe,Eastern Europe,37986412.0
+Poland,2010,76.3,72.1,80.4,12613.011,Europe,Eastern Europe,38042794.0
+Poland,2000,73.7,69.5,77.9,4501.454067000001,Europe,Eastern Europe,38258629.0
+Portugal,2019,81.6,78.6,84.4,23252.05852,Europe,Southern Europe,10269417.0
+Portugal,2015,80.9,77.9,83.7,19242.366469999997,Europe,Southern Europe,10358076.0
+Portugal,2010,79.7,76.6,82.7,22498.69086,Europe,Southern Europe,10573100.0
+Portugal,2000,76.6,73.1,80.1,11497.75346,Europe,Southern Europe,10289898.0
+Qatar,2019,77.2,78.0,76.6,62088.06183,Asia,Western Asia,2832067.0
+Qatar,2015,76.4,77.2,75.9,63039.06349,Asia,Western Asia,2565710.0
+Qatar,2010,74.1,75.0,73.9,67403.1603,Asia,Western Asia,1856327.0
+Qatar,2000,71.3,71.1,71.7,29976.117039999997,Asia,Western Asia,592468.0
+North Macedonia,2019,74.8,72.8,76.9,6022.216179,Europe,Southern Europe,2083459.0
+North Macedonia,2015,73.7,71.7,75.9,4840.273123,Europe,Southern Europe,2079328.0
+North Macedonia,2010,73.1,70.9,75.4,4542.899717,Europe,Southern Europe,2070741.0
+North Macedonia,2000,71.1,68.9,73.5,1854.1459559999998,Europe,Southern Europe,2034819.0
+Romania,2019,75.6,72.0,79.3,12919.52964,Europe,Eastern Europe,19356544.0
+Romania,2015,74.8,71.3,78.4,8969.148921,Europe,Eastern Europe,19815616.0
+Romania,2010,73.7,70.1,77.4,8214.076893000001,Europe,Eastern Europe,20246871.0
+Romania,2000,71.4,68.0,74.9,1659.9076400000001,Europe,Eastern Europe,22442971.0
+Russian Federation,2019,73.2,68.2,78.0,11584.99538,Europe,Eastern Europe,144373535.0
+Russian Federation,2015,71.3,65.8,76.6,9313.013625,Europe,Eastern Europe,144096870.0
+Russian Federation,2010,68.8,62.9,74.7,10674.99578,Europe,Eastern Europe,142849468.0
+Russian Federation,2000,65.3,59.0,72.3,1771.594059,Europe,Eastern Europe,146596869.0
+Rwanda,2019,69.1,66.9,71.2,820.0252417,Africa,Sub-Saharan Africa,12626950.0
+Rwanda,2015,67.7,65.5,69.8,751.6393697000001,Africa,Sub-Saharan Africa,11369071.0
+Rwanda,2010,64.4,62.3,66.5,610.0124006,Africa,Sub-Saharan Africa,10039338.0
+Rwanda,2000,47.5,45.9,49.2,260.7780161,Africa,Sub-Saharan Africa,7933681.0
+Samoa,2019,70.5,69.2,71.8,4324.014018,Oceania,Polynesia,197097.0
+Samoa,2015,70.0,68.7,71.5,4073.6660100000004,Oceania,Polynesia,193513.0
+Samoa,2010,69.6,68.1,71.2,3566.3623780000003,Oceania,Polynesia,185949.0
+Samoa,2000,68.5,66.5,70.8,1542.066736,Oceania,Polynesia,174454.0
+Sao Tome and Principe,2019,70.4,68.8,72.0,1946.643614,Africa,Sub-Saharan Africa,215056.0
+Sao Tome and Principe,2015,69.6,68.0,71.1,1584.82776,Africa,Sub-Saharan Africa,199432.0
+Sao Tome and Principe,2010,68.2,66.9,69.5,1090.264878,Africa,Sub-Saharan Africa,180371.0
+Saudi Arabia,2019,74.3,73.1,76.1,23139.79866,Asia,Western Asia,34268528.0
+Saudi Arabia,2015,73.2,71.7,75.2,20627.932780000003,Asia,Western Asia,31717667.0
+Saudi Arabia,2010,71.8,70.4,73.7,19262.552519999997,Asia,Western Asia,27421461.0
+Saudi Arabia,2000,70.5,69.6,71.6,9171.330145,Asia,Western Asia,20663843.0
+Senegal,2019,68.6,66.8,70.1,1446.830965,Africa,Sub-Saharan Africa,16296364.0
+Senegal,2015,67.2,65.5,68.8,1219.248662,Africa,Sub-Saharan Africa,14578459.0
+Senegal,2010,65.5,63.7,67.2,1280.2254699999999,Africa,Sub-Saharan Africa,12678148.0
+Senegal,2000,58.6,56.9,60.3,604.6540660000001,Africa,Sub-Saharan Africa,9797734.0
+Serbia,2019,75.9,73.5,78.3,7411.8361159999995,Europe,Southern Europe,6944975.0
+Serbia,2015,75.2,72.7,77.8,5588.980728,Europe,Southern Europe,7095383.0
+Serbia,2010,74.2,71.6,76.8,5735.4228570000005,Europe,Southern Europe,7291436.0
+Serbia,2000,71.4,68.7,74.3,914.7857198999999,Europe,Southern Europe,7516346.0
+Seychelles,2019,73.3,70.0,77.1,17448.27029,Africa,Sub-Saharan Africa,97625.0
+Seychelles,2015,73.2,70.0,76.8,14745.34146,Africa,Sub-Saharan Africa,93419.0
+Seychelles,2010,73.0,69.6,76.8,10804.68447,Africa,Sub-Saharan Africa,89770.0
+Seychelles,2000,71.9,67.8,76.3,7578.851053,Africa,Sub-Saharan Africa,81131.0
+Sierra Leone,2019,60.8,59.6,61.9,527.5336344,Africa,Sub-Saharan Africa,7813215.0
+Sierra Leone,2015,56.9,55.9,57.9,588.2284527,Africa,Sub-Saharan Africa,7171914.0
+Sierra Leone,2010,54.7,53.7,55.8,401.8350014,Africa,Sub-Saharan Africa,6415634.0
+Sierra Leone,2000,48.7,46.8,50.7,138.69869219999998,Africa,Sub-Saharan Africa,4584571.0
+Singapore,2019,83.2,81.0,85.5,65233.282439999995,Asia,South-eastern Asia,5703569.0
+Singapore,2015,82.8,80.7,84.9,55646.61875,Asia,South-eastern Asia,5535002.0
+Singapore,2010,81.7,79.4,84.0,47236.960230000004,Asia,South-eastern Asia,5076732.0
+Singapore,2000,78.4,76.2,80.7,23852.32703,Asia,South-eastern Asia,4027887.0
+Slovenia,2019,81.3,78.6,84.1,25946.18219,Europe,Southern Europe,2087946.0
+Slovenia,2015,80.5,77.6,83.3,20881.76693,Europe,Southern Europe,2063531.0
+Slovenia,2010,79.6,76.2,82.7,23509.54314,Europe,Southern Europe,2048583.0
+Slovenia,2000,76.1,72.2,79.7,10201.30354,Europe,Southern Europe,1988925.0
+Solomon Islands,2019,65.2,62.9,67.9,2373.63247,Oceania,Melanesia,669823.0
+Solomon Islands,2015,64.7,62.3,67.4,2167.173826,Oceania,Melanesia,603118.0
+Solomon Islands,2010,63.7,61.3,66.4,1604.20583,Oceania,Melanesia,527861.0
+Solomon Islands,2000,62.5,60.1,65.2,1040.007194,Oceania,Melanesia,412660.0
+South Africa,2019,65.3,62.2,68.3,6001.400814,Africa,Sub-Saharan Africa,58558270.0
+South Africa,2015,62.6,59.8,65.3,5734.633629,Africa,Sub-Saharan Africa,55386367.0
+South Africa,2010,57.1,55.0,59.2,7328.615629000001,Africa,Sub-Saharan Africa,51216964.0
+South Africa,2000,55.8,53.1,58.6,3032.427138,Africa,Sub-Saharan Africa,44967708.0
+South Sudan,2015,62.0,59.8,64.3,1119.651333,Africa,Sub-Saharan Africa,10715658.0
+South Sudan,2010,61.1,59.2,63.1,1535.708184,Africa,Sub-Saharan Africa,9508364.0
+Spain,2019,83.2,80.7,85.7,29600.37825,Europe,Southern Europe,47076781.0
+Spain,2015,82.3,79.7,84.9,25732.01836,Europe,Southern Europe,46444832.0
+Spain,2010,81.7,78.8,84.6,30502.71971,Europe,Southern Europe,46576897.0
+Spain,2000,79.1,75.7,82.5,14713.065709999999,Europe,Southern Europe,40567864.0
+Sri Lanka,2019,76.9,73.8,79.8,3853.083693,Asia,Southern Asia,21803000.0
+Sri Lanka,2015,76.3,73.0,79.4,3843.780672,Asia,Southern Asia,20970000.0
+Sri Lanka,2010,73.3,69.4,77.3,2799.648876,Asia,Southern Asia,20261737.0
+Sri Lanka,2000,71.9,67.9,76.3,869.6965166000001,Asia,Southern Asia,18777601.0
+Sudan,2019,69.1,67.6,70.8,441.5056034,Africa,Northern Africa,42813238.0
+Sudan,2015,67.9,66.2,69.7,1909.738755,Africa,Northern Africa,38902950.0
+Sudan,2010,66.6,64.7,68.4,1401.477474,Africa,Northern Africa,34545013.0
+Sudan,2000,62.5,60.4,64.7,366.17280760000006,Africa,Northern Africa,27275015.0
+Suriname,2019,71.5,68.5,74.6,6359.833614,Americas,Latin America and the Caribbean,581363.0
+Suriname,2015,72.6,69.5,75.8,8562.081369,Americas,Latin America and the Caribbean,559136.0
+Suriname,2010,71.8,68.7,75.1,8255.874872,Americas,Latin America and the Caribbean,529126.0
+Suriname,2000,69.9,67.1,73.0,2012.2816510000002,Americas,Latin America and the Caribbean,470944.0
+Sweden,2019,82.4,80.8,84.0,51615.02065,Europe,Northern Europe,10285453.0
+Sweden,2015,81.7,80.0,83.5,51545.48361,Europe,Northern Europe,9799186.0
+Sweden,2010,81.3,79.4,83.1,52869.04429,Europe,Northern Europe,9378126.0
+Sweden,2000,79.6,77.3,81.8,29624.912669999998,Europe,Northern Europe,8872109.0
+Switzerland,2019,83.4,81.8,85.1,81993.72713,Europe,Western Europe,8574832.0
+Switzerland,2015,82.6,80.6,84.5,82081.59716,Europe,Western Europe,8282396.0
+Switzerland,2010,82.2,80.0,84.2,74605.72107999999,Europe,Western Europe,7824909.0
+Switzerland,2000,79.7,76.9,82.3,37868.32303,Europe,Western Europe,7184250.0
+Syrian Arab Republic,2000,71.5,70.4,72.7,1177.629268,Asia,Western Asia,16410848.0
+Tajikistan,2019,69.5,67.6,71.5,870.7875892999999,Asia,Central Asia,9321018.0
+Tajikistan,2015,68.7,66.7,70.8,929.0958572000001,Asia,Central Asia,8454028.0
+Tajikistan,2010,68.0,66.0,70.2,749.552711,Asia,Central Asia,7527394.0
+Tajikistan,2000,65.6,63.5,67.8,138.4288795,Asia,Central Asia,6216341.0
+Thailand,2019,77.7,74.4,81.0,7806.742211,Asia,South-eastern Asia,69625582.0
+Thailand,2015,77.4,74.1,80.7,5840.046523,Asia,South-eastern Asia,68714511.0
+Thailand,2010,76.3,73.2,79.3,5076.340174,Asia,South-eastern Asia,67195028.0
+Thailand,2000,71.3,67.5,75.2,2007.735175,Asia,South-eastern Asia,62952642.0
+Timor-Leste,2019,69.6,67.9,71.4,1560.509822,Asia,South-eastern Asia,1293119.0
+Timor-Leste,2015,68.9,67.3,70.5,1332.782859,Asia,South-eastern Asia,1196302.0
+Timor-Leste,2010,68.1,66.8,69.4,806.4091016,Asia,South-eastern Asia,1093523.0
+Timor-Leste,2000,62.7,61.9,63.4,415.0859486,Asia,South-eastern Asia,884366.0
+Togo,2019,64.3,61.5,67.2,679.2902491,Africa,Sub-Saharan Africa,8082366.0
+Togo,2015,61.9,59.2,64.8,570.9102790000001,Africa,Sub-Saharan Africa,7323158.0
+Togo,2010,59.3,57.0,61.8,534.0443668,Africa,Sub-Saharan Africa,6421679.0
+Togo,2000,55.9,53.9,58.1,302.2063943,Africa,Sub-Saharan Africa,4924402.0
+Tonga,2019,72.6,69.8,75.6,4903.152903,Oceania,Polynesia,104494.0
+Tonga,2015,72.3,69.4,75.5,4336.196575999999,Oceania,Polynesia,100781.0
+Tonga,2010,72.2,69.1,75.5,3527.7827060000004,Oceania,Polynesia,103986.0
+Tonga,2000,70.9,68.0,74.2,2090.8780469999997,Oceania,Polynesia,97973.0
+Trinidad and Tobago,2019,76.1,72.5,79.9,17397.98176,Americas,Latin America and the Caribbean,1394973.0
+Trinidad and Tobago,2015,74.6,71.1,78.3,18289.70434,Americas,Latin America and the Caribbean,1370328.0
+Trinidad and Tobago,2010,72.1,68.7,75.7,16683.35538,Americas,Latin America and the Caribbean,1328147.0
+Trinidad and Tobago,2000,69.7,66.9,72.6,6435.164683,Americas,Latin America and the Caribbean,1267153.0
+Tunisia,2019,77.0,74.9,79.2,3317.453593,Africa,Northern Africa,11694719.0
+Tunisia,2015,76.7,74.6,78.8,3861.6885310000002,Africa,Northern Africa,11179949.0
+Tunisia,2010,76.0,73.9,78.2,4141.976353,Africa,Northern Africa,10635244.0
+Tunisia,2000,74.1,71.9,76.5,2211.826817,Africa,Northern Africa,9708350.0
+Turkey,2019,78.6,76.4,80.7,9126.561345999999,Asia,Western Asia,83429615.0
+Turkey,2015,77.8,75.4,80.1,11006.249740000001,Asia,Western Asia,78529409.0
+Turkey,2010,76.9,74.6,79.1,10742.43007,Asia,Western Asia,72326988.0
+Turkey,2000,74.4,71.9,76.8,4337.478141,Asia,Western Asia,63240194.0
+Turkmenistan,2015,69.1,65.7,72.6,6432.680702000001,Asia,Central Asia,5565287.0
+Turkmenistan,2010,67.3,63.6,71.1,4439.200382,Asia,Central Asia,5087213.0
+Turkmenistan,2000,63.3,59.3,67.4,643.174726,Asia,Central Asia,4516133.0
+Uganda,2019,66.7,63.2,70.1,794.3410779,Africa,Sub-Saharan Africa,44269594.0
+Uganda,2015,64.5,60.8,68.1,843.6294158,Africa,Sub-Saharan Africa,38225453.0
+Uganda,2010,59.7,57.0,62.2,819.0073159,Africa,Sub-Saharan Africa,32428167.0
+Uganda,2000,48.8,46.8,50.8,261.8689977,Africa,Sub-Saharan Africa,23650172.0
+Ukraine,2019,73.0,68.0,77.8,3659.0313119999996,Europe,Eastern Europe,44385155.0
+Ukraine,2015,72.2,67.2,77.0,2124.662319,Europe,Eastern Europe,45154036.0
+Ukraine,2010,70.2,65.2,75.1,2965.139715,Europe,Eastern Europe,45870741.0
+Ukraine,2000,67.5,62.1,73.2,635.7005351,Europe,Eastern Europe,49176500.0
+United Arab Emirates,2019,76.1,75.1,78.4,43103.32306,Asia,Western Asia,9770529.0
+United Arab Emirates,2015,75.3,74.3,77.8,38663.38381,Asia,Western Asia,9262900.0
+United Arab Emirates,2010,74.9,73.9,77.4,33893.303510000005,Asia,Western Asia,8549988.0
+United Arab Emirates,2000,73.2,72.2,75.1,33291.419369999996,Asia,Western Asia,3134062.0
+Uruguay,2019,77.1,73.5,80.6,16190.12696,Americas,Latin America and the Caribbean,3461734.0
+Uruguay,2015,77.0,73.3,80.6,15613.76427,Americas,Latin America and the Caribbean,3412009.0
+Uruguay,2010,76.4,72.5,80.0,11992.01663,Americas,Latin America and the Caribbean,3359275.0
+Uruguay,2000,74.8,70.8,78.8,6875.021328,Americas,Latin America and the Caribbean,3319736.0
+Uzbekistan,2019,73.0,70.8,75.2,1724.841134,Asia,Central Asia,33580650.0
+Uzbekistan,2015,71.4,69.0,73.9,2615.025134,Asia,Central Asia,31298900.0
+Uzbekistan,2010,70.2,67.5,72.9,1634.312095,Asia,Central Asia,28562400.0
+Uzbekistan,2000,65.3,62.4,68.2,558.2268024,Asia,Central Asia,24650400.0
+Vanuatu,2019,65.3,62.7,68.3,3115.35862,Oceania,Melanesia,299882.0
+Vanuatu,2015,64.6,62.0,67.7,2801.939848,Oceania,Melanesia,271130.0
+Vanuatu,2010,64.5,61.9,67.5,2966.857116,Oceania,Melanesia,236211.0
+Vanuatu,2000,63.9,61.4,66.9,1470.572265,Oceania,Melanesia,184972.0
+Zambia,2019,62.5,59.5,65.4,1305.063254,Africa,Sub-Saharan Africa,17861030.0
+Zambia,2015,60.5,57.9,63.0,1337.795586,Africa,Sub-Saharan Africa,15879361.0
+Zambia,2010,56.7,54.3,59.1,1489.459306,Africa,Sub-Saharan Africa,13605984.0
+Zambia,2000,44.5,43.7,45.2,345.68955439999996,Africa,Sub-Saharan Africa,10415944.0
+Zimbabwe,2019,60.7,57.5,63.6,1463.9859099999999,Africa,Sub-Saharan Africa,14645468.0
+Zimbabwe,2015,58.5,55.7,61.0,1445.071062,Africa,Sub-Saharan Africa,13814629.0
+Zimbabwe,2010,51.5,49.6,53.2,948.3318545,Africa,Sub-Saharan Africa,12697723.0
+Zimbabwe,2000,46.6,45.1,48.1,563.0577411,Africa,Sub-Saharan Africa,11881477.0
